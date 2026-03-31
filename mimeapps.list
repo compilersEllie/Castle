@@ -232,6 +232,8 @@ image/jp2=org.gimp.GIMP.desktop
 image/x-xcursor=org.gimp.GIMP.desktop
 image/openraster=org.gimp.GIMP.desktop
 font/ttf=org.gnome.font-viewer.desktop
+x-scheme-handler/obsidian=obsidian-obsidian.desktop
+text/markdown=obsidian-obsidian.desktop
 
 [Added Associations]
 application/msword=google-chrome.desktop;libreoffice-writer.desktop;

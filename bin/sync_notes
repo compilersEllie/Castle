@@ -2,4 +2,5 @@
 
 cd ~/src/notes
 source ~/src/greasy/greasy.zsh
+echo "Sync $(date)" >&2
 ((a . && m "Backup $(date)") || true) && pP
