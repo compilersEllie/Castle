@@ -63,7 +63,6 @@ zplug modules/node, from:prezto
 
 zREPO HCAIRESteam/hcaires, dir:"${HOME}/src/hcaires", frozen:1
 zREPO PolymerLabs/arcs, dir:"${HOME}/src/arcs", frozen:1
-zREPO cypher1/greasy, dir:"${HOME}/src/greasy"
 zREPO cypher1/llvm-project, dir:"${HOME}/src/llvm-project", frozen:1
 zREPO cypher1/mdbook-graphviz, dir:"${HOME}/src/mdbook-graphviz"
 zREPO cypher1/no_debug, dir:"${HOME}/src/no_debug", frozen:1
@@ -343,6 +342,7 @@ alias open="xdg-open"
 alias v="$EDITOR "
 alias vi="$EDITOR "
 alias vim="$EDITOR "
+alias zed="$EDITOR "
 alias :e="$EDITOR "
 alias zrc="zed ${HOME}/.config/zshrc"
 alias grc="zed ${HOME}/.config/gitconfig"
