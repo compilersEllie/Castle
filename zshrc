@@ -276,7 +276,7 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=yellow"
 # EXPORTS
 export LLVM_SYS_150_PREFIX="${HOME}/llvm-project/build"
 export TERM="xterm-256color"
-export EDITOR="$(which zed || which nvim || which vim)"
+export EDITOR="$(echo -e "$(which zed || which nvim || which vim)" | tail -n 1)"
 export VISUAL="$EDITOR"
 export CARGO_TARGET_DIR="${HOME}/.cargo/target"
 export CARGO_INCREMENTAL=0
