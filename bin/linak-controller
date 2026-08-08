@@ -1,0 +1,4 @@
+#!/bin/bash
+script_dir="/home/ellie/src/linak-controller"
+cd $script_dir
+poetry run linak-controller -- "$@"
