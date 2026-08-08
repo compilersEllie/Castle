@@ -28,6 +28,7 @@ path "${HOME}/.cargo/bin"
 path "${HOME}/.dotnet/tools"
 path "${HOME}/.local/bin"
 path "${HOME}/.zplug/bin"
+path "${HOME}/.rbenv/bin"
 path "${HOME}/.config/bin"
 path "/usr/local/cuda-12.5/bin"
 
@@ -61,18 +62,15 @@ zplug sorin-ionescu/prezto, depth:1
 zplug modules/history, from:prezto
 zplug modules/node, from:prezto
 
-zREPO HCAIRESteam/hcaires, dir:"${HOME}/src/hcaires", frozen:1
 zREPO PolymerLabs/arcs, dir:"${HOME}/src/arcs", frozen:1
 zREPO cypher1/llvm-project, dir:"${HOME}/src/llvm-project", frozen:1
 zREPO cypher1/mdbook-graphviz, dir:"${HOME}/src/mdbook-graphviz"
 zREPO cypher1/no_debug, dir:"${HOME}/src/no_debug", frozen:1
 zREPO cypher1/nvim_config, dir:"${HOME}/src/nvim"
-zREPO cypher1/poetry, dir:"${HOME}/src/poetry"
-zREPO cypher1/poetry-core, dir:"${HOME}/src/poetry-core"
+# zREPO cypher1/poetry, dir:"${HOME}/src/poetry"
+# zREPO cypher1/poetry-core, dir:"${HOME}/src/poetry-core"
 zREPO cypher1/qmk_firmware, dir:"${HOME}/src/qmk_firmware"
-zREPO neovim/neovim, dir:"${HOME}/src/neovim", frozen:1
-# zREPO pop-os/cosmic-epoch, dir:"${HOME}/src/cosmic-epoch", frozen:1
-zREPO tcdi/plrust, dir:"${HOME}/src/plrust"
+# zREPO neovim/neovim, dir:"${HOME}/src/neovim", frozen:1
 zrepo cypher1/notes, dir:"${HOME}/src/notes"
 zrepo cypher1/nvim_config, dir:"${HOME}/src/nvim"
 zrepo cypher1/tako, dir:"${HOME}/src/tako", frozen:1
@@ -274,12 +272,15 @@ export HISTIGNORE="^(fg|bg|ls|s|p|q)$"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=yellow"
 
 # EXPORTS
-export LLVM_SYS_150_PREFIX="${HOME}/llvm-project/build"
+export LLVM_SYS_221_PREFIX="/mnt/big/llvm-project/build"
 export TERM="xterm-256color"
 export EDITOR="$(echo -e "$(which zed || which nvim || which vim)" | tail -n 1)"
 export VISUAL="$EDITOR"
 export CARGO_TARGET_DIR="${HOME}/.cargo/target"
 export CARGO_INCREMENTAL=0
+export OLLAMA_REQUEST_TIMEOUT=600
+export OLLAMA_FLASH_ATTENTION=1
+export OLLAMA_KV_CACHE_TYPE=q8_0
 
 SCCACHE="$(which sccache)"
 [[ -e $SCCACHE ]] && export RUSTC_WRAPPER="$SCCACHE"
@@ -310,6 +311,63 @@ function c() {
 alias tl="less -r -f +G +g .t.log"
 function t() {
   cargo test --color always $@ 2>&1 | tee .t.log | less -r +G +g
+}
+
+function batf() {
+  local filename="$1"
+  local extension="${2:=${filename##*.}}"
+  if [[ ! -f "$filename" ]]; then
+    echo "Error: File '$filename' does not exist."
+    return 1
+  fi
+  tail -f "$filename" | bat -l "$extension" --paging=never
+}
+
+function swap() {
+    # Undo a `mv $1 $2` with `vm $1 $2`.
+    a="$1"
+    b="$2"
+    c="$(mktemp)"
+    mv "${a}" "${c}"
+    mv "${b}" "${a}"
+    mv "${c}" "${b}"
+}
+
+function mv() {
+    # Save overwritten files when moving OVER a file
+    local src="$1"
+    local dest="$2"
+    if [ -e "${src}" ]; then
+        if [ -f "${dest}" ]; then
+            mkdir -p /tmp/mv_backups
+            local name="$(basename -- "${dest}")"
+            local ts="$(date --iso-8601=seconds)"
+            local backup="$(mktemp -p /tmp/mv_backups -d -t "${name}-${ts}-XXX")"
+            /usr/bin/mv "${dest}" "${backup}/${dest}"
+            echo "Backed up ${dest} to ${backup}" > /dev/stderr
+        fi
+    fi
+    /usr/bin/mv "${src}" "${dest}"
+}
+
+function vm() {
+    # Undo a `mv $1 $2` with `vm $1 $2`.
+    local src="$1"
+    local dest="$2"
+    echo "Restore ${src}"
+    mv "${dest}" "${src}" # Undo the move
+
+    echo "Restored ${src} from ${dest}"
+    echo "Looking for backups for ${dest}"
+    # Attempt to restore the backup.
+    local name="$(basename -- "${dest}")"
+    echo "${name}"
+    local backup="$(ls -1d --sort=time /tmp/mv_backups/${name}-*-* | head -n1)" # latest
+    echo "${backup}"
+    if [ -d "${backup}" ]; then
+        mv "${backup}/${dest}" "${dest}" || true # Also back up if undo overwrites
+        rmdir "${backup}" # Cleanup
+    fi
 }
 
 alias sync='((a . && m "Backup $(date)") || true) && pP'
@@ -346,7 +404,7 @@ alias zed="$EDITOR "
 alias :e="$EDITOR "
 alias zrc="zed ${HOME}/.config/zshrc"
 alias grc="zed ${HOME}/.config/gitconfig"
-alias vrc="$EDITOR ${HOME}/.config/nvim/**/*.lua"
+alias vrc="$EDITOR ${HOME}/.config/nvim/lua/cypher/**/*.lua"
 alias icat="kitty +kitten icat"
 alias bob="${HOME}/skfltech/skfl/bob.ts"
 
@@ -359,3 +417,5 @@ export NVM_DIR="$HOME/.nvm"
 nvm use v18.20.4 > /dev/null 2>&1
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(rbenv init -)"
+eval "$(cog generate-completions zsh)"
