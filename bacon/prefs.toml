@@ -44,6 +44,7 @@ i = "job:initial"
 j = "scroll-lines(1)"
 k = "scroll-lines(-1)"
 n = "job:nextest"
+shift-t = "job:todo"
 q = "quit"
 r = "job:run"
 s = "toggle-summary"
@@ -68,3 +69,10 @@ watch = ["tests"]
 command = ["cargo", "fmt"]
 need_stdout = true
 watch = ["src"]
+
+[jobs.todo]
+command = ["bash", "-c", "echo \"$(git grep -E \"(todo!|TODO)\" -- **/*.rs | wc -l) in $(git ls-files | grep '\\.rs$' | wc -l) files ($(git ls-files | grep '\\.rs$' | xargs cat | wc -l) lines)\"; git grep --color -n -E \"(todo!|TODO).*\" -- **/*.rs | sed 's/  */ /'"]
+#command = ["git", "grep", "-E", "--color", "(todo\\!|TODO)", "--", "**/*.rs"]
+need_stdout = true
+watch = ["tests"]
+
