@@ -27,5 +27,24 @@
       // OVERRIDES
       "ctrl-f": "file_finder::Toggle"
     }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+      "ctrl-tab": "pane::ActivateNextItem"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-b": "editor::ToggleBreakpoint"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "f9": "editor::ToggleBreakpoint"
+    }
   }
 ]

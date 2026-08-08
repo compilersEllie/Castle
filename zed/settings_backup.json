@@ -25,19 +25,6 @@
     "favorite_models": [],
     "model_parameters": []
   }, */
-  "context_servers": {
-    "github-activity-summarizer": {
-      "enabled": true,
-      "remote": false,
-      "settings": {
-        "author": "cypher1"
-      }
-    }
-  },
-  "cli_default_open_behavior": "existing_window",
-  "icon_theme": "Colored Zed Icons Theme Dark",
-  "buffer_font_family": "MesloLGS NF",
-  "ui_font_family": ".ZedSans",
   "outline_panel": {
     "dock": "right"
   },
@@ -48,10 +35,10 @@
     "dock": "right"
   },
   "title_bar": {
-    
+    "show_branch_icon": false
   },
   "project_panel": {
-    "dock": "left",
+    "dock": "right",
     "git_status_indicator": true
   },
   "toolbar": {
@@ -77,7 +64,7 @@
       "type": "registry"
     }
   },
-  "show_edit_predictions": true,
+  "show_edit_predictions": false,
   "use_autoclose": false,
   "edit_predictions": {
     "provider": "ollama",
@@ -88,10 +75,9 @@
     },
   },
   "vim_mode": true,
-  "ui_font_size": 14.0,
-  "buffer_font_size": 11.0,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
   "terminal": {
-    "font_family": "MesloLGS NF",
     "dock": "right"
   },
   "gutter": {
@@ -105,55 +91,7 @@
     "regex": true,
   },
   "agent": {
-    "profiles": {
-      "write": {
-        "default_model": {
-          "provider": "ollama",
-          "model": "qwen3-coder:30b",
-          "enable_thinking": false
-        },
-        "name": "Write",
-        "tools": {
-          "edit_file": true
-        },
-        "enable_all_context_servers": false,
-        "context_servers": {}
-      },
-      "research": {
-        "default_model": {
-          "provider": "ollama",
-          "model": "gemma4:31b",
-          "enable_thinking": true
-        },
-        "name": "Research",
-        "tools": {
-          "grep": true,
-          "copy_path": true,
-          "diagnostics": true,
-          "move_path": true,
-          "edit_file": true,
-          "create_directory": true,
-          "fetch": true,
-          "find_path": true,
-          "read_file": true,
-          "skill": true,
-          "spawn_agent": true,
-          "terminal": false,
-          "write_file": true,
-          "list_directory": true
-        },
-        "enable_all_context_servers": false,
-        "context_servers": {
-          "mcp-server-sequential-thinking": {
-            "tools": {
-              "sequentialthinking": true
-            }
-          }
-        }
-      }
-    },
-    "default_profile": "research",
-    "dock": "right",
+    "dock": "left",
     "inline_assistant_model": {
       "provider": "ollama",
       "model": "gemma4:latest",
@@ -162,7 +100,7 @@
     "default_model": {
       "enable_thinking": true,
       "provider": "ollama",
-      "model": "qwen3.5:35b"
+      "model": "nemotron-cascade-2:latest"
     },
   },
   "theme": {
