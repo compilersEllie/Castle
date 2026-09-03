@@ -1,10 +1,10 @@
 {
   "parser-directories": [
-    "/home/jaypratt/github",
-    "/home/jaypratt/src",
-    "/home/jaypratt/source",
-    "/home/jaypratt/Code/tako/",
-    "/home/jaypratt/Code/tako/tree-sitter-tako/"
+    "/home/ellie/github",
+    "/home/ellie/src",
+    "/home/ellie/source",
+    "/home/ellie/Code/tako/",
+    "/home/ellie/Code/tako/tree-sitter-tako/"
   ],
   "theme": {
     "embedded": null,

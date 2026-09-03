@@ -52,8 +52,8 @@ function zREPO() {
 source "${HOME}/.zplug/init.zsh" || echo "'zplug' missing run 'install_zplug'"
 
 # PLUGINS
-zplug cypher1/Castle, dir:"${HOME}/.config", at:main
-zplug cypher1/greasy, dir:"${HOME}/src/greasy"
+zplug compilersEllie/Castle, dir:"${HOME}/.config", at:main
+zplug compilersEllie/greasy, dir:"${HOME}/src/greasy"
 zplug zsh-users/zsh-autosuggestions
 zplug zsh-users/zsh-completions
 zplug romkatv/powerlevel10k, as:theme, depth:1
@@ -63,17 +63,17 @@ zplug modules/history, from:prezto
 zplug modules/node, from:prezto
 
 zREPO PolymerLabs/arcs, dir:"${HOME}/src/arcs", frozen:1
-zREPO cypher1/llvm-project, dir:"${HOME}/src/llvm-project", frozen:1
-zREPO cypher1/mdbook-graphviz, dir:"${HOME}/src/mdbook-graphviz"
-zREPO cypher1/no_debug, dir:"${HOME}/src/no_debug", frozen:1
-zREPO cypher1/nvim_config, dir:"${HOME}/src/nvim"
-# zREPO cypher1/poetry, dir:"${HOME}/src/poetry"
-# zREPO cypher1/poetry-core, dir:"${HOME}/src/poetry-core"
-zREPO cypher1/qmk_firmware, dir:"${HOME}/src/qmk_firmware"
+zREPO compilersEllie/llvm-project, dir:"${HOME}/src/llvm-project", frozen:1
+zREPO compilersEllie/mdbook-graphviz, dir:"${HOME}/src/mdbook-graphviz"
+zREPO compilersEllie/no_debug, dir:"${HOME}/src/no_debug", frozen:1
+zREPO compilersEllie/nvim_config, dir:"${HOME}/src/nvim"
+# zREPO compilersEllie/poetry, dir:"${HOME}/src/poetry"
+# zREPO compilersEllie/poetry-core, dir:"${HOME}/src/poetry-core"
+zREPO compilersEllie/qmk_firmware, dir:"${HOME}/src/qmk_firmware"
 # zREPO neovim/neovim, dir:"${HOME}/src/neovim", frozen:1
-zrepo cypher1/notes, dir:"${HOME}/src/notes"
-zrepo cypher1/nvim_config, dir:"${HOME}/src/nvim"
-zrepo cypher1/tako, dir:"${HOME}/src/tako", frozen:1
+zrepo compilersEllie/notes, dir:"${HOME}/src/notes"
+zrepo compilersEllie/nvim_config, dir:"${HOME}/src/nvim"
+zrepo compilersEllie/tako, dir:"${HOME}/src/tako", frozen:1
 zrepo skfltech/skfl, dir:"${HOME}/src/skfl", frozen:1
 
 # Settings for plugins
@@ -335,39 +335,47 @@ function swap() {
 
 function mv() {
     # Save overwritten files when moving OVER a file
-    local src="$1"
-    local dest="$2"
-    if [ -e "${src}" ]; then
-        if [ -f "${dest}" ]; then
-            mkdir -p /tmp/mv_backups
-            local name="$(basename -- "${dest}")"
-            local ts="$(date --iso-8601=seconds)"
-            local backup="$(mktemp -p /tmp/mv_backups -d -t "${name}-${ts}-XXX")"
-            /usr/bin/mv "${dest}" "${backup}/${dest}"
-            echo "Backed up ${dest} to ${backup}" > /dev/stderr
-        fi
-    fi
-    /usr/bin/mv "${src}" "${dest}"
+    local srcs=("${@:1:$# -1}")
+    local dest="${@: -1}"
+
+    for src in "${srcs[@]}"
+    do
+      if [ -e "${src}" ]; then
+          if [ -f "${dest}" ]; then
+              mkdir -p /tmp/mv_backups
+              local name="$(basename -- "${dest}")"
+              local ts="$(date --iso-8601=seconds)"
+              local backup="$(mktemp -p /tmp/mv_backups -d -t "${name}-${ts}-XXX")"
+              /usr/bin/mv "${dest}" "${backup}/${dest}"
+              echo "Backed up ${dest} to ${backup}" > /dev/stderr
+          fi
+      fi
+      /usr/bin/mv "${src}" "${dest}"
+    done
 }
 
 function vm() {
     # Undo a `mv $1 $2` with `vm $1 $2`.
-    local src="$1"
-    local dest="$2"
-    echo "Restore ${src}"
-    mv "${dest}" "${src}" # Undo the move
+    local srcs=("${@:1:$# -1}")
+    local dest="${@: -1}"
 
-    echo "Restored ${src} from ${dest}"
-    echo "Looking for backups for ${dest}"
-    # Attempt to restore the backup.
-    local name="$(basename -- "${dest}")"
-    echo "${name}"
-    local backup="$(ls -1d --sort=time /tmp/mv_backups/${name}-*-* | head -n1)" # latest
-    echo "${backup}"
-    if [ -d "${backup}" ]; then
-        mv "${backup}/${dest}" "${dest}" || true # Also back up if undo overwrites
-        rmdir "${backup}" # Cleanup
-    fi
+    for src in "${srcs[@]}"
+    do
+      echo "Restore ${src}"
+      mv "${dest}" "${src}" # Undo the move
+
+      echo "Restored ${src} from ${dest}"
+      echo "Looking for backups for ${dest}"
+      # Attempt to restore the backup.
+      local name="$(basename -- "${dest}")"
+      echo "${name}"
+      local backup="$(ls -1d --sort=time /tmp/mv_backups/${name}-*-* | head -n1)" # latest
+      echo "${backup}"
+      if [ -d "${backup}" ]; then
+          mv "${backup}/${dest}" "${dest}" || true # Also back up if undo overwrites
+          rmdir "${backup}" # Cleanup
+      fi
+    done
 }
 
 alias sync='((a . && m "Backup $(date)") || true) && pP'
@@ -392,7 +400,7 @@ alias vitest="npm exec vitest --"
 alias func="npm exec func --"
 alias nt="cargo nextest run"
 alias q="exit"
-alias reauthor="git commit --amend --no-edit --author='Jay Pratt <jp10010101010000@gmail.com>'"
+alias reauthor="git commit --amend --no-edit --author='Eleanor Pratt <ellie@skfl.tech>'"
 alias td="RUST_LOG=\"debug\" cargo test"
 alias ti="RUST_LOG=\"info\" cargo test"
 alias tt="RUST_LOG=\"trace\" cargo test"
@@ -404,7 +412,7 @@ alias zed="$EDITOR "
 alias :e="$EDITOR "
 alias zrc="zed ${HOME}/.config/zshrc"
 alias grc="zed ${HOME}/.config/gitconfig"
-alias vrc="$EDITOR ${HOME}/.config/nvim/lua/cypher/**/*.lua"
+alias vrc="$EDITOR ${HOME}/.config/nvim/lua/compilersEllie/**/*.lua"
 alias icat="kitty +kitten icat"
 alias bob="${HOME}/skfltech/skfl/bob.ts"
 
@@ -419,3 +427,6 @@ nvm use v18.20.4 > /dev/null 2>&1
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(rbenv init -)"
 eval "$(cog generate-completions zsh)"
+
+# Pi
+export PATH="/home/ellie/.local/share/pi-node/node-v22.23.2-linux-x64/bin:$PATH"

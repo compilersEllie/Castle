@@ -1,0 +1,9 @@
+agent_servers:
+    Poolside:
+        type: custom
+        command: pool
+        args:
+            - acp
+        default_config_options:
+            mode: accept-edits
+            model: ornith:latest

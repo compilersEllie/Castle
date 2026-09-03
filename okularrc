@@ -1,0 +1,19 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+1704x1065 screen: Height=483
+1704x1065 screen: Width=1698
+1704x1065 screen: Window-Maximized=true
+State=AAAA/wAAAAD9AAAAAQAAAAAAAADIAAADq/wCAAAAAfsAAAAcAG8AawB1AGwAYQByAF8AcwBpAGQAZQBiAGEAcgEAAAA9AAADqwAAAPQA///+AAAF1AAAA6sAAAAEAAAABAAAAAgAAAAI/AAAAAMAAAABAAAAAQAAACwAcQB1AGkAYwBrAEEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgIAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/src/notes/documents/to_sign_Draft Application for consent orders - 21.08.2026.pdf
+File2[$e]=$HOME/src/notes/documents/signed_Final Consent Orders - FFL 21.08.2026.pdf
+Name1[$e]=to_sign_Draft Application for consent orders - 21.08.2026.pdf
+Name2[$e]=signed_Final Consent Orders - FFL 21.08.2026.pdf

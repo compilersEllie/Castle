@@ -45,6 +45,7 @@ j = "scroll-lines(1)"
 k = "scroll-lines(-1)"
 n = "job:nextest"
 shift-t = "job:todo"
+shift-c = "job:changelog"
 q = "quit"
 r = "job:run"
 s = "toggle-summary"
@@ -67,6 +68,12 @@ watch = ["tests"]
 
 [jobs.fmt]
 command = ["cargo", "fmt"]
+need_stdout = true
+watch = ["src"]
+
+[jobs.changelog]
+command = ["bash", "-c", "cog changelog | sed 's/\\[\\([^]]*\\)\\]([^)]*)/\\1/' | bat -f -pp -l markdown --paging never"]
+#command = ["cog", "changelog"]
 need_stdout = true
 watch = ["src"]
 
