@@ -78,8 +78,8 @@ need_stdout = true
 watch = ["src"]
 
 [jobs.todo]
-command = ["bash", "-c", "echo \"$(git grep -E \"(todo!|TODO)\" -- **/*.rs | wc -l) in $(git ls-files | grep '\\.rs$' | wc -l) files ($(git ls-files | grep '\\.rs$' | xargs cat | wc -l) lines)\"; git grep --color -n -E \"(todo!|TODO).*\" -- **/*.rs | sed 's/  */ /'"]
-#command = ["git", "grep", "-E", "--color", "(todo\\!|TODO)", "--", "**/*.rs"]
+command = ["bash", "-c", "echo \"$(git grep -E \"(todo!|TODO)\" -- **/*.rs | wc -l) in $(git ls-files | grep '\\.rs$' | wc -l) files ($(git ls-files | grep '\\.rs$' | xargs cat | wc -l) lines)\"; git grep --color -n -E \"(todo!|TODO).*\" -- **/*.rs | sed 's/\\(.*\\)\\(#[0-9]*\\)/\\2 \\1/' | sed 's/\\/\\///' | sed 's/  */ /g' | sort -n | sed '0,/#2/{s/#2/\\n#2/}' | sed '0,/#3/{s/#3/\\n#3/}' | sed '0,/#4/{s/#4/\\n#4/}' | sed '0,/#5/{s/#5/\\n#5/}' "]
+# command = ["bash", "-c", "echo \"$(git grep -E \"(todo!|TODO)\" -- **/*.rs | wc -l) in $(git ls-files | grep '\\.rs$' | wc -l) files ($(git ls-files | grep '\\.rs$' | xargs cat | wc -l) lines)\"; git grep --color -n -E \"(todo!|TODO).*\" -- **/*.rs | sed 's/  */ /'"]
 need_stdout = true
 watch = ["tests"]
 
