@@ -274,8 +274,12 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=yellow"
 # EXPORTS
 export LLVM_SYS_221_PREFIX="/mnt/big/llvm-project/build"
 export TERM="xterm-256color"
-export EDITOR="$(echo -e "$(which zed || which nvim || which vim)" | tail -n 1)"
-export VISUAL="$EDITOR"
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+  export EDITOR="$(echo -e "$(which nvim || which vim)" | tail -n 1)"
+else
+  export EDITOR="$(echo -e "$(which zed || which nvim || which vim)" | tail -n 1)"
+fi
+export VISUAL="\$EDITOR"
 export CARGO_TARGET_DIR="${HOME}/.cargo/target"
 export CARGO_INCREMENTAL=0
 export OLLAMA_REQUEST_TIMEOUT=600
@@ -302,6 +306,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
+alias pv="pv -c"
 
 alias cl="less -r -f +G +g .c.log"
 
@@ -405,14 +410,14 @@ alias td="RUST_LOG=\"debug\" cargo test"
 alias ti="RUST_LOG=\"info\" cargo test"
 alias tt="RUST_LOG=\"trace\" cargo test"
 alias open="xdg-open"
-alias v="$EDITOR "
-alias vi="$EDITOR "
-alias vim="$EDITOR "
-alias zed="$EDITOR "
-alias :e="$EDITOR "
-alias zrc="zed ${HOME}/.config/zshrc"
-alias grc="zed ${HOME}/.config/gitconfig"
-alias vrc="$EDITOR ${HOME}/.config/nvim/lua/compilersEllie/**/*.lua"
+alias v="\$EDITOR "
+alias vi="\$EDITOR "
+alias vim="\$EDITOR "
+alias zed="\$EDITOR "
+alias :e="\$EDITOR "
+alias zrc="\$EDITOR ${HOME}/.config/zshrc"
+alias grc="\$EDITOR ${HOME}/.config/gitconfig"
+alias vrc="\$EDITOR ${HOME}/.config/nvim/lua/compilersEllie/**/*.lua"
 alias icat="kitty +kitten icat"
 alias bob="${HOME}/skfltech/skfl/bob.ts"
 
