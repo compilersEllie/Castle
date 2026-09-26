@@ -24,6 +24,7 @@ path "/opt/local/bin"
 path "/usr/sbin"
 path "/usr/local/sbin"
 path "${HOME}/.npm-global/bin"
+path "${HOME}/.local/share/pi-node/node-v22.23.2-linux-x64/bin"
 path "${HOME}/.cargo/bin"
 path "${HOME}/.dotnet/tools"
 path "${HOME}/.local/bin"
@@ -62,6 +63,13 @@ zplug sorin-ionescu/prezto, depth:1
 zplug modules/history, from:prezto
 zplug modules/node, from:prezto
 
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+export NVM_AUTO_USE=true
+# export NVM_LAZY_LOAD_EXTRA_COMMANDS=('v', 'vi', 'vim', 'nvim', 'zed')
+zplug lukechilds/zsh-nvm, depth:1
+
+zREPO HCAIRESteam/hcaires, dir:"${HOME}/src/hcaires", frozen:1
 zREPO PolymerLabs/arcs, dir:"${HOME}/src/arcs", frozen:1
 zREPO compilersEllie/llvm-project, dir:"${HOME}/src/llvm-project", frozen:1
 zREPO compilersEllie/mdbook-graphviz, dir:"${HOME}/src/mdbook-graphviz"
@@ -424,14 +432,8 @@ alias bob="${HOME}/skfltech/skfl/bob.ts"
 # To customize prompt, run `p10k configure` or edit ~/.config/p10k.zsh.
 [[ ! -f ~/.config/p10k.zsh ]] || source ~/.config/p10k.zsh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 2> /dev/null  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 2> /dev/null  # This loads nvm bash_completion
-nvm use v18.20.4 > /dev/null 2>&1
+# nvm use v18.20.4 > /dev/null 2>&1
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(rbenv init -)"
 eval "$(cog generate-completions zsh)"
-
-# Pi
-export PATH="/home/ellie/.local/share/pi-node/node-v22.23.2-linux-x64/bin:$PATH"
