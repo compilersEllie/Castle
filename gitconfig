@@ -47,3 +47,5 @@
 	prune = true
 [safe]
 	directory = /storage/emulated/0/notes
+	directory = /storage/emulated/0/Notes
+	directory = /storage/emulated/0/notes2
