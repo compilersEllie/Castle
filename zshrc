@@ -1,11 +1,33 @@
-#!/usr/bin/zsh
+## !/usr/bin/zsh
 if [[ -n "$ZSH_DEBUGRC" ]]; then
   zmodload zsh/zprof
 fi
 
 export HOME="$(cd;pwd)"
 export ZPLUG_HOME="${HOME}/.zplug"
-export PATH="/data/data/com.termux/files/usr/bin/"
+
+# Set up path!
+PATH="/data/data/com.termux/files/usr/bin/:/usr/bin:/usr/sbin"
+path() {
+  PATH="$1:${PATH}"
+}
+
+# Later is higher precedence
+path "/var/lib/snapd/snap/bin"
+path "/usr/local/bin"
+path "/opt/local/bin"
+path "/usr/local/sbin"
+path "${HOME}/.npm-global/bin"
+path "${HOME}/.local/share/pi-node/node-v22.23.2-linux-x64/bin"
+path "${HOME}/.cargo/bin"
+path "${HOME}/.dotnet/tools"
+path "${HOME}/.local/bin"
+path "${HOME}/.zplug/bin"
+path "${HOME}/.rbenv/bin"
+path "${HOME}/.config/bin"
+path "/usr/local/cuda-12.5/bin"
+export PATH="$PATH"
+
 function install_zplug() {
   local ZPLUG_URL="https://raw.githubusercontent.com/zplug/installer/master/installer.zsh"
   curl -sL --proto-redir -all,https "${ZPLUG_URL}" | zsh
@@ -18,33 +40,6 @@ source "${HOME}/.zplug/init.zsh" || echo "'zplug' missing run 'install_zplug'"
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
-path() {
-  # Add the path to the front & remove duplicates occuring elsewhere.
-  local addition="$1"
-  export PATH="$(echo "$PATH" | sed "s|$addition:||g")"
-  if [ -d "$addition" ]; then
-    export PATH="$addition:${PATH}"
-  fi
-}
-
-# Set up path!
-# Later is higher precedence
-path "/usr/bin"
-path "/var/lib/snapd/snap/bin"
-path "/usr/local/bin"
-path "/opt/local/bin"
-path "/usr/sbin"
-path "/usr/local/sbin"
-path "${HOME}/.npm-global/bin"
-path "${HOME}/.local/share/pi-node/node-v22.23.2-linux-x64/bin"
-path "${HOME}/.cargo/bin"
-path "${HOME}/.dotnet/tools"
-path "${HOME}/.local/bin"
-path "${HOME}/.zplug/bin"
-path "${HOME}/.rbenv/bin"
-path "${HOME}/.config/bin"
-path "/usr/local/cuda-12.5/bin"
 
 function zrepo() {
   # Use zplug for non-plugins :O
@@ -71,7 +66,6 @@ zplug modules/node, from:prezto
 
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
-# export NVM_AUTO_USE=true
 zplug lukechilds/zsh-nvm, depth:1
 
 zREPO HCAIRESteam/hcaires, dir:"${HOME}/src/hcaires", frozen:1
@@ -281,7 +275,7 @@ bindkey '^L' _restart_zsh
 export HISTSIZE=1000000 # set history size
 export SAVEHIST=1000000 # save history after logout
 export HISTFILE=${HOME}/.config/zsh_history  # history file
-export HISTIGNORE="^(fg|bg|ls|s|p|q)$"
+export HISTIGNORE="^(fg|bg|ls|s|p|q|cd|exit)$"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=yellow"
 
 # EXPORTS
