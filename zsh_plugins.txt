@@ -12,18 +12,14 @@ git@github.com:compilersEllie/use-xdg-basedirs
 ~/.config/zsh_functions/ kind:autoload
 
 # Lazy plugins
-ohmyzsh/ohmyzsh path:lib/clipboard.zsh kind:defer
-ohmyzsh/ohmyzsh path:plugins/colored-man-pages kind:defer
 ohmyzsh/ohmyzsh path:plugins/magic-enter kind:defer
-ohmyzsh/ohmyzsh path:plugins/web-search kind:defer
-ohmyzsh/ohmyzsh path:plugins/fbterm kind:defer
 ohmyzsh/ohmyzsh path:plugins/mosh kind:defer
-ohmyzsh/ohmyzsh path:plugins/extract kind:defer
+# ohmyzsh/ohmyzsh path:plugins/extract kind:defer
 ohmyzsh/ohmyzsh path:plugins/autojump kind:defer
 git@github.com:compilersEllie/greasy kind:defer
-agkozak/zsh-z kind:defer
+# agkozak/zsh-z kind:defer
 lukechilds/zsh-nvm kind:defer
-romkatv/zsh-bench kind:path
+# romkatv/zsh-bench kind:path
 
 # Repos
 git@github.com:compilersEllie/Castle branch:main kind:clone
