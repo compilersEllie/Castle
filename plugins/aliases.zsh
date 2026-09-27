@@ -14,8 +14,10 @@ alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 alias pv="pv -c"
 
-alias cl="less -r -f +G +g .c.log"
+alias la="ls -a"
+alias ll="ls -la"
 
+alias cl="less -r -f +G +g .c.log"
 alias tl="less -r -f +G +g .t.log"
 
 alias sync='((a . && m "Backup $(date)") || true) && pP'
@@ -51,7 +53,7 @@ alias vi="\$EDITOR "
 alias vim="\$EDITOR "
 alias zed="\$EDITOR "
 alias :e="\$EDITOR "
-alias zrc="\$EDITOR ${HOME}/.config/zshrc ${HOME}/.config/*.zsh ${HOME}/.config/zsh_plugins.txt"
+alias zrc="pushd ${HOME}/.config; \$EDITOR ${HOME}/.config/zshrc ${HOME}/.config/*.zsh ${HOME}/.config/zsh_plugins.txt; popd"
 alias grc="\$EDITOR ${HOME}/.config/gitconfig"
 alias vrc="\$EDITOR ${HOME}/.config/nvim/lua/compilersEllie/**/*.lua"
 alias icat="kitty +kitten icat"
