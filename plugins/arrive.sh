@@ -33,7 +33,6 @@ pkg_man() {
   echo "No package manager found" > /dev/stderr && exit 1
 }
 
-PKG_MAN=$(pkg_man)
 program() {
   PROG=$1; PKG=${2:-$1}
   setup $PKG "$(which $PROG)" "$PKG_MAN $PKG"
