@@ -1,5 +1,11 @@
 #!/usr/bin/zsh
-zmodload zsh/zprof
+if [[ -n "$ZSH_DEBUGRC" ]]; then
+  zmodload zsh/zprof
+fi
+
+export ZPLUG_HOME="${HOME}/.zplug"
+source "${HOME}/.zplug/init.zsh" || echo "'zplug' missing run 'install_zplug'"
+
 export HOME="$(cd;pwd)"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -307,6 +313,7 @@ function bluetooth_fix() {
 alias battery_level='python -c "print(str(round(100*$(cat /sys/class/power_supply/BAT0/energy_now) / $(cat /sys/class/power_supply/BAT0/energy_full))))"'
 alias matches="grep -o"
 alias -g withFire="-9"
+alias ztime="time ZSH_DEBUGRC=1 zsh -i -c exit"
 
 alias .="clear;s"
 alias ..="cd .."
@@ -432,8 +439,10 @@ alias bob="${HOME}/skfltech/skfl/bob.ts"
 # To customize prompt, run `p10k configure` or edit ~/.config/p10k.zsh.
 [[ ! -f ~/.config/p10k.zsh ]] || source ~/.config/p10k.zsh
 
-# nvm use v18.20.4 > /dev/null 2>&1
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(rbenv init -)"
 eval "$(cog generate-completions zsh)"
+
+if [[ -n "$ZSH_DEBUGRC" ]]; then
+  zprof
+fi
