@@ -19,7 +19,7 @@ if [[ -r "${HOME}/.cache/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${HOME}/.cache/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-for _rc in  ${HOME}/.config/*.zsh(n); do
+for _rc in ${HOME}/.config/*.zsh(n); do
   if [[ $_rc == */zsh_plugins.zsh ]]; then
     continue
   fi

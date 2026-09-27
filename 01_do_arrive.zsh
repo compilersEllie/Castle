@@ -14,6 +14,10 @@ function do_arrive() {
   program nvim neovim
   setup git "${GIT_BIN}" "${PKG_MAN} git"
   program python3
+  program luarocks
+  program hyperfine
+  crate bat
+  crate zsh-patina
   if [[ "$OSTYPE" != "linux-android" ]]; then
     program kitty
     program rustup
@@ -21,4 +25,5 @@ function do_arrive() {
   dotfile gitconfig
   dotfile pylintrc
   dotfile zshrc
+  dotfile zshenv
 }

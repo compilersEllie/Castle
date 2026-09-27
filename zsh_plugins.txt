@@ -1,4 +1,5 @@
 mattmc3/ez-compinit # First
+mattmc3/use-xdg-basedirs
 
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
@@ -13,6 +14,7 @@ agkozak/zsh-z kind:defer
 lukechilds/zsh-nvm kind:defer
 ~/.config/zsh_functions/ kind:autoload
 
+romkatv/zsh-bench kind:path
 
 # Repos
 

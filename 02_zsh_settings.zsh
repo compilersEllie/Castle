@@ -1,51 +1,5 @@
 ## !/usr/bin/zsh
 #
-# EXPORTS
-export NVM_LAZY_LOAD=true
-export NVM_COMPLETION=true
-export WORDCHARS=' *?_-.[]~=\\/&;!#$%^(){}<>'
-export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
-export KEYTIMEOUT=0.1
-export TERM="xterm-256color"
-
-# TOOL SETTINGS
-export LLVM_SYS_221_PREFIX="/mnt/big/llvm-project/build"
-export VISUAL="\$EDITOR"
-export CARGO_TARGET_DIR="${HOME}/.cargo/target"
-export CARGO_INCREMENTAL=0
-export OLLAMA_REQUEST_TIMEOUT=600
-export OLLAMA_FLASH_ATTENTION=1
-export OLLAMA_KV_CACHE_TYPE=q8_0
-export GIT_BIN="$(which git)"
-
-# HISTORY
-export HISTSIZE=1000000 # set history size
-export SAVEHIST=1000000 # save history after logout
-export HISTFILE=${HOME}/.config/zsh_history  # history file
-export HISTIGNORE="^(fg|bg|ls|s|p|q|cd|exit)$"
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=yellow"
-
-# Set up path!
-PATH="/data/data/com.termux/files/usr/bin/:/usr/bin:/usr/sbin"
-path() {
-  PATH="$1:${PATH}"
-}
-
-# Later is higher precedence
-path "/var/lib/snapd/snap/bin"
-path "/usr/local/bin"
-path "/opt/local/bin"
-path "/usr/local/sbin"
-path "${HOME}/.npm-global/bin"
-path "${HOME}/.local/share/pi-node/node-v22.23.2-linux-x64/bin"
-path "${HOME}/.cargo/bin"
-path "${HOME}/.dotnet/tools"
-path "${HOME}/.local/bin"
-path "${HOME}/.rbenv/bin"
-path "${HOME}/.config/bin"
-path "/usr/local/cuda-12.5/bin"
-export PATH="$PATH"
-
 # Settings for plugins
 autoload -U select-word-style
 select-word-style bash
