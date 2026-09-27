@@ -3,10 +3,15 @@ if [[ -n "$ZSH_DEBUGRC" ]]; then
   zmodload zsh/zprof
 fi
 
+export HOME="$(cd;pwd)"
 export ZPLUG_HOME="${HOME}/.zplug"
+export PATH="/data/data/com.termux/files/usr/bin/"
+function install_zplug() {
+  local ZPLUG_URL="https://raw.githubusercontent.com/zplug/installer/master/installer.zsh"
+  curl -sL --proto-redir -all,https "${ZPLUG_URL}" | zsh
+}
 source "${HOME}/.zplug/init.zsh" || echo "'zplug' missing run 'install_zplug'"
 
-export HOME="$(cd;pwd)"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -16,9 +21,11 @@ fi
 
 path() {
   # Add the path to the front & remove duplicates occuring elsewhere.
-  addition="$1"
-  PATH="$(echo "$PATH" | sed "s|$addition:||g")"
-  export PATH="$addition:${PATH}"
+  local addition="$1"
+  export PATH="$(echo "$PATH" | sed "s|$addition:||g")"
+  if [ -d "$addition" ]; then
+    export PATH="$addition:${PATH}"
+  fi
 }
 
 # Set up path!
@@ -39,15 +46,9 @@ path "${HOME}/.rbenv/bin"
 path "${HOME}/.config/bin"
 path "/usr/local/cuda-12.5/bin"
 
-
-ZPLUG_HOME="${HOME}/.zplug"
-function install_zplug() {
-  ZPLUG_URL="https://raw.githubusercontent.com/zplug/installer/master/installer.zsh"
-  curl -sL --proto-redir -all,https "${ZPLUG_URL}" | zsh
-}
 function zrepo() {
   # Use zplug for non-plugins :O
-  zplug "$@", ignore:"*"
+  zplug "$@", ignore:"*", lazy:true
 }
 
 function zREPO() {
@@ -59,20 +60,18 @@ function zREPO() {
 source "${HOME}/.zplug/init.zsh" || echo "'zplug' missing run 'install_zplug'"
 
 # PLUGINS
-zplug compilersEllie/Castle, dir:"${HOME}/.config", at:main
+zplug compilersEllie/Castle, dir:"${HOME}/.config", at:main, use:"arrive.zsh"
 zplug compilersEllie/greasy, dir:"${HOME}/src/greasy"
 zplug zsh-users/zsh-autosuggestions
 zplug zsh-users/zsh-completions
-zplug romkatv/powerlevel10k, as:theme, depth:1
+zplug romkatv/powerlevel10k, as:theme, depth:1, lazy:true
 zplug agkozak/zsh-z, depth:1
 zplug sorin-ionescu/prezto, depth:1
-zplug modules/history, from:prezto
 zplug modules/node, from:prezto
 
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
-export NVM_AUTO_USE=true
-# export NVM_LAZY_LOAD_EXTRA_COMMANDS=('v', 'vi', 'vim', 'nvim', 'zed')
+# export NVM_AUTO_USE=true
 zplug lukechilds/zsh-nvm, depth:1
 
 zREPO HCAIRESteam/hcaires, dir:"${HOME}/src/hcaires", frozen:1
@@ -81,10 +80,10 @@ zREPO compilersEllie/llvm-project, dir:"${HOME}/src/llvm-project", frozen:1
 zREPO compilersEllie/mdbook-graphviz, dir:"${HOME}/src/mdbook-graphviz"
 zREPO compilersEllie/no_debug, dir:"${HOME}/src/no_debug", frozen:1
 zREPO compilersEllie/nvim_config, dir:"${HOME}/src/nvim"
-# zREPO compilersEllie/poetry, dir:"${HOME}/src/poetry"
-# zREPO compilersEllie/poetry-core, dir:"${HOME}/src/poetry-core"
+zREPO compilersEllie/poetry, dir:"${HOME}/src/poetry"
+zREPO compilersEllie/poetry-core, dir:"${HOME}/src/poetry-core"
 zREPO compilersEllie/qmk_firmware, dir:"${HOME}/src/qmk_firmware"
-# zREPO neovim/neovim, dir:"${HOME}/src/neovim", frozen:1
+zREPO neovim/neovim, dir:"${HOME}/src/neovim", frozen:1
 zrepo compilersEllie/notes, dir:"${HOME}/src/notes"
 zrepo compilersEllie/nvim_config, dir:"${HOME}/src/nvim"
 zrepo compilersEllie/tako, dir:"${HOME}/src/tako", frozen:1
@@ -112,7 +111,7 @@ function arrive() {
 GIT_BIN="$(which git)"
 
 function do_arrive() {
-  PKG_MAN=$(pkg_man)
+  local PKG_MAN=$(pkg_man)
   # Install plugins if there are plugins that have not been installed
   if ! zplug check --verbose; then
       printf "Install? [y/N]: "
@@ -159,11 +158,11 @@ function git() {
   declare -a cmd_opts=()
   declare -a tail=()
 
-  git_opts_regex="^(--no-pager)"
-  args_later_regex="^(stash)"
-  opts_regex="^-"
-  needs_arg=false
-  accepting_args=false
+  local git_opts_regex="^(--no-pager)"
+  local args_later_regex="^(stash)"
+  local opts_regex="^-"
+  local needs_arg=false
+  local accepting_args=false
   ## Loop through the args and reorder them as necessary
   for i in "${@}"
   do
@@ -228,7 +227,7 @@ bindkey  "^[[1;5C"   forward-word
 bindkey '^[v' .describe-key-briefly
 
 function _nvim_mode {
-  TMP="$(mktemp)"
+  local TMP="$(mktemp)"
   echo "$BUFFER" >> $TMP
   ${EDITOR:-vim} $TMP && BUFFER="$(cat $TMP)" && CURSOR="$#BUFFER"
 }
@@ -247,7 +246,7 @@ zle -N _sudobuf
 bindkey '^[^[' _sudobuf
 
 function _ggrepconflict {
-  LINE="<<<<<<<"
+  local LINE="<<<<<<<"
   zle push-input
   root && BUFFER="gg '$LINE' | ge '+/$LINE'"
   zle accept-line
@@ -260,7 +259,7 @@ function _ggrep {
     root && $EDITOR "+:GGrep"
     return
   fi
-  LINE="$BUFFER"
+  local LINE="$BUFFER"
   zle push-input
   root && BUFFER="gg '$LINE' | ge '+/$LINE' '+:GGrep \"$LINE\"' || vim '+:GGrep \"$LINE\"'"
   zle accept-line
@@ -272,7 +271,7 @@ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export KEYTIMEOUT=0.1
 
 function _restart_zsh {
-  BUFFER="exec zsh"
+  local BUFFER="exec zsh"
   zle accept-line
 }
 zle -N _restart_zsh
@@ -301,7 +300,7 @@ export OLLAMA_FLASH_ATTENTION=1
 export OLLAMA_KV_CACHE_TYPE=q8_0
 
 SCCACHE="$(which sccache)"
-[[ -e $SCCACHE ]] && export RUSTC_WRAPPER="$SCCACHE"
+[[ -x $SCCACHE ]] && export RUSTC_WRAPPER="$SCCACHE"
 
 # ALIASES
 function bluetooth_fix() {
@@ -313,7 +312,7 @@ function bluetooth_fix() {
 alias battery_level='python -c "print(str(round(100*$(cat /sys/class/power_supply/BAT0/energy_now) / $(cat /sys/class/power_supply/BAT0/energy_full))))"'
 alias matches="grep -o"
 alias -g withFire="-9"
-alias ztime="time ZSH_DEBUGRC=1 zsh -i -c exit"
+alias ztime="time ZSH_DEBUGRC=1 zsh -i -c exit; less ~/.zprof.log"
 
 alias .="clear;s"
 alias ..="cd .."
@@ -345,9 +344,9 @@ function batf() {
 
 function swap() {
     # Undo a `mv $1 $2` with `vm $1 $2`.
-    a="$1"
-    b="$2"
-    c="$(mktemp)"
+    local a="$1"
+    local b="$2"
+    local c="$(mktemp)"
     mv "${a}" "${c}"
     mv "${b}" "${a}"
     mv "${c}" "${b}"
@@ -440,9 +439,9 @@ alias bob="${HOME}/skfltech/skfl/bob.ts"
 [[ ! -f ~/.config/p10k.zsh ]] || source ~/.config/p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 eval "$(cog generate-completions zsh)"
 
 if [[ -n "$ZSH_DEBUGRC" ]]; then
-  zprof
+  zprof > "${HOME}/.zprof.log" &!
 fi

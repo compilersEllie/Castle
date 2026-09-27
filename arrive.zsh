@@ -42,4 +42,4 @@ program() {
 }
 
 # Call the user's config
-do_arrive
+do_arrive &
