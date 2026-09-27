@@ -3,9 +3,6 @@ if [[ -n "$ZSH_DEBUGRC" ]]; then
   zmodload zsh/zprof
 fi
 
-export HOME="$(cd;pwd)"
-export ANTIDOTE_HOME=${HOME}/.cache/antidote
-
 if [[ ! -d ${ANTIDOTE_HOME} ]]; then
   git clone https://github.com/mattmc3/antidote ${ANTIDOTE_HOME}
   source "${ANTIDOTE_HOME}/antidote.zsh"

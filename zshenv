@@ -1,4 +1,7 @@
 # EXPORTS
+export HOME="$(cd;pwd)"
+export ANTIDOTE_HOME=${HOME}/.cache/antidote
+
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
 export WORDCHARS=' *?_-.[]~=\\/&;!#$%^(){}<>'
@@ -8,6 +11,11 @@ export TERM="xterm-256color"
 
 # TOOL SETTINGS
 export LLVM_SYS_221_PREFIX="/mnt/big/llvm-project/build"
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+  export EDITOR="$(echo -e "$(which nvim || which vim)" | tail -n 1)"
+else
+  export EDITOR="$(echo -e "$(which zed || which nvim || which vim)" | tail -n 1)"
+fi
 export VISUAL="\$EDITOR"
 export CARGO_INCREMENTAL=0
 export OLLAMA_REQUEST_TIMEOUT=600
@@ -35,7 +43,7 @@ path "/opt/local/bin"
 path "/usr/local/sbin"
 path "${HOME}/.npm-global/bin"
 path "${HOME}/.local/share/pi-node/node-v22.23.2-linux-x64/bin"
-path "${HOME}/.cargo/bin"
+path "${HOME}/.local/share/cargo/bin"
 path "${HOME}/.dotnet/tools"
 path "${HOME}/.local/bin"
 path "${HOME}/.rbenv/bin"

@@ -23,7 +23,6 @@ function do_arrive() {
     program rustup
   fi
   dotfile gitconfig
-  dotfile pylintrc
   dotfile zshrc
   dotfile zshenv
 }

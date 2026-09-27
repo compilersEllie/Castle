@@ -1,11 +1,10 @@
 mattmc3/ez-compinit # First
-mattmc3/use-xdg-basedirs
-
+git@github.com:compilersEllie/use-xdg-basedirs
+ohmyzsh/ohmyzsh path:lib/clipboard.zsh
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
 romkatv/powerlevel10k
 ~/.config/plugins
-# getantidote/contrib
 michel-kraemer/zsh-patina
 
 # Lazy plugins
