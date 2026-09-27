@@ -1,1 +1,2 @@
+#!/usr/bin/zsh
 cat -n | sort --key=2.1 -b -u | sort -n | cut -c8-

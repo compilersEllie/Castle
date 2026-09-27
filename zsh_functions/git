@@ -1,3 +1,4 @@
+#!/usr/bin/zsh
 declare -a git_opts=()
 declare -a cmd=()
 declare -a cmd_opts=()

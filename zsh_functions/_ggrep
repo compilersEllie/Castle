@@ -1,3 +1,4 @@
+#!/usr/bin/zsh
 if [ -z "$BUFFER" ]; then
   root && $EDITOR "+:GGrep"
   return

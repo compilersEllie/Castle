@@ -1,3 +1,4 @@
+#!/usr/bin/zsh
 local TMP="$(mktemp)"
 echo "$BUFFER" >> $TMP
 ${EDITOR:-vim} $TMP && BUFFER="$(cat $TMP)" && CURSOR="$#BUFFER"

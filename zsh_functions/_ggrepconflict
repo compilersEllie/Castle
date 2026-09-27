@@ -1,3 +1,4 @@
+#!/usr/bin/zsh
 local LINE="<<<<<<<"
 zle push-input
 root && BUFFER="gg '$LINE' | ge '+/$LINE'"

@@ -1,3 +1,4 @@
+#!/usr/bin/zsh
 OFFSET_CURSOR="$(($#BUFFER-CURSOR))"
 if [ -z "$BUFFER" ]; then
   BUFFER="$history[$((HISTCMD-1))]"

@@ -1,3 +1,4 @@
+#!/usr/bin/zsh
 # Save overwritten files when moving OVER a file
 local srcs=("${@:1:$# -1}")
 local dest="${@: -1}"

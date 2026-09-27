@@ -1,3 +1,4 @@
+#!/usr/bin/zsh
 local filename="$1"
 local extension="${2:=${filename##*.}}"
 if [[ ! -f "$filename" ]]; then

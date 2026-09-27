@@ -1,3 +1,4 @@
+#!/usr/bin/zsh
 #ps -ef | grep blu
 #echo 'Killing bluetoothd'
 #sudo pkill bluetoothd
