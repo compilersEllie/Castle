@@ -1,3 +1,5 @@
+#!/usr/bin/zsh
+
 link() {
   if [ -d "$2" ]; then
     return
@@ -43,4 +45,4 @@ crate() {
   setup $PKG "$(which $PROG)" "cargo install $PKG"
 }
 
-zsh-defer do_arrive || do_arrive
+do_arrive
