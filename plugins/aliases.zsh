@@ -3,7 +3,7 @@
 alias battery_level='python -c "print(str(round(100*$(cat /sys/class/power_supply/BAT0/energy_now) / $(cat /sys/class/power_supply/BAT0/energy_full))))"'
 alias matches="grep -o"
 alias -g withFire="-9"
-alias zrctime="hyperfine --warmup 3 --min-runs 10 "zsh -i -c exit" -i"
+alias zrctime="hyperfine --warmup 3 --min-runs 10 'zsh -i -c exit' -i"
 alias zrcprof="time ZSH_DEBUGRC=1 zsh -i -c exit"
 
 alias .="clear;s"
