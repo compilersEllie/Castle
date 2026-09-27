@@ -5,6 +5,7 @@ fi
 
 export HOME="$(cd;pwd)"
 export ZPLUG_HOME="${HOME}/.zplug"
+export ZPlUG_CACHE_DIR="${HOME}/.cache/zplug"
 
 # Set up path!
 PATH="/data/data/com.termux/files/usr/bin/:/usr/bin:/usr/sbin"
@@ -43,7 +44,7 @@ fi
 
 function zrepo() {
   # Use zplug for non-plugins :O
-  zplug "$@", ignore:"*", lazy:true
+  zplug "$@", ignore:"*", lazy:true, as:command
 }
 
 function zREPO() {
@@ -52,8 +53,6 @@ function zREPO() {
   fi
 }
 
-source "${HOME}/.zplug/init.zsh" || echo "'zplug' missing run 'install_zplug'"
-
 # PLUGINS
 zplug compilersEllie/Castle, dir:"${HOME}/.config", at:main, use:"arrive.zsh"
 zplug compilersEllie/greasy, dir:"${HOME}/src/greasy"
@@ -61,8 +60,6 @@ zplug zsh-users/zsh-autosuggestions
 zplug zsh-users/zsh-completions
 zplug romkatv/powerlevel10k, as:theme, depth:1, lazy:true
 zplug agkozak/zsh-z, depth:1
-zplug sorin-ionescu/prezto, depth:1
-zplug modules/node, from:prezto
 
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
@@ -143,8 +140,6 @@ function unique() {
 function join() {
   tr '\n' $1 | sed "s/$1$//"
 }
-
-autoload -U +X bashcompinit && bashcompinit
 
 function git() {
   declare -a git_opts=()
@@ -306,7 +301,8 @@ function bluetooth_fix() {
 alias battery_level='python -c "print(str(round(100*$(cat /sys/class/power_supply/BAT0/energy_now) / $(cat /sys/class/power_supply/BAT0/energy_full))))"'
 alias matches="grep -o"
 alias -g withFire="-9"
-alias ztime="time ZSH_DEBUGRC=1 zsh -i -c exit; less ~/.zprof.log"
+alias zrctime="time zsh -i -c exit"
+alias zrcprof="time ZSH_DEBUGRC=1 zsh -i -c exit"
 
 alias .="clear;s"
 alias ..="cd .."
@@ -437,5 +433,5 @@ alias bob="${HOME}/skfltech/skfl/bob.ts"
 eval "$(cog generate-completions zsh)"
 
 if [[ -n "$ZSH_DEBUGRC" ]]; then
-  zprof > "${HOME}/.zprof.log" &!
+  zprof > "${HOME}/.zrcprof.log" &!
 fi
