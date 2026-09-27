@@ -43,4 +43,4 @@ crate() {
   setup $PKG "$(which $PROG)" "cargo install $PKG"
 }
 
-do_arrive
+zsh-defer do_arrive || do_arrive
