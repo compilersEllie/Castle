@@ -1,0 +1,33 @@
+mattmc3/ez-compinit # First
+
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+romkatv/powerlevel10k
+~/.config/plugins
+# getantidote/contrib
+michel-kraemer/zsh-patina
+
+# Lazy plugins
+git@github.com:compilersEllie/greasy kind:defer
+agkozak/zsh-z kind:defer
+lukechilds/zsh-nvm kind:defer
+~/.config/zsh_functions/ kind:autoload
+
+
+# Repos
+
+git@github.com:compilersEllie/Castle branch:main kind:clone
+git@github.com:HCAIRESteam/hcaires kind:clone conditional:is-laptop
+PolymerLabs/arcs kind:clone
+git@github.com:compilersEllie/llvm-project kind:clone conditional:is-laptop
+git@github.com:compilersEllie/mdbook-graphviz kind:clone
+git@github.com:compilersEllie/no_debug kind:clone
+git@github.com:compilersEllie/nvim_config kind:clone
+git@github.com:compilersEllie/poetry kind:clone conditional:is-laptop
+git@github.com:compilersEllie/poetry-core kind:clone conditional:is-laptop
+git@github.com:compilersEllie/qmk_firmware kind:clone conditional:is-laptop
+neovim/neovim kind:clone conditional:is-laptop
+git@github.com:compilersEllie/notes kind:clone
+git@github.com:compilersEllie/nvim_config kind:clone
+git@github.com:compilersEllie/tako kind:clone
+git@github.com:skfltech/skfl kind:clone conditional:is-laptop

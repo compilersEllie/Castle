@@ -1,0 +1,21 @@
+# Undo a `mv $1 $2` with `vm $1 $2`.
+local srcs=("${@:1:$# -1}")
+local dest="${@: -1}"
+
+for src in "${srcs[@]}"
+do
+  echo "Restore ${src}"
+  mv "${dest}" "${src}" # Undo the move
+
+  echo "Restored ${src} from ${dest}"
+  echo "Looking for backups for ${dest}"
+  # Attempt to restore the backup.
+  local name="$(basename -- "${dest}")"
+  echo "${name}"
+  local backup="$(ls -1d --sort=time /tmp/mv_backups/${name}-*-* | head -n1)" # latest
+  echo "${backup}"
+  if [ -d "${backup}" ]; then
+      mv "${backup}/${dest}" "${dest}" || true # Also back up if undo overwrites
+      rmdir "${backup}" # Cleanup
+  fi
+done

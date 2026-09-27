@@ -1,0 +1,4 @@
+#ps -ef | grep blu
+#echo 'Killing bluetoothd'
+#sudo pkill bluetoothd
+sudo modprobe -r btusb btintel

@@ -1,5 +1,3 @@
-#!/usr/bin/zsh
-
 link() {
   if [ -d "$2" ]; then
     return
@@ -41,5 +39,9 @@ program() {
   setup $PKG "$(which $PROG)" "$PKG_MAN $PKG"
 }
 
-# Call the user's config
-do_arrive &
+crate() {
+  PROG=$1; PKG=${2:-$1}
+  setup $PKG "$(which $PROG)" "cargo install $PKG"
+}
+
+do_arrive

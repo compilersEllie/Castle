@@ -1,0 +1,6 @@
+[highlighting]
+theme = "catppuccin-mocha"
+
+dynamic = true
+
+timeout_ms = 500

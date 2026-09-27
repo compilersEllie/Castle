@@ -1,0 +1,4 @@
+local LINE="<<<<<<<"
+zle push-input
+root && BUFFER="gg '$LINE' | ge '+/$LINE'"
+zle accept-line

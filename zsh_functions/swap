@@ -1,0 +1,7 @@
+# Undo a `mv $1 $2` with `vm $1 $2`.
+local a="$1"
+local b="$2"
+local c="$(mktemp)"
+mv "${a}" "${c}"
+mv "${b}" "${a}"
+mv "${c}" "${b}"

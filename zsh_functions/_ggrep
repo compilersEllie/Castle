@@ -1,0 +1,8 @@
+if [ -z "$BUFFER" ]; then
+  root && $EDITOR "+:GGrep"
+  return
+fi
+local LINE="$BUFFER"
+zle push-input
+root && BUFFER="gg '$LINE' | ge '+/$LINE' '+:GGrep \"$LINE\"' || vim '+:GGrep \"$LINE\"'"
+zle accept-line

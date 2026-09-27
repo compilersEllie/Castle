@@ -1,0 +1,2 @@
+local BUFFER="exec zsh"
+zle accept-line

@@ -1,0 +1,2 @@
+cargo check --all-targets --color always $@ 2>&1 | tee .c.log | less -r +G +g
+

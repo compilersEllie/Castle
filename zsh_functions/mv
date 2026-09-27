@@ -1,0 +1,18 @@
+# Save overwritten files when moving OVER a file
+local srcs=("${@:1:$# -1}")
+local dest="${@: -1}"
+
+for src in "${srcs[@]}"
+do
+  if [ -e "${src}" ]; then
+      if [ -f "${dest}" ]; then
+          mkdir -p /tmp/mv_backups
+          local name="$(basename -- "${dest}")"
+          local ts="$(date --iso-8601=seconds)"
+          local backup="$(mktemp -p /tmp/mv_backups -d -t "${name}-${ts}-XXX")"
+          /usr/bin/mv "${dest}" "${backup}/${dest}"
+          echo "Backed up ${dest} to ${backup}" > /dev/stderr
+      fi
+  fi
+  /usr/bin/mv "${src}" "${dest}"
+done
