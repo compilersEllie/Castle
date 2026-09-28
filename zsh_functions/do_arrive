@@ -21,3 +21,4 @@ crate bat
 setup zsh-patina "$_ZSH_PATINA_PATH" "cargo install zsh-patina"
 dotfile zshrc
 dotfile zshenv
+dotfile gitconfig

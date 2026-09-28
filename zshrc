@@ -26,6 +26,8 @@ for _rc in ${HOME}/.config/*.zsh(n); do
 done
 unset _rc
 
+source <(fzf --zsh)
+
 if [[ -n "$ZSH_DEBUGRC" ]]; then
   zprof > "${HOME}/.zrcprof.log" &!
 fi
