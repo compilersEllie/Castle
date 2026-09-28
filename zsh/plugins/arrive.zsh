@@ -45,4 +45,7 @@ crate() {
   setup $PKG "$(which $PROG)" "cargo install $PKG"
 }
 
-source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/plugins/arrive.zsh"
+arrive() {
+  source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/plugins/do_arrive.zsh"
+  do_arrive
+}
