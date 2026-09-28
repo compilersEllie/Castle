@@ -1,0 +1,2 @@
+#!/usr/bin/zsh
+cargo check --all-targets --color always $@ 2>&1 | tee ${XDG_CACHE_DIR:-$HOME/.cache}/c.log | less -r +G +g

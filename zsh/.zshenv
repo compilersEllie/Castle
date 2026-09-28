@@ -1,6 +1,6 @@
 # EXPORTS
 export HOME="$(cd;pwd)"
-export ANTIDOTE_HOME=${HOME}/.cache/antidote
+export ANTIDOTE_HOME="$HOME/.cache/antidote"
 
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
@@ -26,14 +26,14 @@ export GIT_BIN="$(which git)"
 # HISTORY
 export HISTSIZE=1000000 # set history size
 export SAVEHIST=1000000 # save history after logout
-export HISTFILE=${HOME}/.config/zsh_history  # history file
+export HISTFILE=$HOME/.config/zsh/history  # history file
 export HISTIGNORE="^(fg|bg|ls|s|p|q|cd|exit)$"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=yellow"
 
 # Set up path!
 PATH="/data/data/com.termux/files/usr/bin/:/usr/bin:/usr/sbin"
 path() {
-  PATH="$1:${PATH}"
+  PATH="$1:$PATH"
 }
 
 # Later is higher precedence
@@ -41,13 +41,13 @@ path "/var/lib/snapd/snap/bin"
 path "/usr/local/bin"
 path "/opt/local/bin"
 path "/usr/local/sbin"
-path "${HOME}/.npm-global/bin"
-path "${HOME}/.local/share/pi-node/node-v22.23.2-linux-x64/bin"
-path "${HOME}/.local/share/cargo/bin"
-path "${HOME}/.local/share/fzf/bin"
-path "${HOME}/.dotnet/tools"
-path "${HOME}/.local/bin"
-path "${HOME}/.rbenv/bin"
-path "${HOME}/.config/bin"
+path "$HOME/.npm-global/bin"
+path "$HOME/.local/share/pi-node/node-v22.23.2-linux-x64/bin"
+path "$HOME/.local/share/cargo/bin"
+path "$HOME/.local/share/fzf/bin"
+path "$HOME/.dotnet/tools"
+path "$HOME/.local/bin"
+path "$HOME/.rbenv/bin"
+path "$HOME/.config/bin"
 path "/usr/local/cuda-12.5/bin"
 export PATH="$PATH"

@@ -1,0 +1,8 @@
+#!/usr/bin/zsh
+local PLUGIN_FILE="${XDG_CONFIG_HOME:-$HOME/.config}/zsh/plugins.txt"
+cat $PLUGIN_FILE | \
+  sed "s|[# ].*||g" | \
+  grep -Ev "^(~|$)" | \
+  sort | \
+  unique | \
+  sed "s|.*@github.com:||"

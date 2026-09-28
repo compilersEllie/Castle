@@ -16,8 +16,8 @@ if [[ -r "${HOME}/.cache/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${HOME}/.cache/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-for _rc in ${HOME}/.config/*.zsh(n); do
-  if [[ $_rc == */zsh_plugins.zsh ]]; then
+for _rc in ${HOME}/.config/zsh/*.zsh(n); do
+  if [[ $_rc == ${HOME}/.config/zsh/plugins.zsh ]]; then
     continue
   fi
   if [[ $_rc:t != '~'* ]]; then # Ignore tilde files.

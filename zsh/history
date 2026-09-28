@@ -1,0 +1,5381 @@
+nvm install v18
+nvm install v18.20.4
+p origin/$(branch)
+p stagingExamples
+git checkout stagingExamples
+ln /data/data/com.termux/files/home/Code/nvim -s /data/data/com.termux/files/home/.config/nvim
+git fetch origin && git pull --rebase origin/stagingExamples
+up origin stagingExamples
+up origin/stagingExamples
+ff
+m "Child nodes"
+A="hello"
+(unset A; echo "'$A'")
+echo $A
+Ãºfg
+m "Simplify"
+t tests::table::example1::table_test_1
+ssh pi@192.168.0.42
+z par
+t tests::table::example*::table_test_1
+t "tests::table::example*::table_test_1"
+t "tests::table::example" "::table_test_1"
+t "tests::table::example"
+m "Track entry origins"
+t "table_test_3"
+t "table_test_2"
+amend
+which amend
+t "table_test_all"
+t "table_test_4"
+t "table_test_5"
+gg ' ' | ge '+/ ' '+:GGrep " "' || vim '+:GGrep " "'
+cd partable-parser
+vim src/tests/table.rs
+t "table_test_6"
+t "table_test_1"
+t "table_test_7"
+t "table_test_"
+m "Passes basic tests"
+t "table_test_all" --nocapture
+t "table_test_all" --no_capture
+t "table_test_all" -- --no_capture
+t "table_test_all" -- --nocapture
+t example3
+t unit
+cd src/tests
+cp table.rs old_table.rs
+vim table.rs
+zplug updarw
+m .
+m "Finish up for now"
+z tar
+p goHam
+?q
+z takol
+cd takol
+cat ../examples/simple_sum.tk
+vim src/tako.y
+rm takolib/src/tako.l takolib/src/tako.y 
+m "Remove old yacc and lex parsers"
+y
+vim bindings/rust/build.rs
+d package.json
+d src/grammar.json
+a .;git stash
+ls bindings/rust
+ls Cargo.toml
+vim ~/.config/tree-sitter/config.json
+tree-sitter highlight ../examples/simple_exprs.tk
+tree-sitter highlight ../examples/simple_sum.tk
+vrv
+ln -s queries ~/.local/share/nvim/lazy/nvim-treesitter/queries/tako
+cd ~/.local/share/nvim/lazy/nvim-treesitter
+cd queries
+ln -s queries ~/.local/share/nvim/lazy/nvim-treesitter/queries/
+mv queries tako
+ls tako/tako
+rm tako
+ln -s ~/Code/tako/tree-sitter-tako/queries ~/.local/share/nvim/lazy/nvim-treesitter/queries/tako
+ls tako
+vim ../examples/simple_sum.tk
+c.
+trunk
+dig nxt.to
+whois nxt.to
+man whoi
+man whois
+whois -I skfl.tech
+whois -I nxt.to
+which tako
+tako
+echo "1+3*4/2" | cargo run tako
+cargo run tako
+npm i --no-preinstwll
+npm i --no-preinstall
+npm i --ignore-scripts
+git stash show 
+cat test/corpus/vector_transpose.tk
+m "Vector transpose almost right"
+vim test/corpus/vector_transpose.tk
+tree-sitter generate && tree-sitter test
+tree-sitter 
+tree-sitter fuzz
+tree-sitter test
+tree-sitter test -u
+pkg install graphviz
+tree-sitter test -D
+tree-sitter test --help
+tree-sitter build --help
+tree-sitter build --
+tree-sitter generate --help
+tree-sitter generate --report-states-for-rule -
+tree-sitter generate --report-states-for-rule - -v
+tree-sitter generate --report-states-for-rule hex_literal
+tree-sitter generate --report-states-for-rule parens
+tree-sitter generate --report-states-for-rule ident
+tree-sitter generate --report-states-for-rule call
+tree-sitter generate --report-states-for-rule
+tree-sitter generate --report-states-for-rule add
+du *
+rm log.html
+du -hs *
+skip
+z tr
+pkg install gyp
+npm i --save-dev node-gyp
+m "Add node-gyp"
+cargo init ssl-example
+pkg install cmake
+cargo install onefetch
+z takk
+git grep lazy_static
+git grep lazy_static | ge
+m "Clean up lazy static and fmt"
+gyp
+vim package.json
+i
+turbo test
+man wget
+pkg install fortune
+htop
+pkg install htop
+pkg autoremove
+fortune
+p config_api
+npm run build
+git log origin/main -p
+vim packages/api/src/common/config.ts packages/api/src/functions/config.ts
+swa
+vim packages/api/src/common/config.ts packages/api/src/common/__tests__/common.spec.ts
+npm run -w @skfl/api typechecl
+continue
+git diff origin/main --stat | ge
+vim packages/api/src/common packages/api/src/common/__tests__ packages/api/src/common/__tests__/config.spec.ts packages/api/src/common/__tests__/index.spec.ts packages/api/src/common/config.ts packages/api/src/common/index.ts packages/api/src/functions packages/api/src/functions/loadConfig.ts packages/api/src/functions/loadModel.ts packages/api/src/functions/saveModel.ts 
+vim packages/api/src/common/__tests__/config.spec.ts packages/api/src/common/__tests__/index.spec.ts packages/api/src/common/config.ts packages/api/src/common/index.ts packages/api/src/functions/loadConfig.ts packages/api/src/functions/loadModel.ts packages/api/src/functions/saveModel.ts 
+amend --no-edit
+gd
+node
+m "Smaller test cases as its just a sanity check, not a fuzz"
+npm run -w @skfl/api build
+node --version
+npm update eslint
+npm update jsdom
+npm update vitest
+npm ls punycode
+up origin/$(branch); pP
+up origin/$(branch); pP;up
+git diff --name-only origin/main --stat
+git diff --name-stat origin/main
+git diff --name-status origin/main
+git diff --stat origin/main
+git diff --name-only origin/main
+git diff --name-only origin/main | ge
+vim packages/api/src/common/config.ts packages/api/src/common/__tests__/config.spec.ts
+git checkout -b arrayAndRecord
+git checkout config_api
+m "Use record config generator"
+git diff origin/main -p
+git grep "Context = null" | ge
+git grep -n "Context = null" | ge
+git grep -n "Context = null"
+git config --global grep.lineNumber true
+git grep "Context = null"
+pkg install kitty
+icat graph.png
+pkg remove kitty
+pkg list
+pkg help
+pkg list-installed
+pkg remove root-repo
+pkg remove x11-repo
+imgcat graph.png
+cd ssl-example
+rm -rf ssl-example
+ls mini-c
+cd mini-c
+make
+cd qmk_firmware
+ls -1
+mkdir Prequel
+cd Prequel
+rust init .
+cargo init .
+cargo add pg_query
+cargo add pg_parse
+git remove pg_query
+cargo remove pg_query
+git grep Load
+mv Prequel prequel
+echo "SELECT foo FROM bar" > bar.sql
+z Pre
+git remote add origin git@github.com:Cypher1/prequel.git\
+git branch -M main\
+git push -u origin main
+#
+z p
+cd Code/prequel
+git stash list -p
+cargo --help
+z pre
+z sl
+seq
+seq 0 100
+git diff origin/main -- tstdm
+npm run -w @skfl/api test
+git grep RecordConfigGenerator
+git grep RecordConfigGenerator | ge
+npm run -w @skfl/api typecheck
+cd Code/skfl
+vim bar.sql
+cargo run -- ./bar.sql
+cd 
+cd skdl
+t -w @skfl/api
+git diff config_api
+rm bar.sql
+git diff origin/main --stat | cat
+cat | wc -w
+ls storage
+ln -s ~/Code/notes ~/storage/downloads/notes
+lz
+mkdir notes
+git init
+git branch --set-upstream-to=origin/main;p
+git diff
+D .obsidian/
+D --stat
+echo .obsidian/plugins >> .gitignore
+git rm --cached .obsidian/plugins
+git rm --cached -r .obsidian/plugins
+git rm --cached -r .obsidian
+git log tools/langs/Rust/Haibane\ tenshi\ -\ Rust\ contexts.md
+git log -p tools/langs/Rust/Haibane\ tenshi\ -\ Rust\ contexts.md
+d tools
+D tools
+d tools/langs/Rust/Tmandry\ -\ Contexts\ and\ Capabilities\ in\ Rust.md
+git checkout tools/langs/Rust/Tmandry\ -\ Contexts\ and\ Capabilities\ in\ Rust.md
+d tools/langs/Rust/Why\ is\ my\ Rust\ build\ slow\ -\ Amos.md
+git remote set-url
+git remote set-url https://github.com/Cypher1/notes.git
+echo .obsidian/ >> .gitignore
+m "Ignore config"
+ls .trash
+echo .trash >> .gitignore
+a .gitignore
+m "Ignore trash"
+cd tools/langs
+cd Rust
+d Why\ is\ my\ Rust\ build\ slow\ -\ Amos.md
+git checkout Why\ is\ my\ Rust\ build\ slow\ -\ Amos.md
+git checkout Tmandry\ -\ Contexts\ and\ Capabilities\ in\ Rust.md
+rm .git/rebase-merge
+rm -rf .git/rebase-merge
+git aed .
+git add . -f
+rm -rf tools
+spwd
+rm .git/MERGE_AUTOSTASH
+git checkout origin/main --hard
+ls -la
+rm -rf .foam .gitignore .gitmodules .obsidian .trash .vscode 
+git clone https://github.com/Cypher1/notes.git .
+git branch -v
+git remote set-url origin https://github.com/Cypher1/notes.git
+git pull -f
+rm assets/css -rf
+rm attachments/foam-icon.png
+rmdir attachments
+rm readme.md
+m "Add mobile workspace"
+m "Mode fix"
+ls me/diary
+cat 2024-12-31.md
+git log 2024-12-31.md
+mv Code src
+ln Code -s src
+ln -s Code src
+rm src/Code
+ln -s ~/Code src
+cd src/Code
+cat Code
+ls Code/Code
+rm Code
+ln src -s Code
+git@github.com:djsudduth/keep-it-markdown.git
+cd keep-it-markdown
+./env/bin/pip install requirements.txt
+rm -rf ~/.cargo/target/release/maturin
+./env/bin/pip install -r requirements.txt
+rm -rf keep-it-markdown
+cd ../storage/shared/notes
+a me
+m Diary"
+m Diary
+vim me/diary/2025-01-01.md me/diary/2025-01-02.md 
+next
+an.
+rm conflict-files-obsidian-git.md
+m "Tmp"
+vim .obsidian/graph.json
+git grep "<<<"
+vim .obsidian/plugins/obsidian-git/main.js
+git commit --amend .obsidian/
+rm .git/objects/c9/d5b652e6452689854469b3c3bc4fb1461f3d0e
+rm .git/objects/af/09f7c9d89f269c9c8629999bb90444636fd8d2
+git reset --hard main
+rm .git/objects/4b/10391b178629009db8e1133d9ab059a73a7120
+rm .git/objects/d7/7ce5d67babc3e26571c1c2fb3f14006b80c5f7
+rm .git/objects/51/bf2cc77e4c3011b64a3535b60b95cedd3067d4
+rm .git/objects/pack/pack-91d58c8f3337136e382c678b678b6389fff0fd7d.pack
+git clone https://github.com/Cypher1/notes.git dupe
+cp dupe/.git/objects/* du
+cp dupe/.git/objects/* .git/objects
+rm dupe
+rm -rf dupe
+git log -p me/diary/
+git log -p me/diary/2025-01-03
+git log -p me/diary/2025-01-03.md
+git reset --hard HEAD~
+vim open_tabs.md
+m "Add tabs";pP
+mTM)
+mTMP
+pkg install git-lfs
+git-lfs install
+git checkout origin/main -f
+cat .git/hooks/post-checkout
+git checkout -b main2
+chmod +x .git/hooks/post-checkout
+p main; git branch -D main2
+chnod .git/hooks/post-checkout .git/hooks/post-commit .git/hooks/post-merge .git/hooks/pre-push
+chmod +x .git/hooks/post-checkout .git/hooks/post-commit .git/hooks/post-merge .git/hooks/pre-push
+cat file
+rm file
+vim .git/hooks/applypatch-msg.sample .git/hooks/commit-msg.sample .git/hooks/fsmonitor-watchman.sample .git/hooks/post-checkout .git/hooks/post-commit .git/hooks/post-merge .git/hooks/post-update.sample .git/hooks/pre-applypatch.sample .git/hooks/pre-commit.sample .git/hooks/pre-merge-commit.sample .git/hooks/pre-push .git/hooks/pre-push.sample .git/hooks/pre-rebase.sample .git/hooks/pre-receive.sample .git/hooks/prepare-commit-msg.sample .git/hooks/push-to-checkout.sample .git/hooks/sendemail-validate.sample .git/hooks/update.sample 
+m remove\ file
+git lfs install
+git lfs checkout
+git lfs checkout --all
+git lfs checkout .
+d --stat
+git status -sb | xargs -I{} -P10 git lfs checkout {}
+git lfs checkout from_keep/media/2023-07-07_222351-276000_00000.jpg
+d from_keep/media/2023-07-07_222351-276000_00000.jpg
+d from_keep/media/2023-07-07_222351-276000_00000.jpg --stat
+sh .git/hooks/post-checkout
+git lfs update --force
+git lfs update
+git lfs update --manual
+git-lfs update --manual
+git-lfs update --force
+chmod a+x .git/hooks/*
+git lfs pull
+rm -rf ~/src/notes
+mv notes ~/src/
+ln notes -s ~/src/notes
+rm ~/src/notes/notes
+ln ~/src/notes -s notes
+man ln
+ln -s -T ~/src/notes notes
+mv ~/src/notes .
+cp notes ~/src/
+chmod a+x .git/hooks/applypatch-msg.sample .git/hooks/commit-msg.sample .git/hooks/fsmonitor-watchman.sample .git/hooks/post-checkout .git/hooks/post-commit .git/hooks/post-merge .git/hooks/post-update.sample .git/hooks/pre-applypatch.sample .git/hooks/pre-commit.sample .git/hooks/pre-merge-commit.sample .git/hooks/pre-push .git/hooks/pre-push.sample .git/hooks/pre-rebase.sample .git/hooks/pre-receive.sample .git/hooks/prepare-commit-msg.sample .git/hooks/push-to-checkout.sample .git/hooks/sendemail-validate.sample .git/hooks/update.sample 
+echo $?
+echo $!
+cd ../../../
+cd com.termux
+git lfs uninstall
+git checkout tools
+a .s
+git rest todo
+git reset --hard todo
+git reset todo
+vim me/diary/2025-01-05.md
+git add. 
+git add . 
+git stash; git stash drop
+git add .;git stash; git stash drop
+ls .
+cat todo/Inbox.md
+m "Vault backup $(date)"
+cd no
+znot
+z jot
+git log -p templates
+m tmp;P
+cat sickCat.md
+rm sickCat.md
+rm src/notes
+rm src/notes -rf
+ln -T storage/shared/notes/ -s notes
+ln -T storage/shared/notes/ -s src/notes
+cd src/notes
+ls src/notes
+ln notes -T storage/shared/notes/ -s
+ln storage/shared/notes/ -s notes
+ln -s notes storage/shared/notes/
+ln -s notes ../storage/shared/notes/
+ln -s ../storage/shared/notes/ notes
+m Vault;pP
+cat .gitignore
+git log .obsidian
+git ls-files .obsidian
+m tnp
+which synx
+cat $(which sync)
+m "GitConfig"
+mv clockify\ community\ plugin.md todo/Home\ Tasks/Laptop\ Tasks/
+mv Shane\ on\ AI.md concepts\ and\ ideas/
+vim 4731011.ppt
+ls _layouts
+z conf
+nx
+ls Phone\ tasks
+cp notes notesbak
+rm notesbak
+cp -r notes/.* notesb/
+cd notesb
+git rebase HEAD~4 -i
+git checkoit 
+a me/diary
+vim .obsidian/workspace.json
+vim .obsidian/workspace-mobile.json
+edt
+ls 2025-01
+ls 2025-01*
+m "18,19,20"
+cd src/skfl
+git branches
+git branches -a
+p azureCustomBuils
+p azureCustomBuild
+cd packages/api
+p testApiUsingCommonDependencies
+m "Copy built output"
+m "Build and install in the root"
+rm -rf dist
+la node_modules
+ls node_modules
+rm -rf node_modules
+rm -rf packages/api/build_api
+rm -rf packages/api/dist
+vim packages/api/build_api
+m "Merge node modules dir"
+cd ./packages/api/build_api
+func start
+func start --javascript
+npx func start 
+npm run
+npm run func_install
+npm run install_func
+vim ../../.github/workflows/azure-static-web-apps-lively-pond-0f8c8b91e.yml
+a ../../.
+m "Fix path";P
+m mkdir
+wget https://lively-pond-0f8c8b91e-549.westus2.3.azurestaticapps.net/api/health
+curl https://lively-pond-0f8c8b91e-549.westus2.3.azurestaticapps.net/api/health
+curl -v https://lively-pond-0f8c8b91e-549.westus2.3.azurestaticapps.net/api/health
+./packages/api/build_api
+m "Copy each skfl package"
+ls build_api/src
+vim build_api.sh
+m "Put built src in src"
+turbo build
+git ls-files | grep trans
+mv transgender.md kb/health/Transgender
+p configApi
+git pull --rebase origin/testApiUsingCommonDependencies
+git pull --rebase origin testApiUsingCommonDependencies
+git diff testApiUsingCommonDependencies
+git diff --stat origin/testApiUsingCommonDependencies
+git diff origin/testApiUsingCommonDependencies
+./build_api.sh
+./packages/api/build_api.sh
+git reset me/diary/
+git commit -m fixup
+rm me/diary/2025-01-29.md
+ls *log*
+vim AM2RLauncher.log
+rm AM2RLauncher.log.2 AM2RLauncher.log.txt 
+vim AM2RLauncher.log.2
+https://github.com/AM2R-Community-Developers/AM2R-Autopatcher-Linux.git
+pkg install zip
+mv AM2R-Autopatcher-Linux storage/downloads
+zip AM2R-Autopatcher-Linux
+zip -a AM2R-Autopatcher-Linux
+man zip
+zip -r AM2R-Autopatcher-Linux.zip AM2R-Autopatcher-Linux
+ls AM
+ls AM*
+mv AM2R-Autopatcher-Linux.jpg
+mv AM2R-Autopatcher-Linux.zip AM2R.jpg
+touch AM2R.jpg
+open .
+xdg-open .
+termux-open AM2R.jpg
+mv AM2R.jpg AM2R.zip
+termux-open AM2R-Autopatcher-Linux
+termux-open AM2R.zip
+tar -cf AM2R-Autopatcher-Linux AMR2.tar
+tar -cfr AM2R-Autopatcher-Linux AMR2.tar
+tar -cfr AM2R-Autopatcher-Linux.tar AM2R-Autopatcher-Linux
+tar -c -r -f AM2R-Autopatcher-Linux.tar AM2R-Autopatcher-Linux
+tar -c -f AM2R-Autopatcher-Linux.tar AM2R-Autopatcher-Linux
+vim ~/.termux/termux.properties
+termux-open AM2R-Autopatcher-Linux.tar
+cd storage/downloads
+termux-open .
+termux-open --help
+termux-open --send AM2R.zip
+rm AM2R-Autopatcher-Linux AM2R-Autopatcher-Linux.tar AM2R.zip AM2RLauncher.log.2 
+rm -rf AM2R-Autopatcher-Linux AM2R-Autopatcher-Linux.tar AM2R.zip AM2RLauncher.log.2 
+lasy
+z a
+ztak
+z nv
+mv Soundgasm.md $(mkdir me/needs/)
+mv Soundgasm.md me/needs
+m "Clean up and notes"
+nc
+mv *.png assets
+mv *.jpg assets
+mv *.pdf assets
+git ls-files | grep Desktop
+mv Desktop\ Files.md kb/tools
+rm Desktop\ Files.md
+git ls-files | grep dates
+mv dates.md me
+git grep "Missing .*at"
+m "Int literal test passes with tree sitter"
+t ast::pretty_printer::tests::
+t ast::pretty_printer::tests::round_trip_lit
+t ast::pretty_printer::tests::round_trip_
+t ast::pretty_printer::tests::round_trip_add_mul
+m "Binary operators"
+vim me/diary/2025-02-11.md
+gg
+m "Start on bindings"
+m WIP;p
+cd takolib/
+vim src/parser/mod.rs
+git grep add_bind
+git grep add_def
+git grep Defi
+p org-chart-demo
+gg '<<<<<<<' | ge '+/<<<<<<<'
+git stash list
+vim me/diary/2025-02-13.md
+a .D
+z tsk
+laat
+git checkout origin/main -b update
+cargo update
+cargo outdated
+m "Update outdated and vulnerable dependencies"
+gh auth login
+tree-sitter build
+t ast::pretty_printer::tests::round_trip_implicit_bindings_id_fn
+t ast::pretty_printer::tests::round_trip_implicit_bindings_id
+t ast::pretty_printer::tests::round_trip_implicit_bindings
+t ast::pretty_printer::tests::round_trip_implicit
+t ast::pretty_printer::tests::round_trip
+t ast::pretty_printer::tests
+t ast::pretty_printer
+cat tree-sitter-tako/tree-sitter.json
+rm tree-sitter-tako/tree-sitter.json
+p target-class-cleanup
+npm run clean
+npm i && npm run ci
+vim takolib/src/ast/pretty_printer.rs
+qfg
+t ast
+t test
+t test::vec
+t simplr
+t simple
+cat examples/simple_exprs.tk
+t fib
+m "More node types";p
+cat examples/generic_abstract_data_types.tk
+git grep format_expressions
+git grep format_expression
+vim tree-sitter-tako/grammar.js
+cat examples/vector_transpose.tk
+tree-sitter --help
+vim takolib/src/lowerer/mod.rs
+vim grammar.js
+treesitter geneate
+D .
+cat examples/instances.tk
+cargo update --aggressive
+m "Update dependencies"
+git remote set-url origin git@github.com:Cypher1/tako.git
+m "Updare upload-artifact action"
+vim .github/workflows/tako.yml .github/workflows/takolib.yml .github/workflows/takoweb-pages.yml .github/workflows/takoweb.yml .github/workflows/tree-sitter-tako.yml 
+m "Change path for tako tree sitter package.json"
+v .github/workflows/tree-sitter-tako.yml
+m "Build node-gyp as a build step, not install"
+vim binding.gyp
+rm package-lock.json
+ls package
+ls a
+ls src/tree_sitter
+vim .gitignore
+m "Include generated code as a sort of vendoring"
+which tree-sitter
+npm i --save-dev tree-sitter
+vim ../.github/workflows/tree-sitter-tako.yml
+m "Run tree sitter via npm"
+z notwa
+vim me/diary/2025-02-24.md
+git ls-files "*.md" | xargs wc -l
+git ls-files | grep "\.md$" | xargs wc -l
+v takolib/src/interpreter.rs
+m "String, color and hex literals"
+vim src/tests.rs
+t llamada
+m "Add test for lowerer via llamada";P
+t lowerer
+cd takoweb/
+vim Cargo.toml Trunk.toml
+tree-sitter generate
+vim bindings/rust/build.rs bindings/rust/lib.rs 
+cargo add tree_sitter_wasm_build_tool
+m "Add wasm build config"
+m "TMP"
+m "Update lockfile";P
+cd ../takolib
+m TMP; P
+cd takoweb
+trunk build
+cargo install trunk
+rm goHam
+bd goHam
+cd tree-sitter-tako
+bD
+git diff origin/main --stat Cargo.toml */Cargo.toml
+git diff origin/main Cargo.toml */Cargo.toml 
+cd takoliv
+p greasy
+cd gr
+cd greasy
+v greasy.zsh
+m "Add bD for force bd"
+cd cypher1.github.io
+ls notes notesb 
+rm -rf notesb
+p goHamTs
+rm -rf AM2R-Autopatcher-Linux
+abort
+git rebase HEAD~3 -1
+rm packages/app/src/components/ZoomBackground.vue
+vim ~/.zshrc
+bD target-class-cleanup
+bD org-chart-demo
+bD configApi
+bD config_api
+bD arrayAndRecord
+bd testApiUsingCommonDependencies
+bD testApiUsingCommonDependencies
+bD azureCustomBuild
+git checkout goHamTs~5 && b
+git checkout goHamTs~10 && b
+git checkout goHamTs~7 && t
+git checkout goHamTs~6 && t
+git checkout goHamTs && t
+mtnp
+vim tree-sitter-tako/Cargo.toml
+rm me/diary/2025-03-13.md
+d me
+git log -p me
+git reset ergo-trimode.json
+git reset -- ergo-trimode.json
+git checkout ergo-trimode.json
+git checkout neo_ergo.layout.json
+rm me/diary/2025-03-12.md
+vim takolib/src/codegen/backend/llvm.rs
+cargo teat
+vim tree-sitter-tako/bindings/rust/lib.rs
+vim tree-sitter-tako/bindings/rust/lib.rs +51
+m "Unsafe parser load"
+cd prequel
+vim src/main.rs +11
+m "Cleanup"
+git tag
+git tags
+git tag --help
+../skfl
+git grep parse
+git grep "parse("
+git grep "stringify"
+vim packages/common/src/objects.ts
+git checkout -b stringifyFiddle
+npm i
+npm run ci
+cd Code
+mkdir prospero
+vim spec.pt
+mv spec.pt spec.py
+mv ~/storage/downloads/prospero.txt .
+mv prospero.txt prospero.vm
+python -m venv env
+pip install patchelf
+pkg install patchelf
+pip install numpy
+cd prospero
+vim prospero.vm
+python spec.py
+convert out.ppm out.jpg
+magick convert out.ppm out.jpg
+vim spec.py
+echo out.ppm >> .gitignore
+echo out.jpg >> .gitignore
+m "App prospero"
+cp spec.py mine.py
+time python spec.py && convert out.ppm out.jpg
+time python mine.py && convert out.ppm out.jpg
+pip install cupy
+git stash show
+git clone https://github.com/Cypher1/ika
+vim src/ast.rs src/main.rs src/tokens.rs src/types.rs
+vim README.md
+m "Format"
+vim src/tokens.rs +73
+vim src/ast.rs +207
+vim src/parser.rs +45
+m "Clippy"
+vim src/interpreter.rs +136
+fgfg
+vim src/ast.rs
+5
+t | less
+t | head
+vim src/wasm.rs
+dg
+t 2>&1 | head
+t 2>&1
+m "Rename for clippy"
+brn clippy
+cat examples/1_plus_2.ik examples/alt.ik examples/arguments.ik examples/bool_requirement.ik examples/comment.ik examples/div.ik examples/ignored_let.ik examples/multi_comment.ik examples/multi_comment_nested.ik examples/multiple_assignment.ik examples/neg.ik examples/nested_explicit.ik examples/nested_explicit_side_effect.ik examples/order_of_ops.ik examples/paren.ik examples/pow.ik examples/requirement.ik examples/simple.ik examples/simple_call.ik examples/sub.ik examples/tmp.ik examples/type_bool.ik examples/type_i32.ik examples/type_str.ik examples/x_plus_1.ik 
+z ika
+vim src/parser.rs
+cargo run --help
+cargo run /dev/stdin
+cargo run -r /dev/stdin
+cargo run -i
+cargo run -- -i -ast
+echo "4+2*3" | cargo run -- -i -ast
+echo "4*2*3" | cargo run -- -i -ast
+echo "4*2^2" | cargo run -- -i -ast
+vim src/main.rs
+vim src/parser.rs src/interpreter.rs
+echo "4**2**2" | cargo run -- -i -ast
+m "Exponentiation"
+z sk
+syjc
+cd experiments/prospero
+vim mine.py
+time python mine.py
+cd experiments
+cat gauss.py
+cat enum.c
+gcc enum.c -o enum
+chmod +x enum
+./enum
+cp enum ~/
+cmod +x ~/enum
+chmod +x ~/enum
+~/enum
+echo "$?"
+rm ~/en1
+rm ~/enum
+rm enum
+termux-open --send triangle.py
+termux-am --help
+git@github.com:Cypher1/ponds.git
+git@github.com:Cypher1/pools.git
+cd llamada/
+git ls .
+git ls-files .
+vim src/lib.rs src/visitors/mod.rs
+PA
+bD stagingExamples
+bD goHamTs
+git grep chum
+cd takolib
+cargo add chumsky --features=pratt
+cargo add chumsky --features=memoization
+cargo add --package takolib chumsky --features=memoization
+cargo add --package takolib chumsky --features=memoization,pratt
+cargo add --package takolib chumsky --features=pratt
+D takolib
+m "Add chumsky"
+cat examples/fib_acc.tk
+wc -l examples/fib_acc.tk
+wc -c examples/fib_acc.tk
+RUST_LOG=debug cargo run -- -i examples/fib_acc.tk
+TAKO_LOG=debug cargo run -- -i examples/fib_acc.tk
+TAKO_LOG=debug cargo run -- -r examples/fib_acc.tk
+RUST_LOG=debug cargo run -- -r examples/fib_acc.tk
+gg 'RUST_LOG=debug cargo run -- -r examples/fib_acc.tk' | ge '+/RUST_LOG=debug cargo run -- -r examples/fib_acc.tk' '+:GGrep "RUST_LOG=debug cargo run -- -r examples/fib_acc.tk"' || vim '+:GGrep "RUST_LOG=debug cargo run -- -r examples/fib_acc.tk"'
+RUST_LOG=info cargo run -- -r examples/fib_acc.tk
+cargo run -- -i examples/fib_acc.tk
+cargo run -- -r examples/fib_acc.tk
+pPF
+p chumsky
+cargo nextest archive --help
+cargo nextest 
+cargo nextest show-config
+cargo nextest show-config test-groups
+git grep string_in
+cargo test --release
+cargo test --jobs 1
+cargo test run
+git stash 
+git stash droo
+cd lazy
+cd agitator.nvim
+cd LazyVim
+z Laz
+ls | xargs -I{} sh -c "cd {} && git checkout ."
+ls | xargs -I{} sh -c "cd {} && git remote"
+ls | xargs -I{} sh -c "cd {} && git checkout origin/"
+ls | xargs -I{} sh -c "cd {} && git checkout origin main"
+ls | xargs -I{} sh -c "cd {} && git checkout origin/main"
+ls | xargs -I{} sh -c "cd {} && git checkout origin/master"
+xd neogit
+cd neogit
+git checkout recursiveDescent
+cargo run -- -i
+echo "-1+2*3" | cargo run -- -i
+echo "-1+2*3" | cargo run -- -r /dev/stdin
+echo "3" | cargo run -- -r /dev/stdin
+echo "+3" | cargo run -- -r /dev/stdin
+echo "-3" | cargo run -- -r /dev/stdin
+echo "1+3" | cargo run -- -r /dev/stdin
+echo "1+2*3" | cargo run -- -r /dev/stdin
+echo "-1-2*3" | cargo run -- -r /dev/stdin
+echo "-1-2*3" | RUST_LOG=trace cargo run -- -r /dev/stdin
+echo "1*2+3" | cargo run -- -r /dev/stdin
+echo "1-2*3" | cargo run -- -r /dev/stdin
+gg 'v' | ge '+/v' '+:GGrep "v"' || vim '+:GGrep "v"'
+t parser
+t contexts
+ls dpwnloads
+^dp^do
+ls dploads
+ls downloads
+vim examples/simple_exprs.tk
+t simple_exprs
+vim takolib/src/parser/mod.rs
+wc -l dad
+wc -w dad
+echo "Hello woeld"
+a s
+rm .git/objects/51/e49e9363f3d154b02f7f7d96b9b941f4a1720e
+git pull --rebaae
+git rebase --skip
+git rebase --quit
+git remote 
+m "Save"
+git reset HEAD
+git rebase HEAD~ --onto origin/main
+git rebase --onto origin/main
+mkdir notesb
+cp -r notes/* notesb/
+brn main2
+git stasy
+rn -rf *
+rm -r .foam .gitignore .gitmodules .obsidian
+rm .gitattributes
+rm -rf .trash
+cp -r notesb/* notes/
+v Finnane\ Family\ Law.md me/diary/2025-09-08.md
+rm .git/objects/33/69cd8403580bb97675ee1f3ee45f844de0557f
+git checkout @923fcbe4
+m tmp
+git checkout
+git fetcg
+git@github.com:Cypher1/notes.git
+mv notes/.git .
+vim EverythingOpen-2026_Technique-AdventuresInLanguageDesign_TalkProposal.md
+git rekt
+cp ../skfl/
+cd ../skfl
+ls .mailmap
+../tako
+m "Add Mailmap"
+gh workflow
+gh workflow list
+gh pr list
+vim .github/workflows/tako.yml .github/workflows/takolib.yml .github/workflows/takoweb-pages.yml .github/workflows/takoweb.yml
+m "Update upload artifact for tako binary workflow"
+gh pr update
+cargo fmt
+cargo clippy --all-features --fix
+v takolib/src/parser/tokens.rs +741
+m "Clippy fixes"
+vim llamada/src/macros.rs +37
+v better-std/src/more_pretty_assertions.rs +15
+m "Clippy fixes manual"
+vim .github/workflows/takolib.yml
+m "Install rust fmt"
+vim .all-contributorsrc
+m "Fix name"
+gh pr merge --auto
+git grep Josh
+git grep Jay
+gg Jay | ge
+gg Jay
+gg jay
+gh pr edit
+gh pr merge
+gh pr view
+git diff HEAD~
+v takolib/src/parser/mod.rs
+authors
+rn takolib/src/parser/tokens.rs
+rm takolib/src/parser/tokens.rs
+vim Cargo.lock
+vim tako/Cargo.toml takoweb/Cargo.toml
+cp .mailmap ..
+brn moreEmails
+cp ../.mailmap .
+m "Add more of Ellie's emails"
+p recursiveDescent
+git diff origin/main...
+git diff origin/main... --stat
+bd recursiveDescent
+bd chumsky
+bD ch
+bD chumsky
+echo "Thanks for the vids, my gf loves them and I love seeing her laugh. Your comedy makes hard days easier and the beavers a part of everyday life" | wc -c
+cd src/tako
+ls **/*.rs
+ls **/*.rs | wc -l
+ls **/*.rs | xargs wc -l | sort
+cd skfl
+q.
+z skfl
+z blog
+cd src/cypher1.github.io
+git grep -i jay | ge
+git grep -i jay
+vim src/contact.md
+./gen.sh
+m "Update name"
+vim src/resume.md src/about.md
+m "Update info"
+git grep they
+git grep them
+git grep jr
+vim src/resume.md
+m "Fix linkedin link"
+cd ../cypher1.github.io
+ls 
+cp ../skfl/.mailmap .
+git log | grep J
+git commit --amend --noed
+git commit --amend --noedit
+git rebase HEAD~2 -i
+cat .mailmap
+cp ../cypher1.github.io/.mailmap .
+git log | grep J | tail -n1 >> .mailmap
+br mailmap
+brn mailmap
+p https://github.com/Cypher1/tako.wiki.git
+https://github.com/Cypher1/tako.wiki.git
+cd tako.wiki
+cp ../tako/.mailmap
+cp ../tako/.mailmap .
+m Mailmap
+bd
+PR
+z me
+cd Me
+mv * ../me
+q .
+m "Medical and autism thoughts"
+echo "$(pwd)" > notes
+vim notes
+mv notes ~/.config/bin
+chnod +x $(which notes)
+chmod +x $(which notes)
+chmod +x ~/.config/bin/notes
+which notes
+env bash
+which sync
+which sync >> $(which notes)
+which greasy
+vim $(which notes)
+notes
+mv ~/.config/bin/notes ~/.config/bin/sync_notes
+git add -0
+a bin
+as
+vim .mailmap
+cp ../src/tako/.mailmap .
+m "Add mailmap"
+z ntoes
+z notew
+m TMP
+which s
+which map
+git status -sb
+d .obsidian
+stty size
+echo "$ROWS $COLUMNS"
+wide_bar
+edir
+vim greasy.zsh
+tput lines
+rows
+tput columns
+s | print_with_row_cap | wc -l
+s | wc -l
+m "Handle filenames with spaces, and long output, better"
+source notes
+IFS=$'\n' git status --porcelain | grep -o "[^ $TAB]*$" | sed "s|^|$ROOT/|")
+IFS=$'\n' git status --porcelain | grep -o "[^ $TAB]*$" | sed "s|^|$ROOT/|"
+IFS=$'\n' git status --porcelain
+IFS=$'\n' git status --porcelain | grep -o "[^$TAB]*$"
+IFS=$'\n' git status --porcelain | grep -o "[^ $TAB]*$"
+IFS=$'\n' git status --porcelain | grep -o "[^ $TAB].*$"
+IFS=$'\n' git status --porcelain | grep -o "[^$TAB].*$"
+IFS=$'\n' git status --porcelain | grep -o "[^ $TAB][^$TAB]*$"
+IFS=$'\n' git status --porcelain | grep -o "[^$TAB][^ $TAB]*$"
+IFS=$'\n' git status --porcelain | grep -o "[^$TAB][^$TAB]*$"
+IFS=$'\n' git status --porcelain | grep -o "$TAB[^$TAB]*$"
+IFS=$'\n' git status --porcelain | grep -o " [^$TAB]*$"
+IFS=$'\n' git status --porcelain | grep -o "[^ ].*$"
+IFS=$'\n' git status --porcelain | grep -o " .*$"
+IFS=$'\n' git status --porcelain | grep -o " .*$" | sed "s/^ *//"
+git status --porcelain --raw
+git status --porcelain --long
+git status --porcelain
+git status --porcelain --null
+IFS=$'\0' files=($(git status --porcelain --null | grep -o " .*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"))
+IFS='\0' files=($(git status --porcelain --null | grep -o " .*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"))
+files=($(git status --porcelain --null | grep -o " .*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"))
+man grep
+files=($(git status --porcelain --null | tr '\0' '\n' | grep -o " .*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"))
+files=($(git status --porcelain --null | grep -z -o " .*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"))
+git status --porcelain --null | grep -z -o " .*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"
+git status --porcelain --null | tr '\0' '\n' | grep -z -o " .*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"
+export TAB=$(echo -e "\t")
+git status --porcelain --null | tr '\0' '\n' | grep -z -o " .*$" | sed "s/^[$TAB]*//" | sed "s|^|$ROOT/|"
+git status --porcelain --null | tr '\0' '\n' | grep -z -o "[$TAB].*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"
+git status --porcelain --null | tr '\0' '\n' | grep -z -o ".*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"
+git status --porcelain --null | tr '\0' '\n' | grep -z -o ".*$"| xd
+pkg install xxd
+git status --porcelain --null | tr '\0' '\n' | grep -z -o ".*$"| xxd
+printf "%c" 20
+printf "'%c'" 20
+printf "'%h'" 20
+printf "'%x'" 20
+printf "'%x'" 32
+printf "'%c'" 32
+printf "'\x32'"
+printf "'\x20'"
+git status --porcelain --null | tr '\0' '\n' | grep -o ".*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"
+git status --porcelain --null | tr '\0' '\n' | grep -o "[^ ].*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"
+git status --porcelain --null | tr '\0' '\n' | grep -o "[^A-Z ]*.*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"
+git status --porcelain --null | tr '\0' '\n' | grep -o "[^A-Z]*.*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"
+git status --porcelain --null | tr '\0' '\n' | grep -o "[^A-Z]* *.*$" | sed "s/^ *//" | sed "s|^|$ROOT/|"
+git status --porcelain --null | tr '\0' '\n' | sed "s/[^A-Z]* *(.*)$/\1/" | sed "s/^ *//" | sed "s|^|$ROOT/|"
+git status --porcelain --null | tr '\0' '\n' | sed "s/[^A-Z]* *\(.*\)$/\1/" | sed "s|^|$ROOT/|"
+printf "\n" | xdd
+printf "\n" | xxd
+printf "\r" | xxd
+git status --porcelain --null | tr '\0' '\n' | sed "s/[A-Z]* *\(.*\)$/\1/" | sed "s|^|$ROOT/|" | xxd
+export EDITOR=nvim
+git diff --null
+m "Improve whitespace handling"
+m "Improve whitespace handling for edit"
+source ~/src/greasy/greasy.zsh
+s | print_with_row_cap
+tput longname
+tput name
+tput shortname
+man terminfo
+man tput pairs
+tput -T pairs
+tput -S pairs
+tput pairs
+tput khome
+tput khome | xxd
+tput ka | xxd
+tput kA | xxd
+ga
+z gr
+cat greasy.zsh
+v takolib/src/parser/lexer.rs
+cd pools
+v src/buff.rs
+vim ~/.config/bin/zed
+chmod +x ~/.config/bin/zed
+sh
+z notea
+z note
+2s
+syhc
+termux-info
+w
+curl -d "Hi" ntfy.sh/ellie__test
+curl -d "Hi" ntfy.sh/ellie_test
+cat .config/pylintrc | curl ntfy.sh/ellie_test
+cat .config/pylintrc | curl -d@ ntfy.sh/ellie_test
+cat .config/pylintrc | curl -d@- ntfy.sh/ellie_test
+pkg install termux-api
+termux-apps-info-app-version-name
+termux-am
+cleae
+gl -p
+git diff loopedDescent
+git diff loopedDescent --stat
+p main;t
+z noted
+vim me/diary/2026-01-13.md
+vim Name\ change\ recommendations.md
+git diff --stat
+git diff --null --stat
+git diff --z --stat
+git diff --z
+git diff --numstat --staged
+git diff --numstat --staged | cut -f3 | xargs ls
+git diff --numstat --staged | cut -f3 -d '\n' | xargs ls
+git diff --numstat --staged | cut -f3 -d '\n' | xargs echo
+git diff --numstat --staged | cut -f3 -d "\n" | xargs echo
+git diff --numstat --staged | cut -f3 -d $(echo "\n") | xargs echo
+git diff --numstat --staged | cut -f3 -d $(echo -e "\n") | xargs echo
+git diff --numstat --staged | cut -f3 -d$(echo -e "\n") | xargs echo
+git diff --numstat --staged | cut -f3 -d$IFS
+git diff --numstat --staged | cut -f3
+git diff --numstat --staged | cut -f3 | xargs -L1
+git diff --numstat --staged | cut -f3 | xargs -L1 ls
+synx
+v me/diary/2026-01-23.md
+rm .git/objects/2b/e58312ff0dba914bad81c7cee88aee953480ca
+ed8t
+E
+git checkout 1
+cat 1
+rm 1
+z notes; sync
+rm .git/objects/b3/aaaa3364181c6cb01fedff4e807146f608cc44
+bat $(which sync)
+which sync | bat
+bat $(which sync_notes)
+sync_notes
+.git/objects/8a/b3252e57587fa59c47e75d97205c037
+rm .git/objects/8a/b3252e57587fa59c47e75d97205c037
+rm .git/objects/8a/b3252e57587fa59c47e75d97205c0371495dbc
+m "Add short alias for sync_notes"
+ls templates
+cat templates/todo\ template.md
+cat templates/composer\ template.md
+which last
+vim me/diary/2026-01-29\ -\ Penny\ Iron\ Lung\ issue.md me/diary/2026-01-31\ -\ Penny\'s\ explanation.md
+rm .git/objects/fc/6b4cff6b776d8a2b0742c322231c36b96f3405
+rm .git/objects/89/35908bcff274d783eec3694f5f2a60b3881068
+clear;q
+z .config
+git add bin/sync_notes
+git ls bin
+git ls-files bin
+echo "$OSTYPE"
+cd ~/src/notes
+vim SKFLAccountCreation.md
+rm SKFLAccountCreation.md
+rm extraCred*
+rm main*
+cat sal
+cat EverythingOpen-2026_Technique-AdventuresInLanguageDesign_TalkProposal.md
+mv EverythingOpen-2026_Technique-AdventuresInLanguageDesign_TalkProposal.md ~/src/notes
+cat "--.txt"
+cat "\-\-.txt"
+cat \-\-.txt
+cat '--.txt'
+cat - '--.txt'
+cat '\--.txt'
+cat --.txt
+ls --.txt
+v --.txt
+rm --.txt
+cat ./--.txt
+rm ./--.txt
+rm AM2R-Autopatcher-Linux.tar
+cat lig
+rm lig
+imgcat tmp_1699616392758.jpg
+icat tmp_1699616392758.jpg
+z /storage/emulated/0/notes
+vim me/diary/2026-02-04.md me/diary/2026-02-05.md 
+rm .git/objects/c7/d693e2de42a57e4bd07d3a513c2aa71c2cee0f
+v MRI.md
+nvim --version
+pkg upgrade
+icat
+la
+last
+zrepo update
+zplug
+zrepo
+which zrepo
+rplug update
+z /data/data/com.termux/files/home/src/
+cd nvim
+std
+zrepo 
+vim me/diary/2026-02-10.md me/diary/2026-02-11\ -\ Recent\ police\ brutality\ against\ protestors.md me/diary/2026-02-11.md me/diary/2026-02-12.md 
+obsidian
+pkg install obsidam
+pkg install obsidan
+pkg install obsidian
+git branch --list
+p loopedDescent
+up loopedDescent
+up origin/loopedDescent
+vim takolib/src/parser/tokens.rs
+rm .git/objects/09/faebee6475cfc0fd28e9ee631e21e961d51fb2
+rm .git/objects/60/a5017f0e106ade296e508fde3217b6dfac9704
+rm .git/objects/f6/b50f59ab2eab37f7c8674cb775095326fc2ace
+cargo run -- -r examples/simple_sum.tk
+cargo run -- examples/simple_sum.tk
+cargo run -- -b examples/simple_sum.tk
+v takolib/src/compiler.rs +226
+git log --shortstat
+git log --oneline --stat
+git log --pretty=format: --numstat\
+
+git log --pretty=format: --numstat
+git log --pretty=format: --numstat | cut -f1,2
+git log --pretty=format: --numstat | sed "s/-/0/" | cut -f1,2 | less
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | less
+git log --pretty=format: --numstat | sed "s/-/0/g" | sed "s/\t/+/ | cut -f1,2 | less
+git log --pretty=format: --numstat | sed "s/-/0/g" | sed "s/\t/+/" | cut -f1,2 | less
+git log --numstat\
+
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | less
+pkg install bc
+bc "3+5"
+bc --help "3+5"
+echo "3+5" | bc
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs bc | less
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -L1 bc | less
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -L1 bc -i | less
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -L1 -- bc -i | less
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -L1 -- bc -i /dev/stdin | less
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | bc -i | less
+eval "3+5"
+eval "((3+5))"
+echo "\$((3+5))"
+eval "\$((3+5))"
+"$((3+5))"
+"$(3+5)"
+((3+5))
+echo "((3+5))
+echo "((3+5))"
+(3+5)
+bash (3+5)
+bash -c (3+5)
+bash -c "(3+5)"
+bash -i "(3+5)"
+sh -e "(3+5)"
+sh -i "(3+5)"
+sh -c "(3+5)"
+man sh
+sh -c "echo (3+5)"
+bash -c "echo (3+5)"
+bash -c "echo \(3+5\)"
+bash -c "echo $((3+5))"
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c "\$((\$1))" | less
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c '$(($1))' | less
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c '$(({}))' | less
+git log --pretty=format: --numstat | head | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c '$(({}))' | less
+git log --pretty=format: --numstat | head | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c '$(({}))'
+git log --pretty=format: --numstat | head | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c '$((\$1))' {}
+git log --pretty=format: --numstat | head | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c '$(($1))' {}
+git log --pretty=format: --numstat | head | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c '$(($1))' -- {}
+git log --pretty=format: --numstat | head | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c '$((echo $1))' {}
+git log --pretty=format: --numstat | head | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c '$((echo {}))'
+git log --pretty=format: --numstat | head | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c 'echo $(({}))'
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | xargs -I{} bash -c 'echo $(({}))'
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/" | tr "\n" "+" | sed "s/\+\+/\n/" | xargs -I{} bash -c 'echo $(({}))'
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/" | tr "\n" "+" | sed "s/\+\+/\n/g" | sed "s/\+^//" | xargs -I{} bash -c 'echo $(({}))'
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/" | tr "\n" "+" | sed "s/\+\+/\n/g" | sed "s/\+^//"
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/" | tr "$(echo "\n")" "+" | sed "s/\+\+/\n/g" | sed "s/\+^//"
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/" | tr "$(echo "\n")" "+"
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/" | tr "$(printf "\n")" "+"
+man tr
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/" | tr "\n" "+"
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/" | tr "\n" "+" | sed "s/\+\+/\n/g"
+git log --pretty=format: --numstat | head | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/" | tr "\n" "+" | sed "s/\+\+/\n/g"
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | tr "\n" "+" | sed "s/\+\+/\n/g" | sed "s/\+^//" | xargs -I{} bash -c 'echo $(({}))'
+git log stat
+git log --pretty=format: --numstat| head
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 | sed "s/\t/+/g" | tr "\n" "+" | sed "s/\+\+/\n/g" | sed "s/\+^//" | xargs -I{} bash -c 'echo $(({}))'
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 -D+ | tr "\n" "+" | sed "s/\+\+/\n/g" | sed "s/\+^//" | xargs -I{} bash -c 'echo $(({}))'
+man cut
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter + | tr "\n" "+" | sed "s/\+\+/\n/g" | sed "s/\+^//" | xargs -I{} bash -c 'echo $(({}))'
+echo "a\tb" | cut --output-delimiter "+"
+echo "a\tb" | cut -f1,2 --output-delimiter "+"
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+" | sed "s/\+\+/\n/g" | sed "s/\+^//" | xargs -I{} bash -c 'echo $(({}))'
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+"
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+" | sed "s/\+\+/\n/g" | sed "s/\+^//"
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+" | sed "s/\+\+/\n/g" | sed "s/\+$//" | xargs -I{} bash -c 'echo $(({}))'
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+" | sed "s/\+\+/\n/g" | xargs -I{} bash -c 'echo $(({}))'
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+"
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+" | sed "s/\+\+/\n/g"
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+" | sed "s/\+\+/!/g"
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+" | sed "s/+\+/!/g"
+echo "a+b++c" | sed "s/+\+/!/g"
+echo "a+b++c" | sed "s/+\\+/!/g"
+echo "a+b++c" | sed "s/\\+\\+/!/g"
+echo "a+b++c" | sed "s/\+\+/!/g"
+echo "a+b++cc" | sed "s/cc/!/g"
+echo "a+b++cc" | sed "s/\+\+/!/g"
+echo "a+b++cc" | sed "s/[+]\+/!/g"
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+" | sed "s/\+[+]/\n/g" | xargs -I{} bash -c 'echo $(({}))'
+git log --pretty=format: --numstat| head | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+" | sed "s/\+[+]/\n/g" | sed "s/\+$//" | xargs -I{} bash -c 'echo $(({}))'
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+" | sed "s/\+[+]/\n/g" | sed "s/\+$//" | xargs -I{} bash -c 'echo $(({}))'
+sed --version
+echo "a+b++cc" | sed "s/[+][+]/!/g"
+echo "a+b++cc" | sed "s/++/!/g"
+echo "a+b++cc" | sed -e "s/++/!/g"
+echo "a+b++cc" | sed -e "s/+a\+/!/g"
+echo "a+b++cc" | sed -E "s/+a\+/!/g"
+echo "a+b++cc" | sed -E "s/\+\+/!/g"
+git log --pretty=format: --numstat | sed "s/-/0/g" | cut -f1,2 --output-delimiter "+" | tr "\n" "+" | sed "s/++/\n/g" | sed "s/\+$//" | xargs -I{} bash -c 'echo $(({}))'
+sm
+rm .git/objects/ab/72c894ecd5f089ecf3028fc90dc4d591d26dcf
+git ls-files | xargs cat | wc -l
+git ls-files | xargs -0 cat | wc -l
+git ls-files | tr '\n' '\0' | xargs -0 cat | wc -l
+git ls-files | tr '\r' '\0' | xargs -0 cat | wc -l
+git ls-files | tr '\n' '\0' | xargs -0 wc -l
+git ls-files | tr '\n' '\0' | xargs -0 wc -l | sort -n
+git ls-files | grep "\.md$" | tr '\n' '\0' | xargs -0 wc -l | sort -n
+git ls-files | grep "\.md$" | tr '\n' '\0' | xargs -0 wc -w | sort -n
+cd kb/people
+mv People\ 2/* .
+rmdir People\ 2
+m "Update obsidian settings"
+a .obsidian/plugins/mesh-ai/
+m "Edits"
+a *.md
+m "To move"
+a me/diary/2026-02-10.md me/diary/2026-02-11\ -\ Recent\ police\ brutality\ against\ protestors.md me/diary/2026-02-11.md me/diary/2026-02-12.md me/diary/2026-02-13.md me/diary/2026-02-14\ -\ Police\ brutality.md me/diary/2026-02-14.md me/diary/2026-02-15\ -\ Neurological\ Event.md me/diary/2026-02-15.md me/diary/2026-02-16\ -\ Alysha\'s\ things\ wrong\ with\ me.md me/diary/2026-02-16.md me/diary/2026-02-17.md me/diary/2026-02-18.md 
+m tm0
+git reset me/diary/2025*
+git checkou5 me/diary/2025*
+vim me/diary/2026-02-18.md
+a kb
+git reset HEAD~4
+m "Add tasks plugin and remove MeshAI"
+rm 
+rm .git/objects/89/dd77b2d9846e5578fc341aab7dd78643976743
+synv
+rm .git/objects/e6/8e6329e63d2ddab5b9808359618a5a102064b0
+rm .git/objects/65/06a21d206cdfe042bd318322facfbcfcb94bf6
+ls kb
+ls me
+rm me/diary/2026-02-19.md
+git add -p
+git grep "- [ ]"
+git grep "- \[ \]"
+git grep '- \[ \]'
+git grep -e '- \[ \]'
+git grep -e '- \[ \]' me/diary/*.md
+git grep -e '- \[ \]' me/diary/2025-*.md
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//"
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//" | sort | uniq -c
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//" | sort | uniq | wc -l
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//" | sort | uniq
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//" | sort | uniq | xargs vim
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//" | sort | uniq | xargs nvim
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//" | sort | uniq | xargs /data/data/com.termux/files/usr/bin/nvim
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//" | sort | uniq | tr \n \0 | xargs -0 /data/data/com.termux/files/usr/bin/nvim
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//" | sort | uniq | tr "\n" "\0" | xargs -0 /data/data/com.termux/files/usr/bin/nvim
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//" | sort | uniq | tr "\n" "\0" | xargs -0 -i {} sed "s/- \[ \]/- [-]/" {}
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//" | sort | uniq | tr "\n" "\0" | xargs -0 -I{} sed "s/- \[ \]/- [-]/" {}
+git grep -e '- \[ \]' me/diary/2025-*.md | sed "s/:.*//" | sort | uniq | tr "\n" "\0" | xargs -0 -I{} sed -i "s/- \[ \]/- [-]/" {}
+git status --stat
+m "Cancel unfinished tasks from 2025"
+sed "s/- \[ \]/- [-]/" tasks/abandoned/**/*.md
+sed -i "s/- \[ \]/- [-]/" tasks/abandoned/**/*.md
+d tasks
+a tasks
+m "Cancel unfinished tasks from abandoned"
+ls tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Shopping\ \ List.md
+cat tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Shopping\ \ List.md
+git ls-files | grep "Shopping"
+m "Setup category specific filters!"
+a tasks/TODOs.md
+m "New tasks system"
+d tasks/done/completed\ unexciting/
+v tasks/done/completed\ unexciting/Online\ shopping\ -\ Washes\ and\ Soaps\ from\ ages\ ago.md
+vim templates/diary\ template.md
+cat tasks/TODOs.md
+v tasks/TODOs.md
+git grep " $" **/*.md
+sed -i "s/ $//" **/*.md
+man sed
+rm me/diary/sedx4JuBP
+git diff --numstat
+m "Remove trailing spaces"
+sed -i "s/ $//" ./ADHD.md ./kb/804,\ 47\ Hill\ road\ Wentworth\ point/King\ Living\ Order.md ./kb/Art/Iron\ Lung.md ./kb/Art/Nang\ Talung.md ./kb/Art/Sally\ Finch.md ./kb/Art/Silent\ Hill.md ./kb/Art/Sweet\ Gums.md ./kb/Art/apichai\ piromrak.md ./kb/Finnane\ Family\ Law.md ./kb/Victims\ Service.md ./kb/bike/Stay\ Upright\ PreLearners.md ./kb/books/MurderBot\ Diaries/Murder\ Bot\ Diaries.md ./kb/books/The\ Quentaris\ Chronicles.md ./kb/books/Undying\ Mercenaries.md ./kb/cane\ info.md ./kb/chess/Chess\ tips.md ./kb/chess/Chess.md ./kb/clothes/Swim\ Wear.md ./kb/coffee/Coffee\ tips.md ./kb/coffee/Scribe.md ./kb/coffee/Top\ 100\ coffee\ shops.md ./kb/curiosities/Emerging\ Roles.md ./kb/curiosities/MomentoMori.md ./kb/curiosities/Rust\ template\ namespacing\ changing\ complication\ behaviour.md ./kb/curiosities/The\ end\ of\ Software.md ./kb/curiosities/Water\ that\ flows\ up\ hill.md ./kb/curiosities/Words.md ./kb/drinks/Tawny\ fortified\ wine.md ./kb/drums\ and\ bass.md ./kb/engineering/Bec\'s\ PhD.md ./kb/engineering/energy/Cheap\ Energy.md ./kb/engineering/energy/Geothermal\ Energy.md ./kb/engineering/energy/nuclear\ power/Nuclear\ Power.md ./kb/engineering/energy/nuclear\ power/fusion/Gyrotron.md ./kb/engineering/materials/Graphene.md ./kb/engineering/materials/asbestos.md ./kb/engineering/recycling/Plastic\ Recycling.md ./kb/engineering/recycling/Polyfloss.md ./kb/entertainment/King\ Killer\ Chronicles.md ./kb/entertainment/Lego/Red\ London\ Telephone\ Box.md ./kb/entertainment/Lost\ terminal.md ./kb/entertainment/Movies/Damaged\ Movie.md ./kb/entertainment/Music.md ./kb/entertainment/Primeagen.md ./kb/entertainment/The\ Slow\ Regards\ of\ Quiet\ Things.md ./kb/entertainment/games/Minecraft.md ./kb/entertainment/games/Outlanders.md ./kb/great\ one\ liners.md ./kb/health/2022-04-20\ -\ Tattoo\ removal.md ./kb/health/30\ signs\ you\'re\ masking\ autism.md ./kb/health/Alcohol\ -\ a\ carcinogen.md ./kb/health/Arthritis.md ./kb/health/Autism\ as\ a\ Pie\ Chart\ Spectrum.md ./kb/health/Autism\ spectrum\ disorder.md ./kb/health/Central\ Pain\ Syndrome.md ./kb/health/Chubby\ Emu\ cases.md ./kb/health/CocoCookieDraws.md ./kb/health/Ehlers\ Danlos\ Syndrome.md ./kb/health/Eye\ Movement\ Desensitisation\ Reprocessing.md ./kb/health/Fibromyalgia.md ./kb/health/GoodMorganTherapy\ -\ SEEN.md ./kb/health/Immune\ Disorders.md ./kb/health/Mast\ Cell\ Activation\ Syndrome.md ./kb/health/Myalgic\ Encephalitis\ Chronic\ Fatigue\ Syndrome.md ./kb/health/Parkinson\'s\ Disease.md ./kb/health/Parthenogenisis.md ./kb/health/Post\ Exertion\ Malaise.md ./kb/health/Transgender/GRS.md ./kb/health/Transgender/How\ to\ support\ a\ trans\ person.md ./kb/health/Transgender/Light\ videos/Do\ you\ have\ \'girl\ brain\'.md ./kb/health/Transgender/Light\ videos/New\ Year,\ New\ Gender.md ./kb/health/Transgender/Questioning/2022-08-09\ Teenage\ gender\ dysphoria\ bingo.md ./kb/health/Transgender/The\ Gender\ \'slider\'.md ./kb/health/Transgender/Thought\'s\ on\ Women\'s\ spaces.md ./kb/health/Transgender/Trans\ resources\ reddit.md ./kb/health/Transgender/Trans\ voice\ lessons.md ./kb/health/Transgender/transgender.md ./kb/health/conservatives_why_people_change_gender.md ./kb/health/emotional\ neglect.md ./kb/health/medication/Amitriptyline.md ./kb/health/medication/Endone.md ./kb/health/medication/Escitalopram.md ./kb/health/medication/Estradiol\ Valerate.md ./kb/health/medication/Meloxicam.md ./kb/health/medication/Naltrexone.md ./kb/health/medication/Spironolactone.md ./kb/health/medication/contraindicated.md ./kb/health/medication/dexamphetamines.md ./kb/health/mental\ health/Calm\ Place.md ./kb/health/mental\ health/Coercive\ control.md ./kb/history/1660s\ -\ The\ foundations\ of\ Geology\ and\ Paleontology.md ./kb/history/1940-10-25\ -\ De\ Havvilland\ Mosquito.md ./kb/history/2025-01-05\ -\ Shipman\ Serial\ Killer\ over\ 250\ dead.md ./kb/history/2026\ -\ Genocide\ of\ Palestine.md ./kb/history/Ammo\ Types\ in\ War\ Thunder\ Explained.md ./kb/history/Lemkin\ Genocide\ Institute.md ./kb/history/Ten\ stages\ of\ Genocide.md ./kb/history/health/2021-08-11\ -\ Covid\ has\ lasting\ effects\ on\ immune\ system.md ./kb/history/health/2024-08-10\ -\ Peer\ Reviewers\ Have\ Financial\ Conflicts,\ Too.md ./kb/history/tech/2023-07-07\ -\ Gemini\ YouTube.md ./kb/history/tech/Heroes\ of\ the\ Computer\ Revolution.md ./kb/history/tech/games/Muriel\ Tramis.md ./kb/history/think\ tanks\ -\ Friendly\ jordies.md ./kb/jobs/Finch\ App\ Jobs\ Engineering.md ./kb/news/2024-06\ ish\ -\ ABS\ first\ estimates\ of\ lgbtqi\ population\ in\ Australia.md ./kb/news/2024-12\ -\ Legal\ Eagle\ Sues\ Honey.md ./kb/news/2025-09-23-Seattle-Attacks-Trans.md ./kb/news/2025-09-25-Coercive-Control.md ./kb/organisations/ai/EthicAI.md ./kb/people/Alysha\ leaf\ dragon.md ./kb/people/Arjuna.md ./kb/people/Ash\ and\ Rhys.md ./kb/people/Ashelyn\ Haddow.md ./kb/people/D\ Conway.md ./kb/people/David\ James\ Pratt.md ./kb/people/Desdemona\ and\ Alysha\ issues.md ./kb/people/Desdemona.md ./kb/people/Dr\ Winters.md ./kb/people/Dr\ Yumiko\ Kodota.md ./kb/people/Eva\'s\ Cleaning\ Service.md ./kb/people/EverythingOpen-2026_Technique-AdventuresInLanguageDesign_TalkProposal.md ./kb/people/Felix\ Fenwick.md ./kb/people/Function\ PCP.md ./kb/people/Geeks\ for\ Geeks.md ./kb/people/Hank\ Green.md ./kb/people/Jonah\ Thew.md ./kb/people/Kathryn\ Kirk/Mum\ I\ want\ to\ hear\ your\ story.md ./kb/people/Kirrily.md ./kb/people/Markiplier.md ./kb/people/Matt\ Ferrell.md ./kb/people/Mitchum\ Bezzina.md ./kb/people/Nathaniel\ James\ Tyndale\ Pratt.md ./kb/people/Neighbour\ Lin.md ./kb/people/Penelope\ Adams.md ./kb/people/Peter\ Thew.md ./kb/people/Professor\ Norman\ Wildburger.md ./kb/people/Sonia\ Thew.md ./kb/people/Steve\ Barnewall.md ./kb/people/Tali.md ./kb/people/The\ cats.md ./kb/people/Valerie\ Haddow.md ./kb/people/Vivian.md ./kb/principles/Curiously\ Recurring\ Maxims.md ./kb/principles/no-one\ else\ will.md ./kb/programming\ languages/features.md ./kb/programming\ languages/features/Effects.md ./kb/programming\ languages/features/Language\ wishlist.md ./kb/programming\ languages/features/Monomorphism.md ./kb/programming\ languages/features/co-effects\ PHD\ Tomas\ Petricek.md ./kb/programming\ languages/features/co-effects.md ./kb/programming\ languages/features/ditto\ statements.md ./kb/programming\ languages/features/macros.md ./kb/recipes/2024-05-05\ -\ Palak\ Paneer\ Recipe.md ./kb/recipes/2025-01-06\ -\ Vegetarian\ Tortilla\ Soup.md ./kb/recipes/2025-02-14\ -\ Pad\ Kra\ Pow\ Gai.md ./kb/recipes/2025-03-24\ -\ Cheesy\ Egg\ bites.md ./kb/recipes/Alysha\'s\ overnight\ oats.md ./kb/recipes/Braised\ lamb\ ragu.md ./kb/recipes/Ragu\ recipe.md ./kb/recipes/Taco\ Hot\ Pocket.md ./kb/recipes/kourabiedes.md ./kb/recipes/unsafe\ ingredients\ -\ GRAS.md ./kb/services/Bupa.md ./kb/services/Cleaning\ Services.md ./kb/services/CrunchyRoll.md ./kb/services/Future\ Super.md ./kb/services/Hostinger\ -\ VPS.md ./kb/services/Mavericks\ Chicken.md ./kb/services/Pharmacy\ for\ less\ Marrickville\ road.md ./kb/social/Lesbian\ Masterdoc.md ./kb/social/Memes.md ./kb/social/When\ Your\ Hero\ Is\ A\ Monster.md ./kb/social/memes/how\ many\ genders\ are\ there\ I\ don\'t\ know\ I\ just\ got\ here.md ./kb/social/trans\ women\ are\ women.md ./kb/tech/APIs/Turns\ out\ that\ REST\ APIs\ weren\'t\ the\ answer.md ./kb/tech/Game\ Dev.md ./kb/tech/Machine\ Ethics\ intro\ course.md ./kb/tech/Shane\ on\ AI.md ./kb/tech/Theory/Architectural\ Styles\ and\ the\ Design\ of\ Network-based\ Software\ Architectures.md ./kb/tech/Theory/Operational\ Semantics.md ./kb/tech/Topology.md ./kb/tech/news/2025-02-02\ -\ R1\ -\ chain\ of\ thought\ and\ mixture\ of\ experts\ for\ low\ cost.md ./kb/tech/news/Rust\ belts\ bugs\ out\ of\ Android.md ./kb/tech/performance/A\ 10x\ faster\ Typescript\ via\ Go.md ./kb/tech/performance/Computer\ Enhance.md ./kb/tech/performance/latency\ humanized.md ./kb/tech/performance/latency.md ./kb/tech/security/Unicode\ in\ Google\ Ads.md ./kb/tech/synchronisable.md ./kb/tech/tech\ practices/\ Rob\ Pike\'s\ 5\ Rules\ of\ Programming.md ./kb/tech/tech\ practices/Choosing\ boring\ technology.md ./kb/tech/tech\ practices/Feature\ Flags.md ./kb/tech/tech\ practices/Radical\ Simplicity.md ./kb/tech/tech\ practices/SOLID\ Principles.md ./kb/tools/3d\ printing/5\ Slicer\ defaults\ I\ ALWAYS\ change\ \#3DP101.md ./kb/tools/Bytecode\ alliance.md ./kb/tools/Desktop\ Files.md ./kb/tools/How\ I\ Build\ about\ 60%\ of\ My\ App\'s\ Codebase\ in\ a\ day.md ./kb/tools/Observability\ Tools.md ./kb/tools/Papers\ we\ Love/Compatibility\ Checking\ for\ Asynchronously\ Communicating\ Software.md ./kb/tools/Physics\ Engines.md ./kb/tools/ai/AI\ Safety\ issues.md ./kb/tools/ai/Adversarial\ Poetry\ as\ a\ Universal\ Single-Turn\ Jailbreak\ Mechanism\ in\ Large\ Language\ Models.md ./kb/tools/ai/music\ systems.md ./kb/tools/algorithms/10\ Weird\ algorithms.md ./kb/tools/algorithms/Marching\ Cubes.md ./kb/tools/arduino/Arduino\ -\ Highlights.md ./kb/tools/coffee/Coffee.md ./kb/tools/databases/Asami.md ./kb/tools/databases/Git\ LFS.md ./kb/tools/databases/Obsidian.md ./kb/tools/databases/hg.md ./kb/tools/datastructures/5000x\ performance\ crdts.md ./kb/tools/datastructures/Segment\ trees.md ./kb/tools/datastructures/Swiss\ Tables.md ./kb/tools/datastructures/Types\ of\ Trees.md ./kb/tools/datastructures/Yjs.md ./kb/tools/datastructures/datastructures.md ./kb/tools/datastructures/range\ trees.md ./kb/tools/datastructures/ring\ buffer.md ./kb/tools/datastructures/trees.md ./kb/tools/datastructures/wavelet\ trees.md ./kb/tools/documentation/Udacity\ -\ Readmes.md ./kb/tools/gamedev/Godot.md ./kb/tools/gamedev/Godot/Moving\ to\ Godot\ in\ 2025.md ./kb/tools/gamedev/Multiplayer\ Tooling.md ./kb/tools/gamedev/SimmyPeet\ -\ Building\ a\ Query-Based\ Incremental\ Compilation\ Engine\ in\ Rust.md ./kb/tools/gamedev/The\ Mirror.md ./kb/tools/gamedev/The\ future\ of\ Game\ dev.md ./kb/tools/hardware/Rasberry\ Pi\ Pico.md ./kb/tools/langs/Bloom.md ./kb/tools/langs/Bytecode\ alliance.md ./kb/tools/langs/Flix.md ./kb/tools/langs/Fosforescent.md ./kb/tools/langs/Jank\ lang.md ./kb/tools/langs/Javascript.md ./kb/tools/langs/LLVM/100\ seconds\ of\ LLVM.md ./kb/tools/langs/LLVM/2022-05-24\ 100\ seconds\ of\ LLVM.md ./kb/tools/langs/LLVM/MLIR/MLIR\ notes.md ./kb/tools/langs/Magma.md ./kb/tools/langs/Rust/Embedded\ Rust\ book.md ./kb/tools/langs/Rust/Haibane\ tenshi\ -\ Rust\ contexts.md ./kb/tools/langs/Rust/Rust\ ECS.md ./kb/tools/langs/Rust/Rust\ Memory\ Mapping.md ./kb/tools/langs/Rust/Rust.md ./kb/tools/langs/Rust/Tmandry\ -\ Contexts\ and\ Capabilities\ in\ Rust.md ./kb/tools/langs/Rust/Why\ is\ my\ Rust\ build\ slow\ -\ Amos.md ./kb/tools/langs/Rust/Workflows.md ./kb/tools/langs/Rust/amos_slow_builds.md ./kb/tools/langs/Rust/cargo-web.md ./kb/tools/langs/Rust/tenshi_rust_contexts.md ./kb/tools/langs/Rust/tmandry_contexts_capabilities.md ./kb/tools/langs/Shane\ on\ Language\ design.md ./kb/tools/langs/WASM.md ./kb/tools/langs/compilers_intro/1\ Compilers.md ./kb/tools/langs/compilers_intro/10\ Liveness\ Analysis.md ./kb/tools/langs/compilers_intro/11\ Register\ Allocation.md ./kb/tools/langs/compilers_intro/12\ Code\ Optimizations.md ./kb/tools/langs/compilers_intro/13\ Instruction\ Selection.md ./kb/tools/langs/compilers_intro/14\ Procedure\ Abstraction.md ./kb/tools/langs/compilers_intro/15\ Object\ Oriented\ Languages.md ./kb/tools/langs/compilers_intro/2\ Regex\ +\ DFA.md ./kb/tools/langs/compilers_intro/3\ Regex\ +\ NFA.md ./kb/tools/langs/compilers_intro/4\ CFGs,\ and\ Ambiguity.md ./kb/tools/langs/compilers_intro/5\ Recursive\ Descent\ Parsing.md ./kb/tools/langs/compilers_intro/6\ Top\ Down\ Parsing.md ./kb/tools/langs/compilers_intro/7\ Semantic\ Analysis.md ./kb/tools/langs/compilers_intro/8\ IR\ Code\ Generation.md ./kb/tools/langs/compilers_intro/9\ Control\ Flow\ Graphs.md ./kb/tools/langs/compilers_intro/Introduction\ to\ Compilers.md ./kb/tools/langs/design\ notes/Functional\ Macros.md ./kb/tools/langs/design\ notes/So\ you\'re\ writing\ a\ programming\ language.md ./kb/tools/langs/graphviz.md ./kb/tools/langs/iris.md ./kb/tools/langs/kind/Libc\ LLVM\ and\ Google.md ./kb/tools/langs/kind/kind.md ./kb/tools/langs/langs.md ./kb/tools/langs/programming\ languages.md ./kb/tools/langs/skip.md ./kb/tools/langs/tako.md ./kb/tools/langs/tree\ calculus.md ./kb/tools/modulex.md ./kb/tools/motorbike/Bike\ Gear.md ./kb/tools/os/Midori.md ./kb/tools/parsers/SimmyPeet\ -\ Crafting\ a\ Compiler\ in\ Rust\ -\ Syntactic\ Analysis.md ./kb/tools/parsers/Syscall\ overheads\ and\ lexers.md ./kb/tools/parsers/tree-sitter.md ./kb/tools/printers.md ./kb/tools/protocols/Understanding\ the\ Language\ Server\ Protocol.md ./kb/tools/protocols/Zigbee.md ./kb/tools/social/Consider\ it\ Forum.md ./kb/tools/tools.md ./kb/tools/type\ systems/Emily\ Riehl\ Intro\ to\ Homotopy.md ./kb/tools/type\ systems/Lambda\ Cube.md ./kb/tools/type\ systems/Motivation\ for\ a\ new\ type\ system.md ./kb/tools/type\ systems/TAPL/TAPL\ -\ 1.\ Introduction.md ./kb/tools/type\ systems/TAPL/Types\ and\ Programming\ Languages.md ./kb/tools/type\ systems/Type\ systems.md ./kb/tools/type\ systems/Types\ chats\ with\ Shane.md ./kb/tools/type\ systems/What\ you\ need\ to\ know\ for\ debating\ Type\ Systems.md ./kb/tools/type\ systems/dependant_types/Dependant\ Types.md ./kb/tools/vacuums.md ./kb/tools/webdev/Unpoly.md ./kb/tools/workflow/Toggl.md ./kb/travel/Dog\ friendly\ places.md ./kb/travel/Hikes.md ./kb/words/Feckless.md ./kb/words/shiromuku.md ./kb/workflow/Foam.md ./kb/workflow/Getting\ Things\ Done\ part\ 2.md ./kb/workflow/Getting\ Things\ Done.md ./kb/workflow/Hack\ your\ brain\ with\ elaborate\ coping\ mechanisms.md ./kb/workflow/How\ to\ bullet\ journal.md ./kb/workflow/Pomodoro.md ./kb/workflow/Talks.md ./kb/workflow/Wednesday\ Waffle.md ./kb/workflow/Zettlekasten.md ./kb/writing/World\ Building\ Tips.md ./kb/writing/writing\ tips.md ./me/804_47_hill_road/Silver\ Watcher\ Plumbing\ Pty\ Ltd\ Quote\ 1.md ./me/Black\ creators.md ./me/Chat\ with\ Acclaim\ Legal.md ./me/Coaching\ Trial\ 1.md ./me/Crazy\ tech\ projects.md ./me/Dr\ appointments.md ./me/Food\ Recommendations.md ./me/Jobs.md ./me/Joys.md ./me/Mission\ Statement.md ./me/Musings/If\ I\ Were\ Bold.md ./me/Musings/My\ father\'s\ safe.md ./me/Musings/The\ story\ of\ my\ transition.md ./me/Musings/What\ I\ want.md ./me/My\ tax\ 2024\ 2025.md ./me/Numbers.md ./me/Shower\ Thoughts.md ./me/The\ Berry\ Treat\ factory.md ./me/Things\ dad\ said.md ./me/anime/Favourite\ animes.md ./me/diary/2014\ -\ 2025\ -\ Suny/Janet.md ./me/diary/2014\ -\ 2025\ -\ Suny/Marriage\ counseling\ 2025.md ./me/diary/2014\ -\ 2025\ -\ Suny/Marriage\ counselling\ situation\ Summary\ 2025-06-16.md ./me/diary/2014\ -\ 2025\ -\ Suny/Suny.md ./me/diary/2014\ -\ 2025\ -\ Suny/draft\ for\ Suny.md ./me/diary/2022-02-28\ -\ Inside\ the\ circle.md ./me/diary/2022-10-14\ -\ Baby\ peanut\ with\ leaf.md ./me/diary/2023-07-07\ -\ what\ lurks\ below.md ./me/diary/2023-07-07\ Zoo\ lizard.md ./me/diary/2023-10-19\ -\ Post\ Reunion.md ./me/diary/2023-12-02\ -\ Israel\ basic\ history.md ./me/diary/2024-06-03\ -\ Dr\ visit\ 3rd\ June\ 2024.md ./me/diary/2024-07-28\ -\ Reasons\ to\ transition.md ./me/diary/2024-10\ -\ diary\ backlog.md ./me/diary/2024-12-30\ -\ Suny\'s\ Birthday.md ./me/diary/2024-12-31\ -\ Boundaries\ and\ Processes.md ./me/diary/2025\ -\ Concerns\ r.e.\ Suny.md ./me/diary/2025-01-01\ -\ Happy\ New\ Year.md ./me/diary/2025-01-02\ -\ The\ Telephone\ Box.md ./me/diary/2025-01-03\ -\ Mum,\ Phones\ and\ Acceptance.md ./me/diary/2025-01-04\ -\ Pilates\ and\ tasks.md ./me/diary/2025-01-05\ -\ A\ Fixing\ Day.md ./me/diary/2025-01-06\ -\ To\ Newington.md ./me/diary/2025-01-07\ -\ Leo.md ./me/diary/2025-01-07\ -\ Pokolbin\ Leo\ Trip.md ./me/diary/2025-01-08\ -\ Wildlife.md ./me/diary/2025-01-09\ -\ Yellow\ Billy.md ./me/diary/2025-01-10\ -\ Return.md ./me/diary/2025-01-11\ -\ Masseters.md ./me/diary/2025-01-11\ -\ intrusive\ thoughts.md ./me/diary/2025-01-12\ -\ Edition\ Roasters.md ./me/diary/2025-01-13\ -\ Sad\ Pomodoro.md ./me/diary/2025-01-14\ -\ Welcome\ back.md ./me/diary/2025-01-15.md ./me/diary/2025-01-16.md ./me/diary/2025-01-18.md ./me/diary/2025-01-19.md ./me/diary/2025-01-20.md ./me/diary/2025-01-21.md ./me/diary/2025-01-22\ -\ Failing\ to\ communicate\ with\ Suny.md ./me/diary/2025-01-22.md ./me/diary/2025-01-23.md ./me/diary/2025-01-24.md ./me/diary/2025-01-25.md ./me/diary/2025-01-26.md ./me/diary/2025-01-27.md ./me/diary/2025-01-28.md ./me/diary/2025-01-29.md ./me/diary/2025-01-30.md ./me/diary/2025-01-31.md ./me/diary/2025-02-01.md ./me/diary/2025-02-02.md ./me/diary/2025-02-03.md ./me/diary/2025-02-04.md ./me/diary/2025-02-05.md ./me/diary/2025-02-06.md ./me/diary/2025-02-07.md ./me/diary/2025-02-08.md ./me/diary/2025-02-09.md ./me/diary/2025-02-10.md ./me/diary/2025-02-11.md ./me/diary/2025-02-12.md ./me/diary/2025-02-13\ -\ Early\ Valentine\'s.md ./me/diary/2025-02-14\ -\ Valentine\'s.md ./me/diary/2025-02-15\ -\ Just\ pilates.md ./me/diary/2025-02-16\ -\ a\ Nice\ Night.md ./me/diary/2025-02-17\ -\ Vue\ regression.md ./me/diary/2025-02-18\ -\ Small\ Rolls.md ./me/diary/2025-02-19\ -\ Traces.md ./me/diary/2025-02-20\ -\ a\ work\ day.md ./me/diary/2025-02-21\ -\ SKFL\ goes\ to\ the\ pub.md ./me/diary/2025-02-22\ -\ Robyn\'s\ party.md ./me/diary/2025-02-23\ -\ Sleep.md ./me/diary/2025-02-24\ -\ Not\ COVID.md ./me/diary/2025-02-25.md ./me/diary/2025-02-26.md ./me/diary/2025-02-27.md ./me/diary/2025-02-28.md ./me/diary/2025-03-01.md ./me/diary/2025-03-02.md ./me/diary/2025-03-03\ -\ Phone\ a\ friend.md ./me/diary/2025-03-03.md ./me/diary/2025-03-04.md ./me/diary/2025-03-05.md ./me/diary/2025-03-06.md ./me/diary/2025-03-07.md ./me/diary/2025-03-08.md ./me/diary/2025-03-09.md ./me/diary/2025-03-10.md ./me/diary/2025-03-11.md ./me/diary/2025-03-12.md ./me/diary/2025-03-13.md ./me/diary/2025-03-16.md ./me/diary/2025-03-17.md ./me/diary/2025-03-18.md ./me/diary/2025-03-19.md ./me/diary/2025-03-20.md ./me/diary/2025-03-21.md ./me/diary/2025-03-22.md ./me/diary/2025-03-23.md ./me/diary/2025-03-24.md ./me/diary/2025-03-25.md ./me/diary/2025-03-26.md ./me/diary/2025-03-27.md ./me/diary/2025-03-28.md ./me/diary/2025-03-29.md ./me/diary/2025-03-30.md ./me/diary/2025-03-31.md ./me/diary/2025-04-01.md ./me/diary/2025-04-03.md ./me/diary/2025-04-04.md ./me/diary/2025-04-05.md ./me/diary/2025-04-06.md ./me/diary/2025-04-09.md ./me/diary/2025-04-10.md ./me/diary/2025-04-11.md ./me/diary/2025-04-12.md ./me/diary/2025-04-13.md ./me/diary/2025-04-18.md ./me/diary/2025-04-20.md ./me/diary/2025-04-21.md ./me/diary/2025-04-22.md ./me/diary/2025-04-23.md ./me/diary/2025-04-24.md ./me/diary/2025-04-25.md ./me/diary/2025-05-04.md ./me/diary/2025-05-08.md ./me/diary/2025-05-10.md ./me/diary/2025-05-11.md ./me/diary/2025-05-12.md ./me/diary/2025-05-13.md ./me/diary/2025-05-19.md ./me/diary/2025-05-21.md ./me/diary/2025-05-23.md ./me/diary/2025-05-25.md ./me/diary/2025-05-29.md ./me/diary/2025-05-30.md ./me/diary/2025-05-31.md ./me/diary/2025-06-04.md ./me/diary/2025-06-09.md ./me/diary/2025-06-10.md ./me/diary/2025-06-15.md ./me/diary/2025-06-16.md ./me/diary/2025-06-17.md ./me/diary/2025-06-18.md ./me/diary/2025-06-21.md ./me/diary/2025-06-22.md ./me/diary/2025-06-23.md ./me/diary/2025-06-24.md ./me/diary/2025-06-25.md ./me/diary/2025-06-27.md ./me/diary/2025-06-28.md ./me/diary/2025-07-01.md ./me/diary/2025-07-02.md ./me/diary/2025-07-03.md ./me/diary/2025-07-04.md ./me/diary/2025-07-05.md ./me/diary/2025-07-06.md ./me/diary/2025-07-08.md ./me/diary/2025-07-09.md ./me/diary/2025-07-10.md ./me/diary/2025-07-11.md ./me/diary/2025-07-12.md ./me/diary/2025-07-17.md ./me/diary/2025-07-18.md ./me/diary/2025-07-19.md ./me/diary/2025-07-20.md ./me/diary/2025-07-21.md ./me/diary/2025-07-22.md ./me/diary/2025-07-24.md ./me/diary/2025-07-27.md ./me/diary/2025-07-29.md ./me/diary/2025-07-31\ -\ escape.md ./me/diary/2025-07-31.md ./me/diary/2025-08-05.md ./me/diary/2025-08-06.md ./me/diary/2025-08-07.md ./me/diary/2025-08-09.md ./me/diary/2025-08-11.md ./me/diary/2025-08-12.md ./me/diary/2025-08-13.md ./me/diary/2025-08-15.md ./me/diary/2025-08-18.md ./me/diary/2025-08-23.md ./me/diary/2025-08-24.md ./me/diary/2025-08-25.md ./me/diary/2025-08-26.md ./me/diary/2025-09-01.md ./me/diary/2025-09-04.md ./me/diary/2025-09-05.md ./me/diary/2025-09-06.md ./me/diary/2025-09-07.md ./me/diary/2025-09-08.md ./me/diary/2025-09-09.md ./me/diary/2025-09-10.md ./me/diary/2025-09-11.md ./me/diary/2025-09-12.md ./me/diary/2025-09-14.md ./me/diary/2025-09-15.md ./me/diary/2025-09-16.md ./me/diary/2025-09-17.md ./me/diary/2025-09-22.md ./me/diary/2025-09-27.md ./me/diary/2025-09-29.md ./me/diary/2025-09-30.md ./me/diary/2025-10-03\ -\ hospital\ trip\ -\ Sutherland\ Hospital.md ./me/diary/2025-10-03.md ./me/diary/2025-10-04.md ./me/diary/2025-10-06.md ./me/diary/2025-10-07.md ./me/diary/2025-10-08.md ./me/diary/2025-10-09.md ./me/diary/2025-10-10.md ./me/diary/2025-10-13.md ./me/diary/2025-10-15.md ./me/diary/2025-10-22.md ./me/diary/2025-10-23.md ./me/diary/2025-10-24\ -\ Blood\ test\ result.md ./me/diary/2025-10-24.md ./me/diary/2025-10-30.md ./me/diary/2025-10-31.md ./me/diary/2025-11\ -\ Important\ TODOS.md ./me/diary/2025-11-01\ -\ Professionals\ Australia\ advice.md ./me/diary/2025-11-01\ -\ medical\ appointment.md ./me/diary/2025-11-01.md ./me/diary/2025-11-02.md ./me/diary/2025-11-03.md ./me/diary/2025-11-04\ -\ Ann\ Wilson.md ./me/diary/2025-11-04.md ./me/diary/2025-11-05.md ./me/diary/2025-11-06.md ./me/diary/2025-11-07.md ./me/diary/2025-11-08.md ./me/diary/2025-11-09.md ./me/diary/2025-11-10.md ./me/diary/2025-11-11.md ./me/diary/2025-11-12.md ./me/diary/2025-11-13.md ./me/diary/2025-11-14.md ./me/diary/2025-11-15.md ./me/diary/2025-11-16.md ./me/diary/2025-11-17.md ./me/diary/2025-11-18.md ./me/diary/2025-11-19.md ./me/diary/2025-11-20.md ./me/diary/2025-11-21.md ./me/diary/2025-11-24.md ./me/diary/2025-11-25.md ./me/diary/2025-11-26.md ./me/diary/2025-11-28.md ./me/diary/2025-11-29.md ./me/diary/2025-11-30.md ./me/diary/2025-12-01.md ./me/diary/2025-12-02.md ./me/diary/2025-12-03.md ./me/diary/2025-12-04.md ./me/diary/2025-12-05.md ./me/diary/2025-12-06.md ./me/diary/2025-12-07.md ./me/diary/2025-12-08.md ./me/diary/2025-12-09.md ./me/diary/2025-12-12.md ./me/diary/2025-12-13.md ./me/diary/2025-12-14.md ./me/diary/2025-12-15\ -\ Dad\'s\ birthday\ message.md ./me/diary/2025-12-15.md ./me/diary/2025-12-16.md ./me/diary/2025-12-17.md ./me/diary/2025-12-18.md ./me/diary/2025-12-19.md ./me/diary/2025-12-20\ -\ Neurology\ appointment.md ./me/diary/2025-12-20.md ./me/diary/2025-12-21.md ./me/diary/2025-12-22.md ./me/diary/2025-12-23.md ./me/diary/2025-12-24.md ./me/diary/2025-12-25\ -\ Present\ TODOS.md ./me/diary/2025-12-25.md ./me/diary/2025-12-26.md ./me/diary/2025-12-27.md ./me/diary/2025-12-28.md ./me/diary/2025-12-29.md ./me/diary/2025-12-30.md ./me/diary/2026\ -\ Recession.md ./me/diary/2026-01-02.md ./me/diary/2026-01-04.md ./me/diary/2026-01-05\ -\ Medicines.md ./me/diary/2026-01-05.md ./me/diary/2026-01-08.md ./me/diary/2026-01-09.md ./me/diary/2026-01-11.md ./me/diary/2026-01-12.md ./me/diary/2026-01-13.md ./me/diary/2026-01-14.md ./me/diary/2026-01-15.md ./me/diary/2026-01-18.md ./me/diary/2026-01-19\ -\ MRI.md ./me/diary/2026-01-19.md ./me/diary/2026-01-21.md ./me/diary/2026-01-22.md ./me/diary/2026-01-23.md ./me/diary/2026-01-25.md ./me/diary/2026-01-26.md ./me/diary/2026-01-27.md ./me/diary/2026-01-28.md ./me/diary/2026-01-29\ -\ Penny\ Iron\ Lung\ issue.md ./me/diary/2026-01-29.md ./me/diary/2026-01-30.md ./me/diary/2026-01-31\ -\ Penny\'s\ explanation\ -\ raw\ messages.md ./me/diary/2026-01-31\ -\ Penny\'s\ explanation.md ./me/diary/2026-01-31.md ./me/diary/2026-02-01.md ./me/diary/2026-02-02.md ./me/diary/2026-02-03.md ./me/diary/2026-02-04.md ./me/diary/2026-02-05.md ./me/diary/2026-02-06.md ./me/diary/2026-02-07\ -\ New\ plan\ for\ CFS\ management.md ./me/diary/2026-02-07.md ./me/diary/2026-02-08\ -\ Thoughts\ on\ Medical\ Gaslighting.md ./me/diary/2026-02-08.md ./me/diary/2026-02-09\ -\ a\ farewell.md ./me/diary/2026-02-09.md ./me/diary/2026-02-10.md ./me/diary/2026-02-11\ -\ Recent\ police\ brutality\ against\ protestors.md ./me/diary/2026-02-11.md ./me/diary/2026-02-12.md ./me/diary/2026-02-13.md ./me/diary/2026-02-14\ -\ Police\ brutality.md ./me/diary/2026-02-14.md ./me/diary/2026-02-15\ -\ Neurological\ Event.md ./me/diary/2026-02-15.md ./me/diary/2026-02-16\ -\ Alysha\'s\ things\ wrong\ with\ me.md ./me/diary/2026-02-16.md ./me/diary/2026-02-17.md ./me/diary/2026-02-18.md ./me/diary/2026-02-19.md ./me/diary/Bundanoon/Mrs\ Goldstein\ finger\ clicking.md ./me/diary/Bundanoon/Reflections\ on\ Thomas\ Mabbot.md ./me/diary/Taralga/St.\ Luke\'s.md ./me/diary/Taralga/Taralga.md ./me/gift\ ideas/Me.md ./me/gift\ ideas/Suny.md ./me/guitar/Recordings\ -\ Bass\ style.md ./me/log\ for\ lawyers.md ./me/me.md ./me/medical/Ann\ Wilson.md ./me/medical/Celebrex.md ./me/medical/Neurology\ topics.md ./me/medical/Panic\ attack\ log.md ./me/medical/Rheumatology\ topics.md ./me/medical/Royal\ Prince\ Alfred\ Hospital.md ./me/medical/Therapy\ Sessions.md ./me/medical/Therapy\ topics.md ./me/medical/flashbacks\ and\ core\ memories.md ./me/medical/physio\ topics.md ./me/medical/wheelchair\ requirements.md ./me/needs/Soundgasm.md ./me/partner\ expectations.md ./me/potential\ dates.md ./me/quotes.md ./me/stories/Casey\ was\ mute.md ./me/stories/Story\ Snippets.md ./me/stories/War\ with\ the\ sun.md ./me/suicidal\ thoughts.md ./me/trans/Declaration\ of\ my\ transition\ plan.md ./me/trans/Hair\ Cut.md ./me/trans/Weirdly\ Gendered\ Personality\ Test.md ./ramblings/AI\ ethics\ -\ Pratt\ Maxims.md ./ramblings/Creativity.md ./ramblings/Engineering\ -\ Safety\ practices.md ./ramblings/Experience\ and\ science\ -\ a\ spectrum\ model.md ./ramblings/FND\ Ellie\ model.md ./ramblings/Health/ASD/ASD\ is\ like\ living\ inside\ a\ rocketship.md ./ramblings/Health/ASD/Autism\ spectrum\ disorder\ -\ An\ abstraction\ trade\ off.md ./ramblings/Health/ASD/My\ experience\ of\ AuDHD.md ./ramblings/Health/Ellie\'s\ up-down\ alert\ system.md ./ramblings/Health/Mental\ Health/Ellie\'s\ Mental\ Health.md ./ramblings/Health/Possible\ Diagnoses.md ./ramblings/Health/disability.md ./ramblings/Matter\ and\ personhood\ -\ a\ spectrum\ model.md ./ramblings/Tony\ Hoare\ -\ Prophets\ of\ Doom.md ./ramblings/UI\ Design\ Principles.md ./ramblings/all\ safe\ here.md ./ramblings/choice.md ./ramblings/smiling.md ./ramblings/thoughts\ on\ the\ SKFL\ engineering\ team.md ./tasks/TODOs.md ./tasks/abandoned/don\'t\ know\ where\ to\ start/Pedophiles\ on\ discord.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Dad/Dad\'s\ hardware\ projects.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Dad/Gatekeeper.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Mum/Coaching\ Trial\ 2.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Mum/Thew\ Holiday\ -\ 2025.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Air\ Conditioning\ unit\ FIX.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Asset\ review.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Brush\ Peanut\'s\ teeth.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Bunnings.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Doors.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Emulator\ Hardware.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Find\ a\ cleaning\ service.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Ikea\ Home\ Automation.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Kitchen\ Reno.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Laundry\ Reno.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Recycle\ Suny\ old\ desktop.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/Walk\ Peanut.md ./tasks/abandoned/lack\ of\ support\ from\ other\ parties/Suny/With\ Suny.md ./tasks/abandoned/medical\ restrictions/A\ hike.md ./tasks/abandoned/medical\ restrictions/Lifeblood.md ./tasks/abandoned/medical\ restrictions/Stem\ cell\ donation.md ./tasks/abandoned/missed\ deadline/Wednesday\ Waffle\ catch\ up.md ./tasks/abandoned/superseded/Move\ youtube\ \'watch\ later\'\ to\ tasks.md ./tasks/abandoned/too\ much\ work\ for\ reward/Black\ Gold\ Investigation.md ./tasks/abandoned/too\ much\ work\ for\ reward/Clockify.md ./tasks/abandoned/too\ much\ work\ for\ reward/Element\ 43\ shouldn\'t\ be\ radioactive.md ./tasks/abandoned/too\ much\ work\ for\ reward/Obsidian\ Extensions\ review.md ./tasks/abandoned/too\ much\ work\ for\ reward/P7\ -\ Help\ with\ Steve\ Barnwall\ Book.md ./tasks/abandoned/too\ much\ work\ for\ reward/Rust\ Impl\ Associated\ Types.md ./tasks/abandoned/too\ much\ work\ for\ reward/Try\ Markview\ for\ Neovim.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-02-09\ 072720-073000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-02-09\ 092128-121000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-02-14\ 055750-672000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-02-14\ 203437-691000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-03-23\ 141034-599000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-04-03\ 112434-454000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-04-23\ 152019-516000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-05-20\ 070416-076000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-06-02\ 010823-899000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-07-28\ 104138-773000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-07-28\ 213822-313000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-08-22\ 002440-066000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-10-01\ 063619-775000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-10-04\ 194442-540000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-10-12\ 050156-119000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-10-13\ 004717-420000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-10-23\ 123007-014000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-10-24\ 194925-110000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-11-05\ 125545-682000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-11-11\ 225115-323000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-11-15\ 130303-891000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-11-18\ 155750-535000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-12-15\ 214308-605000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/2024-12-16\ 201116-321000\ 0000.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/AI\ energy\ usage.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/AI\ used\ for\ hacking\ .md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Agenda\ for\ couples\ counselling\ .md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Architecture\ summary\ -\ Arjuna.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Ask\ Questions\ to\ Make\ Data-Driven\ Decisions.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/BESTÃƒ¥.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Bluey\ Extended\ Theme\ Song\ \(Music\ Video\).md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Browser\ state.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/CIS\ DYSPHORIA\ be\ like.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/CPU\ Visualized.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/CS3\ -\ Design\ in\ Computing.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Char\ varchar\ text\ dbs.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/ChatLLM23\ Function\ Room\ -\ Lucia\ -\ Zoom.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Chatllm\ Things\ that\ could\ have\ gone\ better.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Chrome\ OS\ bad.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Colours\ -\ engineering\ .md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Coming\ out\ to\ Suny\ again\ .md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Compiler\ Optimizations\ Are\ Hard\ Because\ They\ Forget.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Conspiracies\ and\ equality\ lol.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Dad\ of\ trans\ girl\ reddit.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Don\'t\ build\ a\ language\ for\ people\ you\ despise.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Europe.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Fault\ tolerance\ in\ distributed\ systems.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Fedora\ Linux\ on\ zephyrus.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Flix\ language\ .md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/For\ suny.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Frank\ Zappa\ -\ Fascism.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Funnel\ to\ coke\ bottle\ adapter\ holder\ 3d\ print.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/GPU\ dialect\ for\ MLIR.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Gemini\ v\ LLMs.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Gender.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/GitHub\ repos\ for\ system\ design.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Goals.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Hidden\ figures.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Hiking\ Tent\ \ \ Ultralight\ Camping\ Gear\ \ \ Camping\ Store\ \ All\ Products\ \ \ â€ƒ³\ Page\ 3\ â€ƒ³\ Novapro\ Sports\ Cam.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Homes\ \ Dimensions.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/House\ measures.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/How\ to\ talk\ about\ AI\ with\ your\ boss\ ðƒ¿ƒ¸ƒ¬.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Identity\ as\ belief\ v\ transness.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/In\ the\ woods.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Inventions\ .md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Invisible\ hardware\ barn\ door.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/J\ \ \ ACCC\ v\ AusPost.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Job\ Singapore\ AI.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Jobs\ -\ Regulatory\ clarity\ for\ AI.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Jobs\ AI\ EU\ regulation.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Jobs\ Node\ And\ Rust.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Jon\ Stewart\ seems\ alright.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Kitch\ hobby\ project\ 3D\ printed\ Christmas\ bow.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Language\ compiler...\ compiler\ .md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Lecture\ Collection\ \ \ Machine\ Learning.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Lesbians,\ 96pc\ pro\ trans.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Linearity\ Programming\ languages\ talk.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Linux\ file\ systems.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Make\ up.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Marginalization\ of\ closeted\ trans\ women\ .md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Marinara.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Mathematics\ -\ Mathematical\ Logic.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Measurements\ \ Sizes\ \ Sizing.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Menu\ this\ week\ \(meal\ plan,\ food,\ meals\).md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Miffy\ Collection\ \ \ Le\ Creuset\ AU.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Mum\ and\ dad\ history.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/My\ Son\ Had\ a\ DECOY\ Bong.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/My\ shopping\ list.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Nuremberg\ -\ Explore\ the\ Nuremberg\ Trials!.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Onetabs.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Parts.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Passport\ appointment.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Peanut\ pet\ insurance.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Performance\ 120x\ speed\ via\ loops.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Predictions\ about\ formal\ spec\ and\ json\ and\ clis.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Rust\ for\ python.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Rust\ job.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Rust\ num\ task\ constexpr\ min\ max.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Rust\ performance\ comparison.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Rust\ youtubers\ tier\ list.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Rust\ zig\ go\ perf.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/SKFL\ talk\ script.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Salmon\ sauce.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Saving\ plastic.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Semi-colon\ and\ close\ block\ -\ The\ ultimate\ continuation\ builders!.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Shared\ route.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Shopping\ \ List.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Small\ apps\ philosophy.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Smoothie\ for\ bae.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Social\ anxiety\ \ hate\ myself\ and\ I\ think\ everyone\ hates\ me\ too.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Solar\ Panel\ Audio\ Detector!.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Solicitor.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Space\ game\ .md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Spooky\ Science\ \ Brainwashing\ Barnacles.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Stop\ Using\ Brims,\ Do\ This\ Instead.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Stop\ using\ classes\ in\ JS.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Sydney\ LGBTI+\ rally\ \ Defend\ Trans\ rights\ and\ stop\ the\ religious\ discrimination\ bill!.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Tax\ fixes\ from\ Suny\ .md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Terraform\ vs\ open\ source.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/The\ holy\ grail\ of\ neovim\ note\ taking\ obsidian.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Things\ for\ Bambi.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/This\ round\ screen\ makes\ me\ go\ around\ screaming!\ \ \#arduino\ \#raspberrypi.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Time\ series\ compression\ db.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Tv\ show\ \ Laughter.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Twitter\ X\ savings\ from\ cloud\ exit.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Typescript\ tips.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Understanding\ \'co-\'things.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Visual\ Group\ Theory.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Warning\ to\ lean\ OSS\ founders.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Wasm\ in\ 2024.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Wasm\ linux.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Watch\ \ My\ Doctor\ says\ I\ have\ IBS-\ is\ it\ all\ in\ my\ head\ !\ \ on\ YouTube.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Watch.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/Women\ in\ tech\ podcast.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/World\ war\ in\ the\ balance\ audible.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/go_to_rust_mistake_theo.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/perimeter_puzzle.md ./tasks/abandoned/too\ much\ work\ for\ reward/from_keep/q1bs0pmcuk661.png\ \(1292Ãƒ·765\).md ./tasks/done/completed\ learned\ something/Find\ a\ cleaning\ service.md ./tasks/done/completed\ learned\ something/Toilet\ flush\ repair.md ./tasks/done/completed\ successfully/Dinner\ with\ Adam.md ./tasks/done/completed\ successfully/Do\ Declaration\ of\ my\ transition\ plan.md ./tasks/done/completed\ successfully/Janet.md ./tasks/done/completed\ successfully/Peanut\ groomed.md ./tasks/done/completed\ successfully/We\ solve\ Murders.md ./tasks/done/completed\ unexciting/CANCEL\ UNISUPER.md ./tasks/done/completed\ unexciting/Document\ OOO\ \&\ Holidays.md ./tasks/done/completed\ unexciting/File\ Ann\ receipts\ with\ Bupa.md ./tasks/done/completed\ unexciting/Getting\ off\ the\ treadmill\ of\ life.md ./tasks/done/completed\ unexciting/Online\ shopping\ -\ Washes\ and\ Soaps\ from\ ages\ ago.md ./tasks/done/completed\ unexciting/PRs.md ./tasks/done/completed\ unexciting/Possibly\ unpaid\ bills.md ./tasks/done/completed\ unexciting/Spring\ clean\ wardrobe.md ./tasks/todo/home/Clean\ air\ conditioning.md ./tasks/todo/home/Cook\ Braised\ Lamb\ Ragu.md ./tasks/todo/home/Groceries.md ./tasks/todo/home/Laundry\ \&\ Folding.md ./tasks/todo/home/Perry\ Street\ Lounge\ TV\ fix\ or\ replacement.md ./tasks/todo/home/Read\ Types\ and\ Programming\ Languages\ Books.md ./tasks/todo/laptop\ or\ phone/CLI\ histogram\ of\ git\ diff\ stats.md ./tasks/todo/laptop\ or\ phone/Find\ Physical\ Disability\ Support\ groups.md ./tasks/todo/laptop\ or\ phone/Order\ meds.md ./tasks/todo/laptop\ or\ phone/Read\ MECFS\ docs.md ./tasks/todo/laptop\ or\ phone/Read\ Rust\ Belts\ bugs\ out\ of\ Android.md ./tasks/todo/laptop\ or\ phone/Read\ about\ Control\ AI.md ./tasks/todo/laptop\ or\ phone/Read\ about\ Sharding\ type\ systems.md ./tasks/todo/laptop\ or\ phone/Research\ reading.md ./tasks/todo/laptop\ or\ phone/Safe\ Relational\ Database\ Queries\ using\ the\ Rust\ type\ system.md ./tasks/todo/laptop\ or\ phone/Trans\ Voice\ Lessons.md ./tasks/todo/laptop\ or\ phone/Write\ to\ Barry\ Jay\ or\ Ben\ Lipmeier\ about\ a\ PhD\ by\ publication\ part\ time\ in\ programming\ language\ theory.md ./tasks/todo/laptop\ or\ phone/mE\ cfs\ MRI\ study\ of\ brain\ after\ voluntary\ triggering\ of\ PEm.md ./tasks/todo/laptop/Asset\ Review.md ./tasks/todo/laptop/Blog\ Posts/Build\ orchestration.md ./tasks/todo/laptop/Blog\ Posts/Distributed\ systems.md ./tasks/todo/laptop/Blog.md ./tasks/todo/laptop/Compilers/Learn\ LLVM.md ./tasks/todo/laptop/Compilers/Learn\ about\ Unpoly.md ./tasks/todo/laptop/Compilers/Tako/Compiler\ Design.md ./tasks/todo/laptop/Compilers/Tako/Reddit\ PL\ feature\ -\ Unnest\ scopes.md ./tasks/todo/laptop/Compilers/Tako/Rosetta\ Parser\ stuff.md ./tasks/todo/laptop/Compilers/Tako/TreeSitter\ Rust\ Matching\ on\ Node\ Kind\ ID.md ./tasks/todo/laptop/Conky\ setup.md ./tasks/todo/laptop/Content\ Management\ Tool.md ./tasks/todo/laptop/Dual\ boot\ LE\ Windows.md ./tasks/todo/laptop/Empty\ and\ remove\ OneTab.md ./tasks/todo/laptop/Fix\ Linak\ controller.md ./tasks/todo/laptop/Low\ priority/Firefox\ Tabs.md ./tasks/todo/laptop/Low\ priority/Read\ about\ LAVD\ Scheduler.md ./tasks/todo/laptop/Low\ priority/ToolBot.md ./tasks/todo/laptop/Low\ priority/chronic\ health\ wiki.md ./tasks/todo/laptop/Name\ change\ recommendations.md ./tasks/todo/laptop/Notes\ I\ updated\ today\ automation.md ./tasks/todo/laptop/Obsidian\ automation\ -\ turn\ public\ YouTube\ playlists\ into\ notes.md ./tasks/todo/laptop/Online\ Classes.md ./tasks/todo/laptop/Pick\ and\ Place\ Workshop\ robot.md ./tasks/todo/laptop/Read\ Heroes\ of\ the\ Computer\ Revolution.md ./tasks/todo/laptop/Read\ about\ Architectural\ Styles\ and\ Network\ based\ Software\ Architecture.md ./tasks/todo/laptop/Read\ or\ watch\ Computer\ Enhance.md ./tasks/todo/laptop/Rust\ Reading.md ./tasks/todo/laptop/SKFL/Configs.md ./tasks/todo/laptop/SKFL/Custom\ Build\ vs\ Oryx.md ./tasks/todo/laptop/SKFL/Edge\ Text.md ./tasks/todo/laptop/SKFL/Follow\ up\ Azure\ Build\ issues.md ./tasks/todo/laptop/SKFL/Minimap.md ./tasks/todo/laptop/SKFL/More\ Search\ actions.md ./tasks/todo/laptop/SKFL/Node\ Extractor\ and\ Search\ \ component.md ./tasks/todo/laptop/SKFL/SKFL\ Tasks.md ./tasks/todo/laptop/SKFL/SWA\ Upload\ timed\ out.md ./tasks/todo/laptop/SKFL/TS\ CLIs\ for\ Monorepos.md ./tasks/todo/outings/Blue\ mountains\ holiday.md ./tasks/todo/outings/Kiki\'s\ Cafe.md ./tasks/todo/outings/Linda\ and\ Skye\ Coffee.md ./tasks/todo/outings/Return\ old\ birth\ cert.md ./tasks/todo/relaxing/Books.md ./tasks/todo/relaxing/Break.md ./tasks/todo/relaxing/From\ TV\ show.md ./tasks/todo/relaxing/Guitar/Learn\ the\ moon\ will\ sing\ by\ the\ Crane\ Waves.md ./tasks/todo/relaxing/Improve\ Rubik\'s\ cube\ algorithms.md ./tasks/todo/relaxing/Keyboard\ building.md ./tasks/todo/relaxing/Listen\ to\ Lost\ terminal.md ./tasks/todo/relaxing/Podcasts.md ./tasks/todo/relaxing/teddy\ bear\ mimic\ swarm.md ./tasks/todo/when\ better/Buy\ a\ motorbike.md ./tasks/todo/when\ better/Compilers\ goals\ and\ action\ items.md ./templates/composer\ template.md ./templates/diary\ template.md ./templates/todo\ template.md 
+git grep " $" | tr "\n" "\0" | xargs -0 -I{} sed -i "s/  *$//" {}
+git grep " $" | sed "s/:.*$//" | tr "\n" "\0" | xargs -0 -I{} sed -i "s/  *$//" {}
+git grep " $" | sed "s/:.*$//" | grep -v "^Binary file" | sort | uniq | tr "\n" "\0" | xargs -0 -I{} sed -i "s/  *$//" {}
+git checkout .obsidian
+git grep " $"
+git grep " $" | sed "s/:.*$//" | grep -v "^Binary file" | sort | uniq
+v templates/diary\ template.md
+rm .git/objects/76/28cc02d2545a1f37c5cefcca949f813d919bfb
+cd todo
+a ..
+git ls-files | wc -l
+git ls-files | xargs wc -l
+git ls-files | xargs -0 wc -l
+git ls-files | tr "\n" "\0"xargs -0 wc -l
+git ls-files | tr "\n" "\0"| xargs -0 wc -l
+git ls-files | tr "\n" "\0"| xargs -0 wc -l | sort -n
+git ls-files | grep "\.md$" | tr "\n" "\0" | xargs -0 wc -l | sort -n
+cd tasks/todo/laptop
+ls **/*.md
+ls **/*.md *.md | sort | uniq | wc -l
+mkdir projects
+cd todo/laptop
+cd Compilers
+cd Tako
+vim Compiler\ Design.md Reddit\ PL\ feature\ -\ Unnest\ scopes.md Rosetta\ Parser\ stuff.md TreeSitter\ Rust\ Matching\ on\ Node\ Kind\ ID.md 
+rmdir Tako
+vim Learn\ LLVM.md Learn\ about\ Unpoly.md 
+rmdir Compilers
+a ../..
+m "Start on moving laptop tasks to projects"
+l
+vim ~/src/notes/tasks/TODOs.md
+cd Blog\ Posts
+rmdir Blog\ Posts
+vim *
+mv SKFL ~/src/notes/tasks/projects
+v Blog.md
+mv Blog.md ~/src/notes/tasks/projects
+a ../../..
+cd Low\ priority
+rmdir Low\ priority
+less *
+ls | xargs -I{} sed -i "0,//^/- [ ] {} #laptop\n/" {}
+a ../../
+ls | xargs -I{} sed -i "0,//s/^/- [ ] {} #laptop\n/" {}
+ls | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #laptop\n/" {}
+ls | grep"\.md$" | sed "s/\.md$//" | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #laptop\n/" {}.md
+ls | grep "\.md$" | sed "s/\.md$//" | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #laptop\n/" {}.md
+rmdir laptop
+cd home
+ls | grep "\.md$" | sed "s/\.md$//" | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #home\n/" {}.md
+rmdir home
+cd laptop\ or\ phone
+ls | grep "\.md$" | sed "s/\.md$//" | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #phone #laptop\n/" {}.md
+rmdir laptop\ or\ phone
+cd relaxing
+ls | grep "\.md$" | sed "s/\.md$//" | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #relaxing\n/" {}.md
+ls -0 | grep "\.md$" | sed "s/\.md$//" | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #relaxing\n/" {}.md
+ls --quote-name | grep "\.md$" | sed "s/\.md$//" | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #relaxing\n/" {}.md
+ls --quoting-style=literal | grep "\.md$" | sed "s/\.md$//" | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #relaxing\n/" {}.md
+ls --quoting-style=escape | grep "\.md$" | sed "s/\.md$//" | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #relaxing\n/" {}.md
+ls --format=single-column
+ls --format=verbose
+ls --format=ver
+ls --format=vertical
+ls --quoting-style=c
+ls --quoting-style=c | sed "s/\"//g" | grep "\.md$" | sed "s/\.md$//" | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #relaxing\n/" {}.md
+ls --quoting-style=c | sed "s/\"//g" | grep "\.md$" | sed "s/\.md$//" | xargs -I{} sed -i "0,/^/s/^/- [ ] {} #relaxing\n/" "{}.md"
+ls --quoting-style=c | sed "s/\"//g" | grep "\.md$" | sed "s/\.md$//" | tr "\n" "\0" | xargs -0 -I{} sed -i "0,/^/s/^/- [ ] {} #relaxing\n/" "{}.md"
+rmdir relaxing
+cd outings
+ls --quoting-style=c | sed "s/\"//g" | grep "\.md$" | sed "s/\.md$//" | tr "\n" "\0" | xargs -0 -I{} sed -i "0,/^/s/^/- [ ] {} #out\n/" "{}.md"
+d .
+vim Linda\ and\ Skye\ Coffee.md
+mv * ~/src/notes/tasks/projects
+rmdir outings
+cd when\ better
+vim Buy\ a\ motorbike.md
+mv Buy\ a\ motorbike.md ~/src/notes/tasks/projects
+vim Compilers\ goals\ and\ action\ items.md
+mv Compilers\ goals\ and\ action\ items.md ../../projects
+rmdir when\ better
+rmdir todo
+ls projects
+cd Guitar
+v *
+mv Learn\ the\ moon\ will\ sing\ by\ the\ Crane\ Waves.md ..
+rmdir Guitar
+ls S
+ls SKFL
+cd SKFL
+ls | grep -v SKFL
+ls | grep -v SKFL | rename "s/(.*)/SKFL \1/"
+ls | grep -v SKFL | xargs rename "s/(.*)/SKFL \1/"
+ls | grep -v SKFL | xargs -I{} rename "s/(.*)/SKFL \1/" {{
+ls | grep -v SKFL | xargs -I{} rename "s/(.*)/SKFL \1/" {}
+rename --help
+man rename
+ls | grep -v SKFL | xargs -I{} rename "" "SKFL" {}
+rename "SKFL" "SKFL " *
+rename "SKFL  " "SKFL " *
+mv * ..
+rmdir SKFL
+mv mE\ cfs\ MRI\ study\ of\ brain\ after\ voluntary\ triggering\ of\ PEm.md ME\ CFS\ MRI\ study\ of\ brain\ after\ voluntary\ triggering\ of\ PEm.md
+vim projects/Break.md
+mv projects/Break.md .
+vim projects/Research\ reading.md
+vim projects/Podcasts.md
+cd done
+le
+ls ramblings
+v Books.md
+v tasks/projectsBooks.md
+v tasks/projects/Books.md
+git grep "[0-9]*spoons?"
+git grep "[0-9]+spoons?"
+git grep "#\[0-9\]+spoons?"
+git grep -e "#\[0-9\]+spoons?"
+git grep -e "#[0-9]+spoons?"
+git grep -e "#[0-9]\+spoons?"
+git grep -e "#\[0-9\]\+spoons?"
+git grep -e "#\[0-9\]\+spoon"
+git grep "[0-9]+spoon"
+git grep "[0-9]*spoon"
+git grep "[0-9][0-9]*spoon"
+git grep "#[0-9][0-9]*spoon"
+git grep "#[0-9][0-9]*spoon" | sed "s/.*: *- *(.*)#(.*)/\2 - \1/
+git grep "#[0-9][0-9]*spoon" | sed "s/.*: *- *(.*)#(.*)/\2 - \1/"
+git grep "#[0-9][0-9]*spoon" | sed "s/.*: *- *\(.*\)#\(.*\)/\2 - \1/"
+git grep "#[0-9][0-9]*spoon" | sed "s/.*: *- *\(.*\)#\([^ ]*\)/\2 - \1/"
+git grep "#[0-9][0-9]*spoon" | sed "s/.*: *- *\(.*\)#\([^ ]*\)/\2 - \1/" | sort -n
+git grep "#[0-9][0-9]*spoon" | sed "s/.*: *- *\(.*\)#\([^ ]*\)/\2 - \1/" | sort -n | uniq
+git grep "#[0-9][0-9]*spoon" | sed "s/.*: *- *\(.*\)#\([^ ]*\)/\2 - \1/" | sort -n | uniq > spoon_tracking.md
+cat spoon_tracking.md| sort | uniq > spoons.md
+rm spoon_tracking.md
+cat spoons.md| sort -n | uniq > spoons2.md
+mv spoons2.md spoons.md
+z n
+gh repo
+mkdor yt-bulk-summariser
+mkdir yt-bulk-summariser
+gh repo create
+mv yt-bulk-summariser/ ..
+mv yt-bulk-summariser/ ../yt-bulk-summariser2
+rmdir yt-bulk-summariser
+mv yt-bulk-summariser2 yt-bulk-summariser
+cd yt-bulk-summariser
+up;p
+git up
+which up
+git branch --set-upstream-to=origin
+git log origin/main
+git remote add origin git@github.com:Cypher1/yt-bulk-summariser.git
+git commit origin/main
+git branch -d main
+git checkout -b main
+cat README.md
+cat test_result.md
+ls memory
+ls backend
+ls test_reports/pytest/
+ls tests/__init__.py
+cat ls tests/__init__.py
+cat tests/__init__.py
+ls frontend
+cat auth_testing.md
+vim backend/server.py
+sybc
+s6bc
+v me/diary/2026-03-05.md
+ls Firefox\ Tabs.md
+cat Firefox\ Tabs.md | sort
+cat Firefox\ Tabs.md | sort | uniq | wc -l
+cat Firefox\ Tabs.md | sort  wc -l
+cat Firefox\ Tabs.md | sort | wc -l
+cat Firefox\ Tabs.md | sort | uniq > tabs.md
+mv tabs.md Firefox\ Tabs.md
+D tasks/projects/Firefox\ Tabs.md
+z proj
+v tasks/projects/Firefox\ Tabs.md
+v Firefox\ Tabs.md
+rm .git/objects/58/e696f78f6a32c6d7b5e56c6982a892585ef802
+e
+s | grep A
+s | grep "^A"
+git status | grep "^A"
+git status --short | grep "^A"
+git status --short | grep "^A" | sed "s/\([^\/]*)$/\1/"
+git status --short | grep "^A" | sed "s/\([^\/]*\)$/[[\1]]/"
+git status --short | grep "^A" | sed "s/.*\([^\/]*\)$/[[\1]]/"
+git status --short | grep "^A" | sed "s/.*\/\([^\/]*\)$/[[\1]]/"
+git status --short | grep "^A" | sed "s/.*\/\([^\/]*\)\.md$/[[\1]]/"
+git status --short | grep "^A" | sed "s/.*\/\([^\/]*\)\.md"?$/[[\1]]/"
+git status --short | grep "^A" | sed "s/.*\/\([^\/]*\)\.md\"?$/[[\1]]/"
+git status --short | grep "^A" | sed "s/.*\/\([^\/]*\)\.md\"\?$/[[\1]]/"
+git status --short | sed "s/.*\/\([^\/]*\)\.md\"\?$/[[\1]]/"
+rm .git/objects/76/5e9121704d3434e08f4e6bf26321e03c48ea22
+rm .git/REBASE_HEAD.lock
+v me/diary/2026-03-14.md
+git log HEAD~1 week
+git diff @{1 week ago}
+git diff "@{1 week ago}"
+git diff --stat "@{1 week ago}"
+git diff --stat "@{2 days ago}"
+z np
+v tasks/projects/Online\ Classes.md
+qrm .git/objects/b9/ad8e3dd3e13513c8bbfd1f7aacda49588798e9
+rm .git/objects/b9/ad8e3dd3e13513c8bbfd1f7aacda49588798e9
+rm .git/objects/cf/c55f5053d58a32343bfaef933bb303562fba71
+g8t fsck
+git prune --remote
+git prune --progress
+git prune --expire "$(date %S)"
+git prune --expire "$(date +%S)"
+git prune --expire 33
+git reflog expire --expire-unreachable=now --all
+git gc
+vim tasks/TODOs.md
+rm .git/objects/61/bb6757110550d2462fca0c5d7936e60f6e885d
+git fsxk
+s.
+z no;sn
+mv *.pdf documents
+mv Pasted\ image\ 20260315113718.jpg assets
+mv IMG_20260314_175742_544.jpg assets
+mv Sydney\ flooding.md kb/engineering/incidents
+rm .git/objects/b7/dcf45bb0b055b9678a55183338ea2f59791a04
+m
+git commit
+cat Apkudo.md
+rm .git/objects/18/a8395f0311716132f7e3e072b31c60f7853f2c
+git pull
+git rebase --continue
+rm Apkudo.md
+git diff main
+git rebase --edit-todo
+vme/diary/2026-03-19.md
+v me/diary/2026-03-19.md
+mv Charon.md kb/space
+cat quotes\ from\ my\ youth.md
+bat quotes\ from\ my\ youth.md
+mv quotes\ from\ my\ youth.md me/
+rm .git/objects/**/*
+rm -r .git/objects/**/*
+rm -r .git/objects/*
+rm -r .git/objects
+mkdir .git/objects
+rm -r .git
+git fetch --depth 1
+sync
+ul
+which ul
+man ul
+git merge origin/main
+brn new
+git checkout new -- .
+git branch -D new
+git unshallow
+git fetch --unshallow
+git log --oneline| wc -l
+sb
+smnn
+v src/notes/tasks/projects/Firefox\ Tabs.md
+z n9
+v ~/.ssh/known_hosts
+crobtab -e
+cron
+pkg install cronie termux-services; SV-enable crond;\
+crontab -e
+sv-enable --help
+sv-enable -h
+cat ~/.config/crontab
+rm .git/objects/d5/78bd2edfd38f03ac06c5c7f2a2ad2839b557eb
+m "Generate missing daily notes"
+git reset .
+a .obsidian/
+m Plugins
+git fe5ch
+rm .git/objects/76/072216e017942566ebaaeaf45b47f11bab7524
+rm .git/objects/2c/9b309738952ef9fef66efef316108cb9eb8612
+which an
+date +%S
+date +%s
+cronnext -h
+cat $(which sync_notes)
+~/.config/bin/sync_notes 
+head ~/.config/bin/sync_notes 
+exiy
+which zsh
+bash
+~/.config/bin/sync_notes
+zsh ~/.config/bin/sync_notes
+git reset HEAD~
+git push --hard
+git push --force
+vim ~/.config/bin/sync_notes
+sv-enable -l
+sv-enable crond
+crond
+crontab
+crontab -l
+cronnext
+grep CRON /var/log/syslog
+sv up crond
+svlogd
+man sv
+man sv-enable
+zsh /home/ellie/.config/bin/sync_notes"
+zsh /home/ellie/.config/bin/sync_notes
+realpath ~/.config/bin/sync_notes
+watch s
+watch git status
+date
+man cron
+ls /data/data/com.termux/files/home/.config/bin/sync_notes
+chmod +x /data/data/com.termux/files/home/.config/bin/sync_notes
+less +F ~/.cronlog
+crontab -e
+1
+sv-disable crond
+sv
+cronnext -l
+cat ~/.cronlog
+mv .git ..
+mv ../.git .
+cd NotesSync
+git config --global --add safe.directory /storage/emulated/0/NotesSync
+rm -rf notes
+ln -s ../storage/shared/NotesSync notes
+cd notes
+git reset HEAD~ --hard
+rm .git/objects/*
+rm .git/objects/**
+rm -r .git/objects/**
+git reset HEAD~2 --hard
+git grep priority
+git grep priority | grep \.md
+git grep priority | grep "\.md:"
+git grep "priority is" | grep "\.md:"
+git grep "priority " | grep "\.md:"
+git grep " priority " | grep "\.md:"
+git log -p " priority"
+git log -p | grep " priority"
+git log -p | grep "priority.*low"
+git log -p me | grep "priority.*low"
+git log -p me | grep "priority.*"
+git log -p me | grep "priority.*" | sort | uniq
+git log -p tasks/TODOs.md
+wc -c .git/objects/**/* | less
+wc -c .git/objects/*/* | less
+wc -c .git/objects/*/* | grep "0 .git"
+wc -c .git/objects/*/* | grep " 0 .git"
+wc -c .git/objects/*/* | grep "[^0-9]0 .git"
+cd pro
+echo tasks/projects/tako >> .gitignore
+rn -rf .smart-env
+rm -rf .smart-env
+cd tasks/projects
+git clone https://github.com/Cypher1/tako tako
+../..
+git submodule add tasks/projects/tako
+git submodule add ./tasks/projects/tako
+git submodule status
+m "Add tako project to include tako's notes"
+v me/diary/2026-03-29.md
+rm -rf *
+git clone https://github.com/Cypher1/tako .
+git config --global --add safe.directory /storage/emulated/0/NotesSync/tasks/projects/tako
+rm -rf .git/objects/**/*
+git gc --prune=now
+git pull --rebase
+git remote show oru
+git remote show origin
+curl -d "Hi ellie" ntfy.sh/ellie_logos
+curl ntfy.sh/ellie_logos
+curl -X PULL ntfy.sh/ellie_logos
+curl -s ntfy.sh/ellie_logos
+curl -s ntfy.sh/ellie_logos/raw
+curl ntfy.sh/ellie_logos/raw
+man curl
+curl -d "Hi ellie (again)" ntfy.sh/ellie_logos/16k7TSzp5Q3X
+curl -d "Hi ellie (again again)" ntfy.sh/ellie_logos/16k7TSzp5Q3X
+curl -d "Hi ellie (again 3)" ntfy.sh/ellie_logos/16k7TSzp5Q3X
+curl -d "Hi ellie (again)" ntfy.sh/ellie_logos
+less BG1rGF7QrVkI
+v 24HuOllJAbzP
+v 7otVqVRsyQ8J
+bat -l markdown 7otVqVRsyQ8J
+v zeoNbFJlH3PJ
+p hoare
+git log --oneline hoare
+p hoare_design_work
+bd hoare
+bd loopedDescent
+git push -d hoare
+git push -d origin/hoare
+git log -d
+git log -0p
+gl --first-parent
+gl --first-parent --oneline
+git log origin/adapton
+git log origin/adapton -0
+git log origin/adapton -p
+git log --oneline
+git log --oneline origin/hoare
+git log --oneline -p origin/hoare
+git diff origin/hoare
+git prune
+git log origin/qbice
+git log origin/qbuice
+git push -d origin/qbuice
+git push -d qbuice
+git branch -D origin/qbuice
+git branch -D --remote origin/qbuice
+git branch
+git branch --remote -D origin/hoare_design_work
+git branch --remote
+brn deadlocks
+pkg install erl
+pkg install erlang
+erl
+pkg install liblz4
+pkg install lz4
+aarch64-linux-android-gcc
+pkg dearch bzop
+pkg install bzip2
+pkg search libbz2
+cargo clean
+llvm-ar
+pkg search binutils
+pkg install binutils
+AR=llvm-ar cargo check
+aarch64-linux-android-gcc "-E" "/data/data/com.termux/files/home/.cargo/target/debug/build/zstd-sys-5b7cae97d9d2b0a8/out/14887494683384725282detect_compiler_family.c"
+ls aarch64-linux-android-gcc "-E" "/data/data/com.termux/files/home/.cargo/target/debug/build/zstd-sys-5b7cae97d9d2b0a8/out/14887494683384725282detect_compiler_family.c"
+ls "/data/data/com.termux/files/home/.cargo/target/debug/build/zstd-sys-5b7cae97d9d2b0a8/out/14887494683384725282detect_compiler_family.c"
+cargo check --debug
+cargo check --dev
+cargo build --help
+cargo build --dev
+cargo check -r
+rm -rf qbice
+git branch -d origin/qbuicr
+git branch -d origin/qbuice
+git branch -d origin/qbuicr --remote
+git branch -d origin/qbuice --remote
+git branch -vv
+which _b
+git branch -a
+git branch -a --format='%refname:short)'
+git branch -a --format='%(refname:short)'
+which _p
+_p
+_p_options
+p origin/qbice
+which p
+branch
+git checkout qbice
+git@github.com:Cypher1/qbice.git
+cd qbice
+git remote add upstream git@github.com:simmypeet/qbice.git
+git remote fetch upstream
+git fetch upstream
+git log upstream/concurrency
+gl --oneline upstream/concurrency
+gl -p upstream/concurrency
+cd crates
+cargo build --features
+cargo build --features []
+cargo build --features ""
+vim qbice/Cargo.toml
+cd crates/qbice
+brn no_storage
+z qb
+vim crates/qbice/Cargo.toml
+git commit --
+pa
+git diff origin/master
+v crates/qbice/src/config.rs +22
+cx tasks/projects/t
+cx tasks/projects/tako
+git reset 
+git checkout origin/main
+m Update\ tako
+v me/diary/2026-04-29.md
+z tak9
+../qbice
+git grep lz4
+cargo tree --invert lz4
+cargo tree --invert lz4-sys
+vim Cargo.toml
+m Fmt
+vim ../qbice/crates/qbice/Cargo.toml
+git remote -b
+git remote -blv
+p origin/no_storage
+p no_storage
+git branch -D no_storage
+git checkout -b no_storage
+git diff HEAD~2
+git log -0
+git diff origin/main
+git log hoare_design_work
+git log hoare_design_work -0
+git log hoare_design_work -p
+git diff hoare_design_work origin/main -p
+bd hoare_design_work
+p main;p
+pkg install unita
+pkg install units
+units
+units 20lbs -h
+python
+units -1 20lbs kg
+units -h
+units -1 --compact  20lbs kg
+units 20lbs
+units 20lbs --compact
+units 20lbs kg
+units 20lbs kg -1
+units 20lbs kg --compact
+units 20lbs kg --compact -1
+pkg search bzip
+apt search bzip
+pkg install libzip
+pkg install libzip-dev
+cargo build --no-default-features
+ls target
+ls target/nextest/default
+rmdir target/nextest/default
+rmdir target/nextest
+rmdir target
+git grep InMemoryStorageEngine
+vim takolib/src/compiler.rs
+m "Replace new with instance"
+v takolib/src/compiler.rs +80
+vim test.py
+python test.py
+ps
+ma0
+git diff origin/$(branch)
+v takolib/src/ qbice_repro_volatile.rs+133
+v takolib/src/qbice_repro_volatile.rs +133
+cargo check --package=takolib --no-default-features
+v takolib/src/lib.rs +36
+v takolib/src/lib.rs +75
+git grep InMemoryDBConfig
+v takolib/src/qbice_repro_volatile.rs +133 takolib/src/compiler.rs
+v takolib/src/qbice_repro_volatile.rs +127
+git diff origin/main tako*
+git diff origin/main takolib/src/
+git diff origin/main takoweb
+m "New ID for qbice llvm"
+v .github/workflows/takolib.yml
+m "Setup env vars for both LLVM versions"
+m "Use LLVM 18 to match mlir-sys"
+git grep melior
+git grep mlir
+cargo update --package=takolib inkwell
+cargo update inkwell
+m "Drop unused dep Melior"
+git rebase HEAD~3 -i
+git commit --amend --no-edit
+cargo tree | grep llvm
+vim takolib/Cargo.toml
+cargo tree --features "llvm" --invert llvm-sys
+git grep "18\.?1\.?4"
+git grep "18\.?1\.?4?"
+git grep "18\.\?1\.\?4\?"
+git grep "18\."
+git grep "18\.?"
+git grep "18\.\?"
+git grep -E "18\.\?"
+git grep -E "18\.?"
+git grep -E "18\.?11"
+git grep -E "18\.?1"
+PG
+m "Add libtinfo5 for llvm"
+v .github/workflows/tako.yml .github/workflows/takolib.yml .github/workflows/takoweb-pages.yml .github/workflows/takoweb.yml 
+git commit --amend --no-edit;PF
+p update
+v tako/src/ui/http.rs
+git rebase HEAD~11 -i
+up origin/update
+rm Cargo.lock
+v tako/Cargo.toml takobench/Cargo.toml takolib/Cargo.toml takoweb/Cargo.toml takoweb/Trunk.toml 
+dig https://www.caringapproach.com.au/abo
+dig www.caringapproach.com.au
+dig caringapproach.com.au
+whois caringapproach.com.au
+p qbice
+bd update
+bD update
+p switch_to_qbice
+bd qbicr
+bd qbice
+bd main
+v takolib/src/compiler.rs
+pP
+git branch -D ma8n
+rm .git/objects/8b/73e38514770ee0a7bb29b3640810e784a0f34d
+git fsck
+rm .git/objects/
+ls .git
+rm -rf .git
+git branch -D main
+git checkout main
+git reset .obsidian/
+git checkout .obsidian/
+pkg install imagemagick
+identify downloads/PXL_20260510_012853246.jpg
+man identify
+sudo apt install libimage-exiftool-perl
+apt install libimage-exiftool-perl
+pkg install exiftool
+exif PXL_20260510_012853246.jpg
+identify ./storage/dcim/Camera/PXL_20260510_012853246.jpg
+pkg search exif
+exiftool ./downloads/PXL_20260510_012853246.jpg
+pkg search libimage-exiftool-perl
+pkg search image-exiftool-perl
+pkg search image-exiftoo
+pkg search image-exiftool
+pkg search iexiftool
+pkg search exiftool
+exiftool -v
+perl
+rm -rf * .*
+z not
+git fetch origin
+rm -rf .git/objects/
+rm -rf .git/
+git init ..
+rm ../.git
+rm -rf ../.git
+git init .
+git remote add origin git@github.com:Cypher1/notes.git
+git branch --set-upstream-to=origin/main
+git reset --hard .
+git reset --hard
+rm -rf tasks
+brn old
+rm -rf .gitattributes .gitignore .mailmap .obsidian
+rm .gitmodules
+git checkout origin/main -b main
+bD old
+map
+cat ~/.ssh/id_rsa
+cd ./storage/shared/Documents
+mv Documents Notes
+mkdir Documents
+git fetch
+git config --global --add safe.directory $(pwd)
+vim ~/
+0wd
+cd tasks/projects/tako
+git config --global --add safe.directory /storage/emulated/0/Notes/tasks/projects/tako
+git brn main
+cd projects/tako
+git commit -m init
+vim ~/.gitconfig
+git dad
+git add .
+m "Init"
+git config --global user.email "ellie@skfl.tech"
+git config --global user.name "Ellie Pratt"
+git fetxh
+p main
+...
+m "Set tako to main"
+ping my.ndis.gov.au
+dig my.ndis.gov.au
+ta
+git reset
+git rebase --abort
+which edit
+git status --porcelain --null | tr '\0' '\n' | sed "s/[A-Z]* *\(.*\)$/\1/" | sed "s|^|$ROOT/|"
+git status --porcelain --null | tr '\0' '\n' | sed "s/[A-Z]* *\(.*\)$/\1/"
+git status --porcelain --null | tr '\0' '\n'
+git status --porcelain --null | tr '\0' '\n' | sed "s/[A-Z? ]* *\(.*\)$/\1/"
+v me/diary/2026-05-18.md
+v .obsidian/plugins/recent-files-obsidian/data.json
+git grep "<<<<<"
+v me/diary/2026-05-18.md me/diary/2026-05-12.md
+git stash drop
+pkg i clinfo vulkan-tools
+vulkaninfo
+glxinfo | grep "OpenGL renderer"
+which sn
+which sync_notes
+vim $(which sync_notes)
+pwd
+realpath $(pwd)
+git config --global --add safe.directory /storage/emulated/0/notes
+git fetxh ssh
+cd ../storage/shared/Download
+python -m http.server
+v demo.html
+m "Implement Lex Query Executor"
+m "Implement stub of ParseFrontMatter Query Executor"
+p $(branch)
+cat ~/.ssh/id_rsa | termux-clipboard-set
+sn
+git submodule add git@github.com:Cypher1/tako.git tasks/projects/tako
+gl
+z t
+cd ../qbice
+cqrgo tear
+cqrgo test
+git grep bzip
+cargo tree --invert bzip2
+cargo tree --invert bzip2-sys
+cargo tree --no-default-features --invert bzip2-sys
+cargo tree --no-default-features | less
+cargo build --no-default-features --features 
+git grep features
+cat crates/qbice/Cargo.toml
+cargo tree --no-default-features --features "fjall" --invert bzip2-sys
+cargo tree --no-default-features --features "fjall" | less
+cargo build --no-default-features --features "fjall" 
+cd ../tako
+v takolib/src/queries/executors.rs takolib/src/queries/mod.rs 
+v takolib/src/queries/executors.rs takolib/src/queries/mod.rs takolib/parser/mod.rs
+v takolib/src/queries/executors.rs takolib/src/queries/mod.rs takolib/src/parser/mod.rs
+git grep file\.display
+fh
+v takolib/src/lowerer/mod.rs
+cargo fmt --all
+v takolib/src/desugarer/mod.rs
+git grep to_path_buf
+git grep "trait"
+git grep "trait Tasl"
+v takolib/src/tasks/task_trait.rs
+git grep "trait Task"
+git grep has_file_path
+v tako/src/main.rs takolib/src/tasks/tast_trait.rs
+cargo check --fix
+cargo clippy --fix
+up $(branch)
+v takolib/src/interpreter.rs +50
+v "takolib/src/tasks/{mod, task_trait}.rs"
+v "takolib/src/tasks/{mod|task_trait}.rs"
+v takolib/src/tasks/mod.rs takolib/src/tasks/tast_trait.rs
+v takolib/src/ui/client.rs
+v takolib/src/ui/mod.rs
+v takolib/src/ui/client.rs +444
+v takolib/src/ui/client.rs +95
+v takolib/src/ast/location.rs +70
+v takolib/src/ast/location.rs +78
+v 
+v clippy.toml Cargo.toml
+v clippy.toml
+v search.py
+python search.py
+cat search_results.txt
+cat search_results.txt | termux-clipboard-set
+v takolib/src/queries/executors.rs
+a
+v takolib/src/queries/executors.rs +532
+ffg
+v takolib/src/queries/executors.rs +508
+v takolib/src/queries/executors.rs +407
+tfg
+v takolib/src/queries/executors.rs +381
+git log --stat
+git diff origin/main --stat
+z ta
+z tak
+v
+cargo clippy
+cargo test
+cargo nextest
+cargo nextest list
+git grep Container
+gh pr view -w
+v takolib/src/engine.rs +93
+cargo check --package=takolib --no-default-features --features "wasm"
+z no
+z No
+git remote add ssh git@github.com:Cypher1/notes.git
+git remote add http https://github.com/Cypher1/notes.git
+z tako;p
+up origin/$(branch)
+cargo nextest run
+git grep cache
+git grep tmp
+git grep temp
+git stash pop
+v takolib/Cargo.toml
+which v
+cat $(which zed)
+which _zed
+fned
+zed fned
+which _vi
+zplug lis5
+zplug list
+zplug check
+zrx
+zplug info
+zplug info zsh-users/zsh-completions
+v zsh-completions.plugin.zsh
+v src/_cat
+v src/_emacs
+git grep _emacs
+git grep emacs
+which _v8m
+which _vim
+cd .zplug/repos/zsh-users/zsh-autosuggestions
+vim src/strategies/completion.zsh
+xd zsh-completions
+cd zsh-completions
+git grep _vim
+git grep vim
+git grep "vim.*)"
+which _nvim
+which _emacs
+cp _nvim _vim _vi
+cp _nvim _vim
+cp _nvim _vi
+cp _nvim _v
+cd .zplug/repos/zsh-users/zsh-completions
+v /data/data/com.termux/files/usr/bin/nvim
+cat which nvim
+cat $(which nvim)
+v /data/data/com.termux/files/usr/libexec/nvim/nvim"
+v /data/data/com.termux/files/usr/libexec/nvim/nvim
+which z3e
+rm /data/data/com.termux/files/home/.config/bin/zed
+ed
+vim
+zed
+m "Avoid duplicate repo, remove zed script, add zed alias"
+bacon chec
+which zed
+which zed 2> /dev/null
+which fzed 2> /dev/null
+which fzed 1> /dev/null
+which zed | which nvim
+which zed | which nvimf
+which zed || which nvim
+which zed || which nvim || which emacs
+which zed || which nvim || which emacs | tail -n 1
+echo -e "$(which zed || which nvim || which emacs)" | tail -n 1
+echo $files
+git grep BinaryDescription
+git grep BinaryDescription | sed "s/:.*//"
+git grep -n BinaryDescription | sed "s/:.*//"
+git grep -n BinaryDescription | sed "s/(:([0-9]+))?:.*/\2/"
+git grep -n BinaryDescription | sed "s/(:)?([0-9]+)?:.*/\2/"
+git grep -n BinaryDescription | sed "s/\(:\)?\([0-9]+\)?:.*/\2/"
+git grep -n BinaryDescription | sed "s/(:)?([0-9]+)?:.*$/\2/"
+git grep -n BinaryDescription | sed -e "s/(:)?([0-9]+)?:.*$/\2/"
+git grep -n BinaryDescription | sed "s/\(:\)?\([0-9]+\)?:.*$/\2/"
+git grep -n BinaryDescription | sed "s/^([^:]*:\)\([0-9]+:\)?.*$/\2/"
+git grep -n BinaryDescription | sed "s/^([^:]*:\)\([0-9]+:\)?.*$/\1\2/"
+git grep -n BinaryDescription | sed "s/^\([^:]*:\)\([0-9]+:\)?.*$/\1/"
+git grep -n BinaryDescription | sed "s/^\([^:]*:\)\([0-9]+:\)?.*$/\1\2/"
+git grep -n BinaryDescription | sed "s/^\([^:]*:\)\([0-9]\+:\)?.*$/\1\2/"
+git grep -n BinaryDescription | sed "s/^([^:]*:)\([0-9]\+:\)?.*$/\1|||\2/"
+git grep -n BinaryDescription | sed "s/^\([^:]*:\)\([0-9]\+:\)?.*$/\1|||\2/"
+git grep -n BinaryDescription | sed "s/^\([^:]*:\)\([0-9]\+:\)?.*$/\1/"
+git grep -n BinaryDescription | sed "s/^\([^:]*:\)\([0-9]\+:\)?.*$//"
+git grep -n BinaryDescription | sed "s/^\([^:]*:\)\([0-9]\+:\)\?.*$//"
+git grep -n BinaryDescription | sed "s/^\([^:]*:\)\([0-9]\+:\)\?.*$/\1/"
+git grep -n BinaryDescription | sed "s/^\([^:]*:\)\([0-9]\+:\)\?.*$/\1\2/"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):\([0-9]\+:\)\?.*$/\1\2/"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):\([0-9]\+\)\?:\?.*$/\1\2/"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):\([0-9]\+\)\?:\?.*$/\1+\2/"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):\([0-9]\+\)\?:\?.*$/\1/"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort -c
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | s9rt -n
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | cut -f2 -d"$TAB"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | cut -f2 -d"$(echo "\t")"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | cut -f2 -d"$(echo -e "\t")"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | cut -f2 -d"\t"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | cut -f2 -d"$(printf "\t")"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | cut -f2
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | cut
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | sed "s/\t[0-9]*//"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | sed "s/^\w*[0-9]* //"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | sed "s/^\w*[0-9]*//"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | column
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | columns
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | map
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | sed -e "s/^\w*[0-9]*//"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | sed "s/^[\t ]*[0-9]*//"
+git grep -n BinaryDescription | sed "s/^\([^:]*\):.*$/\1/" | sort | uniq -c | sort -n -r | sed "s/^[\t ]*[0-9]* //"
+git grep -n BinaryDescription
+git grep BinaryDescription | ge
+seq 10 
+seq 10 > a
+seq 15 > b
+vim a+4
+vim a +4 b +7
+ztako
+git grep -n BinaryDescription 
+which ge
+vim ~/src/greasy/greasy.zsh
+git grep -n BinaryDescription | ge
+z nvim
+m "Add vim fetch jump to line and column"
+z gre
+m "Use vim-fetch syntax to jump to file:line for editors like vim and zed"
+git lpg
+z .conf
+m "Fix for multi editor support";pP
+git grep -n --column BinaryDescription
+v ~/src/greasy/greasy.zsh
+gg BinaryDescription | ge
+vim passes.md todo.md
+git stash -0
+git stash -p
+v takolib/src/tasks/status.rs
+rm takolib/src/tasks
+rm takolib/src/tasks -r
+m "Remove tasks system"
+v takolib/src/lib.rs
+gg tasks:: | ge
+ssh ellie@lego
+ssh ellie@172.17.0.1
+cat ~/.ssh/id_rsa.pub|  nc -p 1234 192.168.4.53
+cat ~/.ssh/id_rsa.pub|  nc 192.168.4.53:1234
+cat ~/.ssh/id_rsa.pub|  nc 192.168.4.53 1234
+ssh-copy-id ellie@192.168.4.53
+ssh ellie@192.168.4.53
+ssh ellie@100.112.39.126:6666
+ssh ellie@172.18.0.1
+cd me/diary
+v 2026-07-09.md
+ssh ellie@100.112.39.126 -p 22
+ssh ellie@192.168.4.4 -X -Y
+ssh ellie@100.112.39.126 -p 6666
+z src
+git clone https://github.com/Cypher1/logos
+cd logos
+branches
+p rustKB
+pkg i pkg-config libssl-dev
+pkg search ssl
+pkg i openssl openssl-static
+cargo tree openssl-syz
+cargo tree openssl-sys
+cargo tree --inverted openssl-sys
+cargo tree --invert openssl-sys
+sudo apt install libssl-dev
+apt install libssl-dev
+pkg install openssl openssl-dev\
+
+export OPENSSL_DIR=$PREFIX
+OPENSSL_DIR=$PREFIX cargo check
+pkg search libssl
+pkg search ssl-dec
+pkg search ssl-dev
+su
+pkg install libwolfssl
+cargo build
+v src/main.rs +143
+m "Make ollama dep optional via features to allow viewing and modifying the kb on mobile"
+S
+cargo add redb
+v src/main.rs src/kb/mod.rs
+cargo add simple-datetime-rs
+a .
+mtmp;P
+cat main.rs| termux-clipboard-set
+scp ellie@lego.tail01de8a.ts.net:~/src/logos/src/main.rs .
+scp ellie@lego.tail01de8a.ts.net:~/src/logos/Cargo.toml .
+cp main.rs ~/storage/shared/Download
+cp Cargo.toml ~/storage/shared/Download
+git checkout .
+rn main.rs
+v src/main.rs Cargo.toml
+ssh ellie@192.168.4.4
+z log
+cat Cargo.toml
+git log
+m "feat: Make ollama dep optional via features to allow viewing and modifying the kb on mobile"
+v src/main.rs
+g
+ls logos.db
+rm -rf logos.db
+git commit --amend
+PF
+ssh ellie@lego.tail01de8a.ts.net -c tmux a
+ssh ellie@lego.tail01de8a.ts.net -C tmux a
+tmux a
+ssh ellie@lego.tail01de8a.ts.net -X
+z logos
+bat Cargo.toml
+cargo tree --invert onig_sys
+cargo run --no-default-features
+nvim Cargo.toml
+cargo check --no-default-features
+nvim tako/Cargo.toml takolib/Cargo.toml
+cargo tree --invert llvm-sys
+bacon
+ssh 
+cargo run -- -h
+cargo run -- --help
+cat src/main.rs
+cargo run -- examples/1_plus_2.ik
+cargo run -- examples/1_plus_2.ik | wasm-ld
+cargo run -- -ast examples/1_plus_2.ik
+cargo run -- -r examples/1_plus_2.ik
+cargo run -- -r examples/type_str.ik
+cargo run -- -r examples/bool_requirement.ik.
+bat src/*
+bacon check
+wc -l Participants\ count\ by\ diagnosis\ data.csv
+bqt Participants\ count\ by\ diagnosis\ data.csv
+cat Participants\ count\ by\ diagnosis\ data.csv | grep ME | bat
+cat Participants\ count\ by\ diagnosis\ data.csv | grep ME | bat -l csv
+cat Participants\ count\ by\ diagnosis\ data.csv | grep All | bat -l csv
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "30JUNE2026.*All" | bat -l csv
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "30June2026.*All" | bat -l csv
+head Participants\ count\ by\ diagnosis\ data.csv
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "30JUN2026.*All" | sed "s/\(.*\),\([0-9]*\)/\2,\1/"
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "30JUN2026.*All" | sed "s/\(.*\),\([0-9]*\)/\2,\1/" | sort -n
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "30JUN2026.*All" | sed "s/\(.*\),\([0-9]*\)/\2,\1/" | sort -n | bat
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "30JUN2026.*All" | sed "s/\(.*\),<?\([0-9]*\)/\2,\1/" | sort -n | bat
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "30JUN2026.*All" | sed "s/\(.*\),<?\([0-9]*\)$/\2,\1/" | sort -n | bat
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "30JUN2026.*All" | sed "s/\(.*\),<\?\([0-9]*\)$/\2,\1/" | sort -n | bat
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "30JUN2026.*All" | bat -l csv
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "30JUN2026.*All" | sed "s/\(.*\),<\?\([0-9]*\)$/\2,\1/" | sort -n | bat -l csv
+mv ../Download/Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv .
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep ME | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep fatigue | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep -i fatigue | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep -i chronic | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep -i M.E. | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep -i M\.E\. | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep -i "M\.E\." | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep -i "M\.S\." | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep -i "MS" | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep -i "Autism" | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | cut -d, -f1,2,3,4,5,6,7,8 | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | cut -d, -f1,2,3,4,5,6,7,8,9,10,11 | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | cut -d, -f1,2,3,4,5,6,7,8,9,10,11,12,13,14 | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | cut -d, -f1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "30JUN2026" | cut -d, -f4,5,6,7,8 | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "30JUN2026" | cut -d, -f4,5 | bat -l csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "30JUN2026" | grep "ALL" | cut -d, -f4 | sort
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "30JUN2026" | grep "ALL" | cut -d, -f4 | sort | uniq -c | sort -n
+head Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "30JUN2026" | grep "ALL" | cut -d, -f4,8 | sort | uniq -c | sort -n
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "30JUN2026" | grep "ALL" | cut -d, -f4,9 | sort | uniq -c | sort -n
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "30JUN2026" | sed 's/"\(.*\),\(.*\)"/"\1.\2"/' | grep "ALL" | cut -d, -f4,9 | sort | uniq -c | sort -n
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "30JUN2026" | sed 's/"\(.*\),\(.*\)"/"\1.\2"/g' | grep "ALL" | cut -d, -f4,9 | sort | uniq -c | sort -n
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "30JUN2026" | sed 's/"\(.*\),\(.*\)"/"\1.\2"/g' | grep "ALL" | cut -d, -f4,8,9 | sort | uniq -c | sort -n
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "30JUN2026" | sed 's/"\(.*\),\(.*\)"/"\1.\2"/g' | grep "ALL" | cut -d, -f4 | sort | uniq -c | sort -n
+bat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "Myalgic"
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "Chronic"
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "hronic"
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "fat"
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "Obes"
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "Enceph"
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "enceph"
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "Multi"
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "Multi" | bat -l csv
+bat ~/test.py
+bat ~/src/tako/takolib/src/parser/mod.rs
+bat Participants\ count\ by\ diagnosis\ data.csv
+z dow
+cd storage/shared/Documents
+cat Participant\ numbers\ and\ plan\ budgets\ data\ June\ 2026.csv | grep "ME"
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "ME"
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "JUN2026.*ALL.*ME"
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "JUN2026.*ME"
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "JUN2026.*All.*ME"
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "JUN2026.*All.*MS"
+cat Participants\ count\ by\ diagnosis\ data.csv | grep "JUN2026.*All.*Multi"
+rm a b
+cat dadf
+cat dad
+cd storage
+cd downloads
+ls perl*
+mv perlin_noise\ \(1\).png .
+mv perlin_noise\ \(1\).png map1.png
+mv map1.png ~/
+scp map1.png ellie@lego.tail01de8a.ts.net:~/src/keeps_and_kobolds/game/assets/maps/
+ls | while read d; do pushd $d; echo "$(git remote set-url $(git remote -v | grep '[cC]ypher1.*fetch' | sed 's/[cC]ypher1/compilersEllie/' | sed 's/ (fetch)//'))"; popd; done
+rmdir notes
+rm notes
+ls | while read d; do pushd $d; echo "$(git remote set-url $(git remote -v | grep '[cC]ypher1.*fetch' | sed 's/[cC]ypher1/compilersEllie/g' | sed 's/ (fetch)//'))"; popd; done
+ls | xargs -I{} sh -c 'echo -n "{}\t"; cd {}; git remote -v' | grep -i cypher
+cd bendy
+dig _discord.blog.mimir.systems
+dig blog.mimir.systems
+man dig
+dig blog.mimir.systems +all
+cd ~/src/
+mv cypher1.github.io compilersEllie.github.io
+cd compilersEllie.github.io
+git remotr 
+git remote -v
+echo dh=cb93ff9b1a447aec5de84fa23e326d8b83b90e9d >> discord
+cat Make
+reset
+tree
+mkdir src/.well-known/
+mv discord src/.well-known
+m "Add discord token"
+cat Makefile
+git grep im
+git grep images
+bat book.toml
+git grep cypher1
+git grep cypher1 | ge
+git grep assets
+ls src
+git grep imgs
+cat gen.sh
+bat Makefile
+nvim Makefile
+man cp
+ls .*
+mmdir .well-known
+mkdir .well-known
+cd .well-known
+cat discord
+make all
+make deploy
+wget http://blog.mimir.systems/.well-known/discord
+curl http://blog.mimir.systems/.well-known/discord
+ls Code
+git config --global --add safe.directory /storage/emulated/0/Notes
+cd Notes
+z notes
+git ls-files | grep tako
+rm -rf tasks/projects/tako
+ls tasks/projects/tako
+git submodule deinit
+cd .
+z Notes
+git submodule deinit tasks/projects/tako
+cd tasks
+cd projects
+cd ../../..
+cd -
+cd ../..
+v .git/HEAD
+rm -rf .git/modules/tasks/projects/tako
+rm -rf .git/modules/tasks/
+cd storage/shared/Notes
+cp ../Notes .
+git status
+git config --global --add safe.directory /storage/emulated/0/notes2
+z s
+git@github.com:compilersEllie/keeps_and_kobalds.git
+git@github.com:compilersEllie/keeps_and_kobolds.git
+cd keeps_and_kobolds
+cargo tree --target all --invert ring@.16.20
+cargo tree --target all --invert ring@0.16.20
+cargo tree --target all --invert ring@
+git@github.com:rust-lang/cargo.git
+cd cargi
+cd cargo
+git grep specification
+git grep specificationm
+gg "is ambiguous"
+cd ../storage
+cd shared
+diff Notes notes2
+cd notes2
+cp -r ../Notes/* .
+tput bel
+while true; do; tput bel; continue
+while true; do; tput bel; done
+0
+ping 8.8.8.8
+p9ng ts.net
+ping ts.net
+pkg install traceroute
+traceroute ts.net
+traceroute lego.tail01de8a.ts.net
+ssh ellie@100.114.80
+ssh ellie@100.114.80.59
+z tako
+t
+cd ika
+bat examples/bool_requirement.ik
+cargo run -- -r examples/bool_requirement.ik
+le examples
+l examples
+la examples
+ls examples
+cargo run -- -r examples/simple_call.ik
+bat examples/simple_call.ik
+bat -l rs  examples/simple_call.ik
+bat main.rs
+rm main.rs
+rm -rf cargo inkwell logos prequel qmk_firmware
+gko
+v .termux
+termux-reload-settings
+v ~/.termux/termux.properties
+git
+which $GIT_BIN
+echo $PATH | grep "usr/bin"
+echo $PATH | grep --colour "usr/bin"
+pkg install git
+bat dad
+less dad
+wc dad
+mv dad dad_rant_professional
+bat tcargo install bat
+cargo install bat
+z /data/data/com.termux/files/home/downloads
+lw
+../src
+cd ..
+cd tako
+b
+mtmp
+git grep Manager
+git grep Task
+v Cargo.toml
+cargo tree --target all --invert ring
+v game/Cargo.toml
+v game/src/net.rs
+cargo tree --target all --invert ring@0.17.14
+v game/src/net.rs game/Cargo.toml
+v game/src/main.rs
+cargo check
+cargo run
+cog commiy
+cog commit chore "Support building on linux"
+brn android
+gh pr create
+gh pr merge --auto update
+gh pr merge --auto android
+gh pr merge android
+brn maps
+wguc
+exec zsh
+z .con
+a zshrc
+m "Improve start up time with lazy load for nvm"
+m "Reinit notes"
+edit
+n
+glo -p
+P
+git remote set-url origin git@github.com:compilersEllie/Castle.git
+pkg install rbenv
+apt list --upgradable
+pkg update
+pkg ugrade
+apt upgrade
+pkg install ruby
+gem install rbenv
+which gem
+apt remove ruby
+apt autoremove
+z /data/data/com.termux/files/home/src/keeps_and_kobolds
+cl
+c
+r
+which r
+which run
+which __run
+r r
+time zsh -i -c return
+zplug install
+ztc
+cd src
+ls notes
+time zsh -c exit
+zplug --help
+zplug status
+zplug update
+time zsh -i -c exit
+ssh ellie@lego.tail01de8a.ts.net
+zsh-z
+which z
+which zshz
+z
+zshz keeps
+zsh-z keeps
+z keeps
+m hi
+nvm alias default v18.20.4
+cd .config/nvim
+cd
+vrc
+which zrc
+echo $EDITOR
+which nvim
+nvim
+nvm
+clear
+nvim .zshrc
+\:q
+zprof | less
+zprof | grep total
+zprof | grep time
+zprof | grep 100
+which git
+git grep git
+git grep "git "
+up
+brn main
+git log origin/master
+glo
+p
+brn mastee
+brn master
+git grep "zplug depends"
+v base/core/core.zsh
+git --version
+git --version | head -n1
+qq
+zrv
+zprof
+cd .zplug
+git stash
+gh repo set-default
+gh repo view -w
+cd cache
+rm -rf cache
+..
+rm -r .cache/p10k-dump-u0_a307.zsh .cache/p10k-dump-u0_a307.zsh.zwc .cache/p10k-instant-prompt-u0_a307.zsh .cache/p10k-instant-prompt-u0_a307.zsh.zwc .cache/p10k-u0_a307 
+function f() {\
+f()\
+}
+function f() {\
+    f\
+}
+f
+zsh -c "function f() {f};"
+zsh -c "function f() {f;f};f"
+zsh -c "function f() {f};f"
+which ztime
+zsh
+set -x
+exit
+v zshrc
+cp .zshrc old.zshrc
+git stash show -p
+cargo install cocogitto
+v .zshrc
+a -p
+m "Init zplug and zprof as needed"
+fg
+D
+echo $PATH
+a 
+a.
+s
+rm -fr .cache/p10k-dump-u0_a307.zsh .cache/p10k-dump-u0_a307.zsh.zwc .cache/p10k-instant-prompt-u0_a307.zsh .cache/p10k-instant-prompt-u0_a307.zsh.zwc .cache/p10k-u0_a307 
+rm -rf .zplug/cache
+v ~/.zshrc
+v .cache/p10k-dump-u0_a307.zsh
+which cat
+v .cache/p10k-u0_a307/prompt-32
+rm -rf .cache/p10k*
+tmxu
+tmux
+v .tmux.conf
+cd .config
+ls
+git grep tmux
+git log -p
+.
+d
+ztime
+zrc
+q
+ztime
+zrc
+q
+ztime
+zrc
+q
+ztime
+s
+d
+cd .config
+d
+rm -rf .cache/p10k*
+rm -rf ~/.cache/p10k-*
+q
+ztime
+node
+s
+clear
+s
+z .con
+s
+d
+a.
+m "Improve lazy loading and profiling zplug and p10k usage"
+P
+tmux
+q
+q
+less ~/.zprof.log
+zrc
+q
+ztime
+zrc
+s
+cd .config
+s
+d
+a.
+m "Improve PATH handling for speed"
+fg
+cf
+cd
+ztime
+zrc
+q
+rm -rf ~/.cache/p10k-*
+q
+ztime
+zrc
+q
+rm -rf ~/.cache/p10k-*
+ztime
+s
+cd .config
+v .zshrc
+..
+zrc
+s
+.
+ztime
+1zrc
+zrc
+q
+rm -rf ~/.cache/p10k-*
+ztine
+ztime
+zrc
+rm -rf ~/.cache/p10k-*
+q
+ztime
+fg
+v .zshrc
+/usr/bin/time zsh -i -c exit
+time zsh -i -c exit
+less ~/.zprof.log
+zrc
+q
+rm -rf ~/.cache/p10k-*
+ztime
+fg
+vrc
+zrc
+q
+ztime
+echo $ZSH_CACHE_DIR
+zrc
+ztime
+zplug --self-manage
+zplug --self-manage update
+zrc
+q
+zplug --self-manage update
+zplug --self-manage install
+zplug install
+zrc
+q
+zplug clean
+zplug list
+zplug clean
+zplug update
+zplug --self-manage
+zplug --self-manage --help
+zplug --self-manage check
+zplug --log
+echo $ZPLUG_LOG_LOAD_FAILURE
+.
+ztime
+zrc
+s
+a.
+s
+rm -rf ~/.cache/p10k-*
+rm .zplug/cache/ -rf
+ztime
+cd .zplug
+git status
+d
+git checkout .
+s
+echo $ZPLUG_LOADFILE
+bat /data/data/com.termux/files/home/.zplug/packages.zsh
+tocuh /data/data/com.termux/files/home/.zplug/packages.zsh
+touch /data/data/com.termux/files/home/.zplug/packages.zsh
+ztime
+.
+d
+bat packages.zsh
+s
+d
+a.
+s
+D
+mtmp
+s
+.
+v base/job/polling.zsh
+rm .zplug/cache/ -rf
+ztime
+git grep log
+git grep "::log::"
+git grep -i "::log::.*info"
+gg -i "::log::.*info" | ge
+gg generate
+gg generate | ge
+s
+d
+ztime
+rm ~/.zplug/cache/ -rf
+ztime
+rm $ZPLUG_LOADFILE
+ztime
+rm ~/.zplug/cache/ ~/.cache/p10k-* -rf
+ztime
+zrc
+rm ~/.zplug/cache/ ~/.cache/p10k-* -rf
+ztime
+zrc
+rm ~/.zplug/cache/ ~/.cache/p10k-* -rf
+ztime
+time zsh -i -c exit
+zrc
+rm ~/.zplug/cache/ ~/.cache/p10k-* -rf
+ztime
+rm ~/.zplug/cache/ ~/.cache/p10k-* -rf
+q
+ztime
+zrc
+zrctime
+zrcprof
+zrctime
+less ~/.zprof.log
+touch /data/data/com.termux/files/home/.zplug/packages.zsh
+zrctime
+rm ~/.zplug/cache/ ~/.cache/p10k-* -rf
+zplug install
+q
+zplug install
+cd .zplug
+ls
+ls repos/
+zplug list
+zplug status
+zrctime
+zrc
+rm ~/.cache/zplug ~/.zplug/cache/ ~/.cache/p10k-* -rf
+q
+ztime
+zrctime
+zprof
+zrcprof
+less ~/.zprof.log
+vrc
+zrc
+rm .zprof.log
+ztime
+zrctime
+rm ~/.cache/zplug ~/.zplug/cache/ ~/.cache/p10k-* -rf
+ztime
+zrctime
+zrcprof
+zrc
+q
+rm ~/.cache/zplug ~/.zplug/cache/ ~/.cache/p10k-* -rf
+zprof
+zrcprof
+ztime
+zrctime
+less ~/.zprof.log
+less ~/.zrcprof.log
+zrc
+zprof
+zrcprof
+rm ~/.cache/zplug ~/.zplug/cache/ ~/.cache/p10k-* -rf
+zrcprof
+zrctime
+zrc
+q
+zrctime
+zrc
+zrctime
+s
+zrc
+less ~/.zrcprof.log
+hyperfine --warmup 3 --min-runs 10 "zsh -i -c exit" -i
+pkg hyperfine
+pkg install hyperfine
+s
+cd .config
+s
+d
+zrc
+d
+a.
+D
+m "Avoid loading zplug twice, set the cache dir"
+s
+P
+zrc
+arrive
+zrc
+arrive
+zrc
+arrive
+do_arrive
+touch zsh_plugins.txt
+exec zsh
+cat ~/.zsh_plugins.txt
+do_arrive
+ls
+git stash
+exec zsh
+s
+d
+git stash pop
+v zshrc
+dotfile zsh_plugins.txt
+ls ~/.zsh_plugins.txt
+realpath ~/.zsh_plugins.txt
+s
+zrc
+zsh
+install_antidote
+exit
+v zshrc
+antidotr
+antidote list
+zsh
+install_antidote
+exit
+v zsh_plugins.txt
+zsh
+antidote
+antidote list
+antigen update
+antidote update
+touch zsh_plugins.txt
+exit
+z tako
+git remote -v
+cd
+v .zsh_plugins.txt
+zsh
+antidote install
+antidote update
+antidote update
+antidote load
+v .zshrv
+nvim .zshrc
+q
+exit
+exit
+v .zshrc
+zsh
+cd .cache/antidote
+ls
+cd github.com
+ls
+git@github.com:compilersEllie/llvm-project.git --depth 1
+git clone git@github.com:compilersEllie/llvm-project.git --depth 1
+..
+exit
+fg
+exit
+v .zshrc .zsh_plugins.txt
+zsh
+exit
+zrc
+s
+rm -rf ~/.cache/zplug ~/.zplug/cache/ ~/.cache/p10k-* .antidote ..zsh_plugins.zsh.new.* .zcompdump* .zrcprof.log .z.lock
+ls
+ls .*
+rm old.zshrc
+.
+ls
+ls .*
+rm -rf .tmp
+ls .*
+ls -la
+ls -a
+zrc
+rm -rf .powerlevel10k
+rm -rf .bun .cache .node_repl_history
+clear
+zsh
+v /data/data/com.termux/files/home/.config/zsh_settings.zsh
+nvim /data/data/com.termux/files/home/.config/zsh_settings.zsh
+zrc
+export EDITOR=nvim
+zrc
+rm -rf ~/.cache/zplug ~/.zplug/cache/ ~/.cache/p10k-* .antidote ..zsh_plugins.zsh.new.* .zcompdump* .zrcprof.log .z.lock
+q
+fg
+zrc
+export EDITOR=nvim
+zrc
+cd .config
+d
+git diff
+fg
+s
+q
+zrc
+export EDITOR=nvim
+zrc
+q
+rm -rf ~/.cache/crontab/crontab.bak ~/.cache/zplug ~/.zplug/cache/ ~/.cache/p10k-* .antidote ..zsh_plugins.zsh.new.* .zcompdump* .zrcprof.log .z.lock
+q
+zrc
+vrc
+export EDITOR=nvim
+zrc
+s
+q
+rm -rf ~/.cache/crontab/crontab.bak ~/.cache/zplug ~/.zplug/cache/ ~/.cache/p10k-* .antidote ..zsh_plugins.zsh.new.* .zcompdump* .zrcprof.log .z.lock .zsh_plugins.zsh
+q
+echo $EDITOR
+echo "$EDITOR"
+export EDITOR=nvim
+zrc
+s
+ls
+cat nvim.10307
+ls nvim.10307
+rmdir nvim.10307
+cd src
+cd ../.config
+s
+v ~zsh_settings.zsh
+export EDITOR=nvim
+v ~zsh_settings.zsh
+ls
+/usr/bin/mv "~zsh_settings.zsh" "zsh_settings.zsh"
+/usr/bin/mv "~zsh_styles.zsh" zsh_styles.zsh
+s
+mv zsh_settings.zsh zsh_settings
+mv zsh_styles.zsh zsh_styles
+zrc
+rm -rf ~/.cache/crontab/crontab.bak ~/.cache/zplug ~/.zplug/cache/ ~/.cache/p10k-* .antidote ..zsh_plugins.zsh.new.* .zcompdump* .zrcprof.log .z.lock .zsh_plugins.zsh
+q
+fg
+cd .config
+ls
+mv 02_zsh_aliases.zsh 04_zsh_aliases.zsh
+ls
+zsh
+mv arrive.zsh 02_arrice.sh
+mv 02_arrice.sh 02_arrive.sh
+mv 02_zsh_binds.zsh 03_zsh_binds.zsh
+ls
+mv 04_zsh_aliases.zsh 05_zsh_aliases.zsh
+mv 03_zsh_settings.zsh 04_zsh_settings.zsh
+ls
+zrc
+q
+q
+all
+which all
+q
+which all
+zrc
+git grep do_arrive
+cd .config
+git grep do_arrive
+git grep arrive
+a.
+git grep arrive
+s
+D
+fg
+v zsh_functions/all.zsh
+fg
+s
+a.
+q
+zrc
+cd .config
+cd zsh_functions
+cp all.zsh do_arrive.zsh
+v all.zsh do_arrive.zsh 
+..
+zsh
+cd zsh_functions
+mv all.zsh all
+mv do_arrive.zsh do_arrive
+ls
+a.
+..
+exit
+s
+v zsh_functions/do_arrive
+q
+q
+do_arrive
+cd .config/zsh_functions
+mv do_arrive ../02_do_arrive.sh
+..
+mv 02_do_arrive.sh 02_do_arrive.zsh
+mv 02_do_arrive.zsh 01_do_arrive.zsh
+v 01_do_arrive.zsh
+ls
+ls zsh_functions
+bat zsh_functions/all
+q
+v 01_do_arrive.zsh
+cd .config/
+v 01_do_arrive.zsh
+q
+zrc
+cd .config/
+ls
+mv 04_zsh_settings.zsh 01_zsh_settings.zsh
+ls
+mv 02_arrive.zsh 04_arrive.zsh
+ls
+mv 01_zsh_antigen.zsh 02_zsh_antigen.zsh
+clear
+.
+a.
+.
+q
+zrc
+rm .zsh_plugins.zsh
+rm .cache/p10k-* .cache/crontab/crontab.bak
+rm -rf .cache/p10k-* .cache/crontab/crontab.bak
+.
+q
+v .zsh_plugins.zsh
+cd .config/
+ls
+v zsh_plugins.txt
+v 00_zsh_styles.zsh 01_do_arrive.zsh 01_zsh_settings.zsh 02_zsh_antigen.zsh 03_zsh_binds.zsh 04_arrive.zsh 05_zsh_aliases.zsh fzf.zsh mdbook.zsh p10k.zsh 
+q
+cd .config/
+git grep comp
+git grep compdef
+git grep compdefinit
+git grep compinit
+ls
+..
+rm -rf .cache/p10k-* .cache/crontab/crontab.bak .zsh_plugins.zsh
+zsh
+zrc
+q
+q
+zsh
+set -x
+zsh
+exit
+exit
+clear
+tmux
+exit
+cd .config/
+git grep compini5
+git grep compinit
+git grep compdef
+a.
+git grep compdef
+ls
+v zshrc
+ls
+cat 06_compinit.zsh
+v zsh_plugins.txt
+zrc
+cd .config/
+mkdir plugins
+ls *.zsh
+mv fzf.zsh plugins
+mv p10k.zsh plugins
+mv mdbook.zsh plugins
+ls
+q
+fg
+v zsh_plugins.txt
+cd .config/
+v zsh_plugins.txt
+q
+zrc
+rm -rf .cache/p10k-* .cache/crontab/crontab.bak .zsh_plugins.zsh
+rm .zplug -rf
+ls
+ls .
+ls -a
+ls .cache
+s
+zsh
+rm .cache/p10k-*
+rm -rf .cache/p10k-*
+s
+.
+zsh
+which fzf
+zrc
+fzf --zsh
+fzf --zsh | grep .zsh
+fzf --zsh | grep "\.zsh"
+cd .config/
+git grep fzf
+v 01_zsh_settings.zsh
+q
+rm -rf .cache/p10k-* .zsh_plugins.zsh
+zsh
+rm -rf .cache/p10k-* .zsh_plugins.zsh && exit
+ rm -rf .cache/p10k-* .zsh_plugins.zsh && exit
+rm -rf .cache/p10k-* .zsh_plugins.zsh; exit
+exit
+ rm -rf .cache/p10k-* .zsh_plugins.zsh; exit
+cd .config/
+s
+a .
+s
+v 01_do_arrive.zsh
+.
+..
+rm .fzf.bash .fzf.zsh 
+zrc
+cat ~/.config/plugins/fzf.zsh
+rm -rf .cache/p10k-* .zsh_plugins.zsh; exit
+git grep do_arrive
+cd .config/
+git grep do_arrive
+git grep arrive
+s
+a.
+s
+git grep arrive
+D
+..
+v .zsh_plugins.txt
+zsh
+q
+q
+zrctime
+clear
+zrctime
+clear
+q
+tmux
+q
+q
+q
+s
+zrctime
+hyperfine --warmup 3 --min-runs 10 "zsh -i -c exit" -i
+nvm
+nvm --help
+clear
+node
+ls
+rbenv
+cog
+clear
+a .
+s
+ls
+cd .config/
+s
+a.
+D
+mv 04_arrive.zsh plugins/arrive.sh
+ls
+v plugins/arrive.sh
+q
+rm -rf .cache/p10k-* .zsh_plugins.zsh; exit
+ls
+hyperfine --warmup 3 --min-runs 10 "zsh -i -c exit" -i
+zrc
+cd .config/
+ls
+mv 06_compinit.zsh plugins/greasy_completions.zsh
+mv 05_zsh_aliases.zsh plugins/aliases.zsh
+mv 03_zsh_binds.zsh plugins/binds.zsh
+ls
+mv 02_zsh_antigen.zsh 03_zsh_antigen.zsh
+mv 01_zsh_settings.zsh 03_zsh_settings.zsh
+mv 03_zsh_settings.zsh 02_zsh_settings.zsh
+ls
+a.
+D
+..
+rm -rf .cache/p10k-* .zsh_plugins.zsh; exit
+zrctime
+vrc
+zrv
+zrc
+s
+ls
+ls -a
+rm .zsh_plugins.*
+rm -rf ~/.cache/antidote ~/.cache/p10k-*
+q
+cd .config/
+v zsh_functions/is-macosx
+mv zsh_functions/is-macosx zsh_functions/is-macos
+cd zsh_functions
+ls
+bat all
+git log -p ; cp is-macos is-laptop
+fg
+v zs
+ld
+ls
+v is-laptop
+s
+..
+s
+echo zsh_plugins.zsh >> .gitignore
+s
+a.
+s
+v zsh_plugins.txt
+q
+zrctime
+zrctim
+zrcprof
+zrc
+ls
+echo $SCCACHE
+cargo install sccache &
+cd .config/
+cd zsh_functions
+ls
+v all
+cat all | tr '\n' '$$$'
+cat all | tr '\n' '$$$' | sed "s/function/\rfunction/g"
+cat all | tr '\n' '$$$' | sed "s/function/\rfunction/g" | sed "s/function([^(){}]*)/\1\tfunction \1/g"
+cat all | tr '\n' '$$$' | sed "s/function/\rfunction/g" | sed "s/function\([^(){}]*\)/\1\tfunction \1/g"
+cat all | tr '\n' '$$$' | sed "s/function/\rfunction/g" | sed "s/function *\([^(){}]*\)/\1\tfunction \1/g"
+cat all | tr '\n' '$$$' | sed "s/function/\rfunction/g" | sed "s/function *\([^(){}]*\)\$\(.*\)}/\1\t/g"
+cat all | tr '\n' '$$$' | sed "s/function/\rfunction/g" | sed "s/function *\([^(){}]*\)\(.*\)}/\1\t/g"
+cat all | tr '\n' '$$$' | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(.*\)}/\1\t/g"
+cat all | tr '\n' '$$$' | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(.*\)}/\1\t\2/g"
+cat all | tr '\n' '$$$' | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(.*\)}/\1\t\2\n/g"
+cat all | tr '\n' '$$$' | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(.*\)}/\1\t\2\n\n/g"
+cat all | tr '\n' '$$$' | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\(.*\)}/\1\t\3\n\n/g"
+cat all | tr '\n' '$$$' | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)?\(.*\)}/\1\t\3\n\n/g"
+cat all | tr '\n' '$$$' | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\?\(.*\)}/\1\t\3\n\n/g"
+cat all | tr '\n' '$$$' | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\?{\(.*\)}/\1\t\3\n\n/g"
+cat all | tr '\n' '$$$' | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\?{\(.*\)}/\1\t\3\n\n/g" | sed "s/$$$/\n/g"
+cat all | tr '\n' "$$$" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\?{\(.*\)}/\1\t\3\n\n/g" | sed "s/$$$/\n/g"
+cat all | tr '\n' "â‚¬" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\?{\(.*\)}/\1\t\3\n\n/g" | sed "s/â‚¬/\n/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\?{\(.*\)}/\1\t\3\n\n/g" | sed "s/%/\n/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\? *{\(.*\)}/\1\t\3\n\n/g" | sed "s/%/\n/g"
+cat all | tr '\n' "%%" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\? *{\(.*\)}/\1\t\3\n\n/g" | sed "s/%/\n/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\? *{\(.*\)}/\1\t\3\n\n/g" | sed "s/%/\n/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\? *{\(.*\)}/\1\t\3/g" | sed "s/%/\n/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\? *{\(.*\)}/\1\t\3/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\? *{\(.*\)}/\1\t\3/g" | xargs -I{} sh -c 'echo "{}"'
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\? *{\(.*\)}/\1\t\3/g" | xargs -I{} sh -c 'echo \'{}\''
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\? *{\(.*\)}/\1\t\3/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\? *{\(.*\)}/\1\t\3/g" > out
+cat out
+cat out | xargs -I{} sh -c 'echo "{}" | cut -f2 > $(echo "{}" | cut -f1)'
+ls
+s
+rm *
+ls
+s
+git checkout all
+s
+git checkiu
+git checkout is-laptop
+git checkout is-macos
+ls
+s
+d
+s
+ls
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function *\([^(){}]*\)\(()\)\? *{\(.*\)}/\1\t\3/g" > out
+s
+cat out | xargs -I{} sh -c 'echo "{}" | cut -f2 > $(echo '{}' | cut -f1)'
+s
+rm c\ %\ cargo\ check\ --all-targets\ --color\ always
+s
+rm t\ %\ cargo\ test\ --color\ always
+rm %
+rm out
+ls
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | cut -f1
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function \([^()]\)/\1\t\1/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function \([^()]*\)/\1\t\1/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function \([^(){]*\)/\1\t\1/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function \([^(){]*\)/\1\t\1/g" | cut -f1
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function \([^(){]*\)/\1\t\2/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function \([^(){]*\)/\1\t\1/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function \([^(){]*\)\(.*\)/\1\t\1 \2/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function \([^(){]*\)\(.*\)/echo "\1 \2"> \1/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/function \([^(){]*\)\(.*\)/echo \'\1 \2\'> \1/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/'/\'/g" | sed "s/function \([^(){]*\)\(.*\)/echo \'\1 \2\'> \1/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/'/\\'/g" | sed "s/function \([^(){]*\)\(.*\)/echo \'\1 \2\'> \1/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed "s/\"/\\\"/g" | sed "s/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g'
+s
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g' | xargs eval
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g' | xargs -I{} "eval {}"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g' | xargs -I{} eval {}
+ls
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g' | xargs -I{} "sh -c '{}'"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g' | xargs -I{} sh -c '{}'
+s
+ls
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g' | xargs -I{} "sh -c {}"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g' | xargs -I{} sh -c "{}"
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g' | xargs -I{} sh -c '{}'
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g'
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g' | xargs sh -c
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g' | xargs -0 -I{} sh -c "{}"
+s
+ls
+cat all | tr '\n' "%" | sed "s/function/\nfunction/g" | sed 's/"/\\"/g' | sed 's/function \([^(){]*\)\(.*\)/echo \"\1 \2\"> \1/g' | xargs -0 -I{} sh -c '{}'
+s
+rm join unique install_rustup
+s
+ls
+v all
+s
+a .
+..
+s
+a.
+zrv
+zrc
+q
+cargo install sccache
+
+s
+clear
+zsh
+
+zrc
+q
+q
+v /data/data/com.termux/files/home/.config/zsh_plugins.zsh:31
+zrc
+q
+ init-zsh-patina --with=build
+cargo install sccache
+q
+init-zsh-patina --with=builf
+init-zsh-patina --with=build
+q
+exec zsh
+zsh-patina
+bat
+which bat
+v .cache/antidote/github.com/michel-kraemer/zsh-patina/zsh-patina.plugin.zsh
+cargo install zsh-patina
+zsh-patina
+which zsh-patina
+q
+init-zsh-patina
+zrc
+q
+zrc
+q
+ls wow
+s
+ls
+zrc
+rm .config/zsh_plugins.zsh .cache/p10k-*
+rm -rf .config/zsh_plugins.zsh .cache/p10k-*
+q
+ls
+s
+zsh-patina themes
+zsh-patina theme
+zsh-patina --hell
+zsh-patina --help
+zsh-patina list-themes
+v ~/.config/zsh-patina/config.toml
+fg
+ls
+q
+ls wow
+ls
+z tako
+ls
+zsh-patina list-themes
+zsh-patina --help
+zsh-patina status
+zsh-patina check
+z .co
+s
+a.
+d
+D
+m "Switch to antidote"
+P
+tmux
+q
+ls
+..
+q
+s
+..
+ls
+zrctime
+which zshrctime
+which zrctime
+zrc
+cd zrc
+cd .config/
+zrc
+q
+zrctime
+zrc
+rm ~/.local/share/nvim/site/pack/packer/
+rm -rf ~/.local/share/nvim/site/pack/packer/
+q
+zrc
+pkg search luarocms
+pkg search luarocks
+pkg install luarocks
+zrc
+s
+ls
+z /data/data/com.termux/files/home/src/tako/takolib
+s
+c
+cx
+cd
+z .con
+s
+d
+zrctime
+zrcprof
+less ~/.zrcprof.log
+zrc
+zsh
+exit
+fg
+zrc
+zsh
+fg
+zrc
+exit
+zrc
+q
+q
+zrctime
+rm .config/zsh_plugins.zsh .cache/p10k-*
+rm -rf .config/zsh_plugins.zsh .cache/p10k-*
+zrctime
+zrcprof
+less ~/.zrcprof.log
+zrc
+q
+zrc
+a 
+rm -rf .config/zsh_plugins.zsh .cache/p10k-*
+zrcprof
+less ~/.zrcprof.log
+clear
+cd .config/
+s
+d
+a.
+git reset 
+a -p
+m "Fix quote issue in zshrc timing alias"
+s
+d
+a.
+m "Avoid double loading plugins*
+m "Avoid double loading plugins"
+s
+cd
+zrctime
+P
+z .con;P
+cd
+zrctime
+zrcprof && less .zrcprof.log
+s
+.
+z keeps
+ls
+v game/src/map.rs 
+s
+zrctime
+zrcprof && less .zrcprof.log
+zrcprof && less ~/.zrcprof.log
+.
+vrc
+zrc
+bat Cargo.lock
+fg
+q
+xdgbasedir
+mv .cargo ~/.local/share/cargo
+mv .lesshst .local/state/
+mv .node_repl_history .local/share
+mv .npmrc .config
+mv .npm .cache
+mv .pylintrc .config/pylintrc/pylintrc
+mkdir .config/pylintrc
+mv .config/pylintrc .pylintrc
+mkdir .config/pylintrc
+mv .pylintrc .config/pylintrc/pylintrc
+zrc
+do_arrive
+zrc
+zsh
+zrc
+xdgbasedir
+mv .python_history .local/state
+zrc
+exec zsh
+rm -rf .config/zsh_plugins.zsh .cache/p10k-*
+exec zsh
+echo $CARGO_HOME
+echo $CARGO_TARGET_DIR
+cd .cargo
+cd .config
+d
+a -p
+s
+mv .npmrc npmrc
+xdgbasedir
+zrc
+fg
+zrc
+..
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+cd -
+s
+a.
+m "Use xdg dirs plugins"
+s
+do_arrive
+clear
+source ~/.config/plugins/arrive.sh
+which zsh-patina
+v zshenv
+echo $CARGO_HOME
+fg
+v zshenv
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+q
+v ~/.cache/antidote/github.com/mattmc3/use-xdg-basedirs/use-xdg-basedirs.plugin.zsh
+mktemp xdg-runtime
+mktemp xdg-runtime-XXXXX
+ls
+rm xdg-runtime-dOD5r
+man mktemp
+fg
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+s
+d
+s
+cd .cache/antidote/github.com/mattmc3/use-xdg-basedirs
+s
+gh repo form
+gh repo fork
+s
+a.
+m "Use \$PREFIX to support Termux"
+P
+cd
+zrc
+q
+ls
+q
+ls
+antigen --help
+antidote list
+antidote update
+s
+ls
+le -a
+ls -a
+rm .suroot
+rm -rf .suroot
+ls -a
+ls .fzf
+rm .tako.log
+ls
+ls -a
+rm .units_history
+rm .cronlog
+rm .zprof.log
+la
+ls -a
+rm .zrcprof.log
+ls -a
+zrc
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+.
+q
+zrctime
+s
+ls
+ls -a
+xdgbasedir
+zrc
+rm .pylintrc
+.
+s
+ls
+.
+ls
+la
+v .config/plugins/aliases.zsh
+s
+which zrc
+cd .config
+cd
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+ll
+la
+zrc
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+zrc
+pkg search rustup
+d
+v 02_zsh_settings.zsh
+v 00_zsh_styles.zsh 01_do_arrive.zsh 02_zsh_settings.zsh 03_zsh_antigen.zsh zsh_plugins.zsh plugins/aliases.zsh plugins/arrive.sh plugins/binds.zsh plugins/cog.zsh plugins/fzf.zsh plugins/greasy_completions.zsh plugins/mdbook.zsh plugins/p10k.zsh plugins/rbenv.zsh plugins/sscache.zsh zsh_functions/_ggrep zsh_functions/_ggrepconflict zsh_functions/_nvim_mode zsh_functions/_restart_zsh zsh_functions/_sudobuf zsh_functions/batf zsh_functions/bluetooth_fix zsh_functions/c zsh_functions/git zsh_functions/install_zustup zsh_functions/is-laptop zsh_functions/is-macos zsh_functions/join zsh_functions/mv zsh_functions/swap zsh_functions/t zsh_functions/unique zsh_functions/vm 
+v zsh_functions/*
+s
+d
+a zsh_functions/
+D
+m "Ensure functions are executed abd highlighted with zsh"
+s
+d
+git grep .cargo
+git grep "\.cargo"
+git grep ".cargo"
+git grep "\.cargo"
+D
+d
+a -pa
+a -p
+d
+a
+a -p
+s
+D
+s
+d
+v plugins/aliases.zsh
+d
+ss
+s
+D
+s
+m "Use XDG dirs and zshenv better"
+s
+d
+a -p
+s
+m "Cleanup"
+glo -p
+s
+d
+a.
+zrc
+..
+zrc
+s
+D
+a.
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+zrc
+s
+cd .config
+s
+D
+m "Smarter aliases"
+s
+P
+s
+..
+antidote list
+antidote home
+ls $(antidote home)
+ls $(antidote home)/tools
+antidote-bench
+/data/data/com.termux/files/home/.cache/antidote/tools/antidote-bench
+s
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+zsh-bench
+ "builtin" ":" >>"/data/data/com.termux/files/usr/tmp/zsh-bench-CpS4sfbj7W/fifo" && "builtin" ":" <"/data/data/com.termux/files/usr/tmp/zsh-bench-CpS4sfbj7W/fifo" || "builtin" "exit"
+ "builtin" "." "./s"
+ "builtin" "exit" "0"
+zrc
+zrv
+zrc
+cd .config
+ls
+cd plugins
+ls
+v aliases.zsh arrive.sh binds.zsh cog.zsh fzf.zsh greasy_completions.zsh mdbook.zsh p10k.zsh rbenv.zsh sscache.zsh 
+d
+a -p
+D
+m "Remove uneccessary pkg_man computation"
+s
+d
+..
+a -p
+git checkout .
+s
+D
+..
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+zrctime
+s
+cd .zshrc
+cd .config
+s
+D
+git stash
+..
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+zrctime
+cd .config
+git stash pop
+d
+a.
+m "Defer do_arrive"
+s
+P
+ls
+zsh-bench
+ "builtin" ":" >>"/data/data/com.termux/files/usr/tmp/zsh-bench-VUXLfw0Wpo/fifo" && "builtin" ":" <"/data/data/com.termux/files/usr/tmp/zsh-bench-VUXLfw0Wpo/fifo" || "builtin" "exit"
+ "builtin" "." "./s"
+ "builtin" "exit" "0"
+zsh-bench --hell
+zsh-bench --help
+zsh-bench -l no
+ "builtin" ":" >>"/data/data/com.termux/files/usr/tmp/zsh-bench-NnKUxLxVPo/fifo" && "builtin" ":" <"/data/data/com.termux/files/usr/tmp/zsh-bench-NnKUxLxVPo/fifo" || "builtin" "exit"
+ "builtin" "." "./s"
+ "builtin" "exit" "0"
+ls
+p10m
+p10k
+p10k display
+s
+cd ~/src
+ls
+ls * | xargs -I {} sh -c 'cd {}; git remote -v | grep origin'
+clear
+ls | xargs -I {} sh -c 'cd {}; git remote -v | grep origin'
+ls | xargs -I {} sh -c 'cd {}; git remote -v | grep fetch'
+ls | xargs -I {} sh -c 'cd {}; git remote -v | grep fetch' | cut -f2
+ls | xargs -I {} sh -c 'cd {}; git remote -v | grep fetch' | cut -f2 -d' '
+ls | xargs -I {} sh -c 'cd {}; git remote -v | grep fetch' | cut -f2 | cut -f1 -d' '
+zrc
+exec zsh
+q
+zrc
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+autojump
+zrc
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+pkg install autojump
+q
+fg
+zrc
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+antidote list
+zrc
+q
+ls -lh .
+cd .config
+git status -u .
+j zsh
+..
+z conf
+..
+j conf
+..
+z takk
+z tak
+..
+jo tako
+ducky --hp
+s
+jjtghjj
+zrctime
+zrc
+q
+zrctime
+j conf
+..
+zrc
+zsh-bench
+ "builtin" ":" >>"/data/data/com.termux/files/usr/tmp/zsh-bench-2Y75TIs98f/fifo" && "builtin" ":" <"/data/data/com.termux/files/usr/tmp/zsh-bench-2Y75TIs98f/fifo" || "builtin" "exit"
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+zrc
+cd .config/plugins
+ls
+v aliases.zsh arrive.sh binds.zsh cog.zsh fzf.zsh greasy_completions.zsh mdbook.zsh p10k.zsh rbenv.zsh sscache.zsh 
+zsh-defer true || echo hi
+zsh-defer false || echo hi
+git status -u .
+fg
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+zrc
+q
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+ls -lh .
+cd .config/plugins/aliases.zsh .config/plugins/arrive.sh .config/plugins/binds.zsh .config/plugins/cog.zsh .config/plugins/fzf.zsh .config/plugins/greasy_completions.zsh .config/plugins/mdbook.zsh .config/plugins/p10k.zsh .config/plugins/rbenv.zsh .config/plugins/sscache.zsh 
+v .config/plugins/aliases.zsh .config/plugins/arrive.sh .config/plugins/binds.zsh .config/plugins/cog.zsh .config/plugins/fzf.zsh .config/plugins/greasy_completions.zsh .config/plugins/mdbook.zsh .config/plugins/p10k.zsh .config/plugins/rbenv.zsh .config/plugins/sscache.zsh 
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+d
+s
+v .config/plugins/aliases.zsh .config/plugins/arrive.sh .config/plugins/binds.zsh .config/plugins/cog.zsh .config/plugins/fzf.zsh .config/plugins/greasy_completions.zsh .config/plugins/mdbook.zsh .config/plugins/p10k.zsh .config/plugins/rbenv.zsh .config/plugins/sscache.zsh 
+cd .config/
+s
+git checkout zsh_plugins
+git checkout plugins
+d
+a -p
+s
+which s
+which d
+which map
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+ls -lh .
+j c
+d
+which d
+zrc
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+zrctime
+zrc
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+
+zrc
+cd .config/
+s
+v zsh_plugins.txt
+nvim zsh_plugins.txt
+cd
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+exit
+j c
+s
+d
+D
+a.
+D
+s
+D
+zrc
+s
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+do_arrive
+clear
+arrive
+zrc
+s
+ls -lh .
+zrctime
+s
+j c
+s
+a.
+D
+program mosh
+git status -u .
+zrf
+zrc
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+arrive
+v ~/.config/zsh_functions/arrive
+mv ~/.config/plugins/arrive.sh ~/.config/zsh_functions/arrive
+v ~/.config/zsh_functions/do_arrive
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+arrive
+zrctime
+j c
+ls
+d
+s
+a.
+D
+git reset
+s
+a zsh_plugins.txt
+s
+D
+m "Tidy and add OMZ plugins"
+s
+a.
+D
+m "Convert arrive to autoload functions"
+s
+git status -u .
+ls
+map
+ls config
+rm config
+s
+D
+d
+a.
+m "Cleanup symlink"
+s
+ls data
+ls data/data/com.termux/files/home
+rm data/data/com.termux/files/home
+rm -r data/data/com.termux/files/home
+ls
+s
+bat colors.sh
+..
+s
+ls -lh .
+ls -l .
+ls -h .
+ls data
+rmdir data/data/com.termux/files/home
+rmdir data/data/com.termux/files/home/.config/
+rmdir data/data/com.termux/files/home/
+rmdir data/data/com.termux/files/
+rmdir data/data/com.termux/
+rmdir data/data/
+rmdir data/
+.
+ls -lh .
+s
+ls -lh .
+ls -1b .
+ls -1h .
+ls -1 .
+du -hs *
+cd src
+ls
+..
+zsh-bench
+ "builtin" ":" >>"/data/data/com.termux/files/usr/tmp/zsh-bench-sg7noWqMXs/fifo" && "builtin" ":" <"/data/data/com.termux/files/usr/tmp/zsh-bench-sg7noWqMXs/fifo" || "builtin" "exit"
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "." "./s"
+git status -u .
+ "builtin" "exit" "0"
+ls -lh .
+time zsh -i -c exit
+v ~/.config/zsh_plugins.txt
+mosh lego.tail01de8a.ts.net
+s
+j c
+d
+..
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+zrctime
+v ~/.config/zsh_plugins.txt
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+zsh
+s
+q
+exit
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+q
+zrctime
+s
+j c
+s
+d
+mosh localhost
+a.
+m "Skip unused plugins";P
+v ~/.config/zsh_plugins.zsh
+set -x
+zsh
+q
+unset -x
+git status -u .
+unset -x
+git status -u .
+q
+s
+j keep
+jo kwel
+jo keep
+cd src/keeps_and_kobolds
+cd
+jo keep
+j keep
+n
+j
+cd -
+b
+google rustix
+zrc
+exec zsh
+ducky rustix
+zrc
+git log -p
+j c
+git log -p
+gh
+zrc
+q
+fg
+q
+ducky rustix
+zrc
+q
+ducky rustix
+z
+j k
+b
+xdgbasedir
+rm ~/.pylintrc/pylintrc
+rm ~/.pylintrc/
+rm - ~/.pylintrc/
+rm -r ~/.pylintrc/
+rm ~/.pylintrc/
+rm ~/.pylintrc
+s
+which s
+which map
+which git
+v ~/.config/zsh_functions/git
+git
+s
+rm -rf target
+s
+git status -u .
+cd
+la
+ll
+la
+cat .bashrc
+rm .bashrc
+rm .bash_history
+xdgbasedir
+zrctime
+j c
+zrc
+d
+a
+.
+ls -lh .
+z
+j c
+d
+git checkout pylintrc/
+d
+v
+fg
+s
+d
+a.
+m "Ensure ohmyzsh plugins can use ohmyzsh lib and add fancy-ctrl-z"
+glo
+glo -p
+s
+web_search no
+web_search --help
+j t
+glo
+j k
+s
+glo
+brn map
+up
+up map origin/map
+up map map
+up map origin
+which up
+up origin/map
+p
+d
+edit
+n
+s
+edit
+a.
+n
+s
+last
+git commit --amend
+s
+P
+c
+s
+zrctime
+antidote check
+antidote bundle
+ls
+antidote install
+antidote update
+zrctime
+q
+archive .
+arrive
+zrc
+which zsh-patina
+echo "$_ZSH_PATINA_PATH"
+zrc
+git config --global --help
+git config --global edit
+git config edit --global
+fg
+rm .gitconfig
+la
+zsh
+q
+ls
+la
+xdgbasedir
+bat $PREFIX/etc/zsh/zshenv
+cd $PREFIX
+ls
+cd etc
+ls
+bat motd*
+v zprofile zshrc 
+s
+cd
+la
+z --help
+rm .z .z.lock
+la
+rm Code
+la
+touch ~/.config/zsh_plugins.txt
+xdgbasedir
+rm .pylintrc
+.
+fg
+s
+antidote path git@github.com
+v .cache/antidote/github.com/compilersEllie/use-xdg-basedirs
+ls .nvm
+v .cache/antidote/github.com/compilersEllie/use-xdg-basedirs/apps/python3.zsh
+q
+xdgbasedir
+cd ~/.cache/antidote/github.com
+ls
+zrc
+pushd ~/.config
+ls
+which nvim
+ls nvim
+rm nvim
+ls
+link 
+clear
+ls -s ~/src/nvim .
+ln -s ~/src/nvim .
+ls
+ls nvim
+popd
+s
+d
+..
+s
+d
+cd github.com/compilersEllie/use-xdg-basedirs
+ls
+d
+ls .git
+git statys
+git status
+s
+a.
+zrc
+v apps/node.zsh apps/npm.zsh
+s
+xdgbasedir
+touch ~/.config/zsh_plugins.txt
+xdgbasedir
+touch ~/.config/zsh_plugins.txt
+q
+xdgbasedir
+ls
+la
+ls fzf
+ls .fzf
+cd github.com/compilersEllie/use-xdg-basedirs
+cd .cache/antidotegithub.com/compilersEllie/use-xdg-basedirs
+cd .cache/antidote/github.com/compilersEllie/use-xdg-basedirs
+v apps/node.zsh apps/npm.zsh
+fg
+touch ~/.config/zsh_plugins.txt
+q
+xdgbasedir
+mv ~/.fzf ~/.local/share/fzf
+xdgbasedir
+q
+cd .config
+s
+rm zsh_functions/.c.log zsh_functions/.t.log 
+d
+zrc
+q
+zrc
+vrc
+q
+touch ~/.config/zsh_plugins.txt
+q
+zrc
+xdgbasedir
+echo $FZF_HOME
+ls $FZF_HOME
+j anti
+ls
+fzf
+git grep fzf
+git grep "/fzf"
+cd github.com
+ls
+ls */*fzf*
+ls *
+cd ~/.config
+ls
+git grep "fzf"
+fzf --zsh | less
+v zshenv
+zrc
+cd
+touch ~/.config/zsh_plugins.txt
+q
+cd .config
+git grep "fzf --zsh"
+fzf --zsh | less
+$FZF_HOME/bin/fzf --zsh
+$FZF_HOME/bin/fzf --help
+v zsh_plugins.txt
+git log -p
+source "${FZF_HOME}/shell/key-bindings.zsh"
+v "${FZF_HOME}/shell/key-bindings.zsh"
+echo "\${FZF_HOME}/shell/key-bindings.zsh" >> ~/.config/plugins/fzf.zsh
+zrc
+touch ~/.config/zsh_plugins.txt
+q
+v .config/plugins/fzf.zsh
+touch ~/.config/zsh_plugins.txt
+q
+fzf
+fg
+source "${FZF_HOME}/shell/key-bindings.zsh"
+v .config/plugins/fzf.zsh
+q
+zrc
+rm ~/.cache/p10k* ~/.config/zsh_plugins.zsh
+rm -rf ~/.cache/p10k* ~/.config/zsh_plugins.zsh
+q
+source "${FZF_HOME}/shell/key-bindings.zsh"
+v .config/plugins/binds.zsh .config/zshrc
+rm -rf ~/.cache/p10k* ~/.config/zsh_plugins.zsh
+q
+echo $FZF_HOME
+v /data/data/com.termux/files/home/.config/02_zsh_settings.zsh
+ls
+q
+zrc
+touch ~/.config/zsh_plugins.txt
+q
+zrc
+q
+bat ~/.config/zsh_plugins.zsh
+j c
+s
+d zsh_functions/
+a zsh_functions/
+D
+m "Update arrive for XDG"
+s
+m "Update arrive for XDG"
+git config --global user.name "Ellie Pratt"
+git config --global user.email "ellie@skfl.tech"
+ls ~/.gitconfig
+cat ~/.gitconfig
+cat gitconfig
+zrc
+ls
+rm ~/.gitconfig
+arrive
+cd .config
+m "Update arrive for XDG"
+s
+d
+a.
+D
+which fF
+which fzf
+cd /data/data/com.termux/files/home/.local/share/fzf/bin/fzf
+cd /data/data/com.termux/files/home/.local/share/fzf/
+ls
+p
+fzf --zsh | less
+ls
+git llg
+which fzf
+./bin/fzf --zsh
+./bin/fzf --bash
+./bin/fzf --hell
+./bin/fzf --help
+echo $FZF_DEFAULT_COMMAND
+echo $fzf_default_completion
+echo $FZF_HOME
+ls
+./uninstall
+v ~/.config/plugins/binds.
+cd
+touch ~/.config/zsh_plugins.txt
+q
+cat .fzf.zsh
+v .local/share/fzf/install
+cd ~/.local/share/fzf
+ls
+git grep "/.fzf"
+git grep "\/.fzf"
+git grep "\/\.fzf"
+git grep "\/\.fzf" | ge
+gg "\/\.fzf"
+s
+a.
+glo
+s
+gh repo fork
+m "Use default dirs in the style of XDG"
+s
+P
+ls
+touch ~/.config/zsh_plugins.txt
+q
+fzf-history-widget
+fzf
+fzf --hell
+fzf --help
+.
+which fzf-history-widget
+bindkey
+bindkey | grep fzf
+zrc
+cd ~/.local/share/fzf
+git log -p
+a
+v shell/key-bindings.zsh
+v ~/.config/plugins/binds.zsh
+apt search fzf
+fzf --version
+./bin/fzf --version
+ls /data/data/com.termux/files/usr/bin/fzf 
+/data/data/com.termux/files/usr/bin/fzf  --versio 
+/data/data/com.termux/files/usr/bin/fzf  --version
+/data/data/com.termux/files/usr/bin/fzf  --zsh
+..
+rm -rf fzf
+..
+zrc
+j c
+s
+reset plugins/fzf.zsh
+git reset plugins/fzf.zsh
+git reset -- plugins/fzf.zsh
+d
+s
+git reset -- plugins/fzf.zsh
+git checkout plugins/fzf.zsh
+v plugins/fzf.zsh
+s
+v plugins/binds.zsh
+s
+d
+D
+v zsh_plugins.txt
+d
+a zsh_plugins.txt
+D
+s
+git status -u .
+d plugins/
+a plugins/
+s
+touch ~/.config/zsh_plugins.txt
+q
+fzf --zsh | less
+cd .config
+git grep bindkey
+bindkey | grep fzf
+bindkey | grep R
+git grep history-incremental-search-backward
+v 00_zsh_styles.zsh
+q
+zrc
+source $(<fzf --zsh)
+source $(< fzf --zsh)
+source (< fzf --zsh)
+eval (fzf --zsh)
+eval "fzf --zsh"
+eval "$(fzf --zsh)"
+zrc
+v ~/.config/nvim/lua/compilersEllie/lazy.lua
+q
+v
+v ~/.config/nvim/lua/compilersEllie/lazy.lua
+v
+v ~/.config/nvim/lua/compilersEllie/lazy.lua
+q
+v
+cd .config
+s
+d
+v zshrc
+d
+..
+v .zsh
+v .fzf.bash .fzf.zsh 
+which fzf
+vrc
+which fzf
+v -O .config/plugins/fzf.zsh .fzf.bash .fzf.zsh 
+zrc
+s
+q
+fg
+s
+q
+builtin cd -- /data/data/com.termux/files/home/downloads
+v ~/.config/zsh_plugins.zsh
+s
+fzf --zsh
+zrc
+touch ~/.config/zsh_plugins.txt
+q
+s
+cd .config
+s
+rm plugins/fzf.zsh
+s
+git status -u .
+d crontab
+git checkout crontab
+s
+git rm plugins/fzf.zsh
+s
+a.
+D
+m "Force fzf to behave"
+s
+vrc
+s
+git status -u .
+P
+v
+j ke
+builtin cd -- /data/data/com.termux/files/home/src/keeps_and_kobolds/target/debug/.fingerprint/keeps_and_kobolds-e1bc17a3c54b45ac
+..
+rm target
+rm -rf target
+s
+zrc
+fg
+cd ~/.confgi
+cd ~/.confg
+cd ~/.config
+gg TARG
+ls
+..
+echo $CARGO_TARGET_DIR
+cd -
+git log -p
+cd ~/.cache/antidote/github.com/compilersEllie/use-xdg-basedirs
+ls
+s
+v apps/cargo.zsh
+cd
+find -name target
+find -name target -d
+find -type d -name target
+find -type d -name target | grep v llvm
+find -type d -name target | grep -v llvm
+find -type d -name target | grep -v llvm -v ./.local/share/cargo/target
+find -type d -name target | grep -v llvm | grep -v ./.local/share/cargo/target
+find -type d -name target | grep -v llvm | grep -v ./.local/share/cargo/target | xargs rm -r
+find -type d -name target | grep -v llvm | grep -v ./.local/share/cargo/target
+xdgbasedir
+s
+j tak
+bacon
+ls
+v ~/.config/bacon/prefs.toml
+bacon
+ls target
+rm -rf target
+v ~/.config/bacon/prefs.toml
+bat ~/.zshenv
+bat ~/.cache/antidote/github.com/compilersEllie/use-xdg-basedirs/apps/cargo.zsh
+fg
+xdgbasedir
+fg
+cargo check
+ls target
+rm -rf target
+CARGO_TARGET_HOME=$XDG_CACHE_HOME/cargo cargo check
+ls target
+CARGO_TARGET_DIR=$XDG_CACHE_HOME/cargo cargo check
+ls target
+rm -rf target
+CARGO_TARGET_DIR=$XDG_CACHE_HOME/cargo cargo check
+rm -rf target
+CARGO_TARGET_DIR=$XDG_CACHE_HOME/cargo cargo check
+ls target
+xdgbasedir
+fg
+bacon
+v ~/.config/bacon/prefs.toml
+bacon
+v ~/.config/bacon/prefs.toml +74
+bacon
+v ~/.config/bacon/prefs.toml +74
+bacon
+ls target
+rm -rf target
+ls target
+bacon
+ls target
+echo $CARGO_TARGET_DIR
+xdgbasedir
+echo $CARGO_TARGET_DIR
+zrv
+zrc
+touch ~/.config/zsh_plugins.txt
+echo $CARGO_TARGET_DIR
+echo $XDG_CACHE_HOME
+echo $CARGO_HOME
+rm -rf ~/.config/zsh_plugins.zsh ~/.cache/p10k-*
+echo $CARGO_HOME
+echo $CARGO_TARGET_DIR
+source ~/.cache/antidote/github.com/compilersEllie/use-xdg-basedirs/apps/cargo.zsh
+echo $CARGO_TARGET_DIR
+q
+echo $CARGO_TARGET_DIR
+xdgbasedir
+echo $CARGO_TARGET_DIR
+find -type d -name target | grep -v llvm | grep -v ./.local/share/cargo/target
+rm -rf src/tako/target/
+j t
+j tak
+s
+bacon
+ls
+ls target
+s
+zrv
+j c
+s
+a .
+D
+v bacon/prefs.toml
+git grep RUST
+plugins/sscache.zsh:[[ -x $SCCACHE ]] && export RUSTC_WRAPPER="$SCCACHE"
+git grep INCR
+git grep INCR | cay
+git grep INCR | cat
+git grep IN| cat
+git grep INCR | cat
+git grep RUST | cat
+v bacon/prefs.toml
+fg
+which sccache
+which rustc
+fg
+pkg install sccache
+pkg search sccache
+pkg install sccache
+zrc
+which rustup
+q
+echo $RUSTC_WRAPPER
+zrc
+cd .config
+v bacon/prefs.toml
+j tak
+bacon
+ls
+v ~/.config/bacon/prefs.toml
+bacon
+ls target
+v ~/.config/bacon/prefs.toml
+ls
+bacon check
+bacon build
+bacon
+zrv
+bacon --help
+bacon --list
+bacon --list-jobs
+v ~/.config/bacon/prefs.toml
+bacon --list-jobs
+bacon
+cargo --help
+man cargo
+man cargo-build
+echo $CARGO_HOME
+v /data/data/com.termux/files/home/.local/share/cargo/config.toml
+arrive
+realpath ~/.local/share/cargo/config.toml
+v ~/.config/cargo/config.toml ~/.config/bacon/prefs.toml
+bacon
+unset CARGO_TARGET_DIR
+bacon
+rm -rf target
+q
+j tak
+ls
+v ~/.config/cargo/config.toml ~/.config/bacon/prefs.toml
+s
+a 
+a.
+m "Remove bacon prefs that should be user specified"
+s
+bacon
+ls target
+ls
+P
+pP
+.
+v ~/.gitconfig ~/.config/gitconfig\
+i
+v ~/.gitconfig ~/.config/gitconfig
+v ~/.config/gitconfig
+s
+git stash show -p
+j c
+s
+a cargo
+d
+a -p
+s
+m "Setup cargo sccache and bacon to handle caching based on env vars"
+glo -p
+git --versio 
+git --version
+mkdir git
+mv gitconfig git/
+..
+rm .gitconfig
+cd .config/git
+ls
+mv gitconfig config
+s
+a.
+s
+a..
+..
+a.
+s
+m "Use git config dir"
+ls gitignore_global
+v git/config gitignore_global 
+v git/config git/ignore 
+a.
+s
+git commit --amend
+..
+la
+ls -lh .
+la
+j c
+git greo .ohmyzsh
+cd ..
+ls
+ls .ohmyzsh
+realpath .ohmyzsh
+rm -rf .ohmyzsh
+q
+ls .ohmyzsh
+fg
+j c
+s
+..
+la
+ls .nvm
+rm -rf .nvm
+which do_arrive
+v ~/.config/zsh_functions/do_arrive
+vrc
+zrc
+q
+vrc
+zrc
+vrc
+touch ~/.config/zsh_plugins.txt
+vrc
+zrc
+q
+vrc
+cd .config/
+s
+d
+a.
+m "Cd to dirs when editing rc files so fzf finds things properly"
+P
+cd nvim
+ls
+s
+d
+a.
+d
+D
+m "Avoid overriding global fzf"
+s
+p
+P
+which P
+cd ..
+j gre
+gg greasy
+j gre
+gg greasy
+v git/ignore
+v .gitignore
+s
+git checkout  
+s
+git checkout  .
+s
+..
+ls
+la
+zrc
+vrc
+vrx
+vrc
+mv ~/.vim ~/.local/share/vim
+la
+cat .bashrc
+rm .bashrc
+la
+cat .zsh_history
+v ~/.config/zsh_history
+zrc
+rm .zsh_history
+la
+ls ~/.config/ssh
+echo $TERMUX__HOME
+echo $TERMUX__PREFIX
+termux-reload-settings --help
+which termux-open
+termux-open --help
+termux-sms-inbox
+termux-sms-list
+termux-sms-list | grep Dad
+termux-sms-list | grep -i Dad
+termux-sms-list | grep David
+termux-sms-list --hell
+termux-sms-list --help
+termux-sms-list --conversation-list
+termux-sms-list --conversation-list | less
+termux-wallpaper --help
+termux-wallpaper -h
+termux-info
+termux-info  | grep "\.termux"
+s
+ls /data/user/0/com.termux
+ls /data/user/0/com.termux/shared_prefs/com.termux_preferences.xml
+ls /data/user/0/com.termux/files/home/.termux
+mv .termux .config/termux
+zrc
+j c
+s
+a.
+D
+m "Backup termux config"
+. 
+q
+rm -rf antidote
+arrive
+zrc
+s
+q
+j c
+s
+d
+a 
+a.
+glo
+D
+a.
+git commit --amend
+P
+cd
+la
+rm .gitconfig
+ls
+la
+rm .bash_history
+la
+j c
+s
+cd nvim
+s
+d
+a.
+m "Use XDG dir fir undodir"
+s
+pP
+xdgbasedir --help
+nrc
+vec
+vrc
+dg
+fg
+xdgbasedir --help
+la
+..
+la
+cat /etc/zshenv
+cat $PREFIX/etc/zshenv
+v ~/.cache/antidote/github.com/mattmc3/use-xdg-basedirs/apps/python3.zsh
+q
+xdgbasedir
+v ~/.cache/antidote/github.com/mattmc3/use-xdg-basedirs/apps/zsh.zsh
+q
+xdgbasedir
+which xdgbasedir
+echo $ZDOTDIR
+v ~/.cache/antidote/github.com/mattmc3/use-xdg-basedirs/apps/zsh.zsh
+cat $PREFIX/etc/zshenv
+v ~/.cache/antidote/github.com/mattmc3/use-xdg-basedirs/apps/zsh.zsh
+xdgbasedir
+touch ~/.config/zsh_plugins.txt
+q
+xdgbasedir
+la
+cat .zshrc
+v ~/.cache/antidote/github.com/mattmc3/use-xdg-basedirs/apps/zsh.zsh
+xdgbasedir
+fg
+ls .zshrc
+ls /data/data/com.termux/files/usr/etc/zprofile /data/data/com.termux/files/usr/etc/zshrc 
+v /data/data/com.termux/files/usr/etc/zprofile /data/data/com.termux/files/usr/etc/zshrc 
+v .config/zsh_functions/do_arrive
+touch ~/.config/zsh_plugins.txt
+q
+v /data/data/com.termux/files/usr/etc/zprofile /data/data/com.termux/files/usr/etc/zshrc 
+arrive
+v /data/data/com.termux/files/usr/etc/zprofile /data/data/com.termux/files/usr/etc/zshrc 
+zrc
+arrive
+v /data/data/com.termux/files/usr/etc/zprofile /data/data/com.termux/files/usr/etc/zshrc 
+touch ~/.config/zsh_plugins.txt
+q
+arrive
+zrc
+arrive
+touch ~/.config/zsh_plugins.txt
+v /data/data/com.termux/files/usr/etc/zprofile /data/data/com.termux/files/usr/etc/zshrc 
+q
+arrive
+ls -lh .
+arrive
+la
+rm .zsh*
+.
+ls
+la
+s
+j c
+s
+d
+a.
+v zsh_functions/do_arrive
+s
+a zsh_functions/
+s
+D
+m "Setup ZDOTDIR in arrive"
+P
+s
+git status -u .
+ls
+..
+la
+ls .local
+vrc
+j nv
+s
+a.
+D
+m "Fix undo dir path"
+P
+..
+s
+rm -rf  ../.local/statevim/
+ls
+s
+.
+..
+la
+l
+la
+ll
+ls
+s
+.
+ls
+rm SKFL\ Application\ Graph\ Pretty.svg
+bat test.py
+rm test.py
+.
+ls
+mv dad_rant_professional downloads
+ls
+icat graph.png
+termux-open --view graph.png
+ls -lh .
+termux-open --help
+termux-open graph.png
+termux-open --send graph.png
+imgcat
+img_cat
+clear
+ls
+rm graph.png map1.png 
+ls
+ls storage downloads
+z src
+ls
+cd
+zrc
+antidote list
+antidote list | sed "/$PREFIX//"
+antidote list | sed "s/$PREFIX//"
+ls -lh .
+antidote list | sed "s|$PREFIX||"
+antidote list | sed s"|$XDG_CONFIG_HOME||"
+antidote list | sed s"|$XDG_CONFIG_HOME||g"
+antidote list | sed s"|$XDG_CACHE_HOME||"
+antidote list | sed s"|$XDG_CACHE_HOME|~/.cache|"
+antidote list | sed s"|$XDG_CACHE_HOME|~/.cache|" | cut -f1
+cat ~/.zsh_plugins.txt | sed "s|#.*||g"
+cat ~/.config/zsh_plugins.txt | sed "s|#.*||g"
+cat ~/.config/zsh_plugins.txt | sed "s|#.*||g" | sort | uniq
+cat ~/.config/zsh_plugins.txt | sed "s|#.*||g" | sed "s| .*||g" sort | uniq
+cat ~/.config/zsh_plugins.txt | sed "s|#.*||g" | sed "s| .*||g" | sort | uniq
+cat ~/.config/zsh_plugins.txt | sed "s|#.*||g" | sed "s| .*||g" | sort | uniq | grep -v "~"
+cat ~/.config/zsh_plugins.txt | sed "s|#.*||g" | sed "s| .*||g" | sort | uniq | grep -v "^~?$" 
+cat ~/.config/zsh_plugins.txt | sed "s|#.*||g" | sed "s| .*||g" | sort | uniq | grep -Ev "^~?$" 
+cat ~/.config/zsh_plugins.txt | sed "s|[# ].*||g" | sort | uniq | grep -Ev "^~?$" 
+cat ~/.config/zsh_plugins.txt | sed "s|[# ].*||g" | sort | grep -Ev "^~?$" 
+cat ~/.config/zsh_plugins.txt | sed "s|[# ].*||g" | grep -Ev "^~?$" 
+cat ~/.config/zsh_plugins.txt | sed "s|[# ].*||g" | grep -Ev "^~?$" | sort | unique
+cat ~/.config/zsh_plugins.txt | sed "s|[# ].*||g" | grep -Ev "^~?" | sort | unique
+cat ~/.config/zsh_plugins.txt | sed "s|[# ].*||g" | grep -Ev "^(~|$)" | sort | unique
+cat ~/.config/zsh_plugins.txt | sed "s|[# ].*||g" | grep -Ev "^(~|$)" | sort | unique | sed "s|:|/|"
+cat ~/.config/zsh_plugins.txt | sed "s|[# ].*||g" | grep -Ev "^(~|$)" | sort | unique | sed "s|:|/|" | sed "s|.*@||"
+cat ~/.config/zsh_plugins.txt | sed "s|[# ].*||g" | grep -Ev "^(~|$)" | sort | unique | sed "s|:|/|" | sed "s|.*@github.com||"
+cat ~/.config/zsh_plugins.txt | sed "s|[# ].*||g" | grep -Ev "^(~|$)" | sort | unique | sed "s|.*@github.com:||"
+zrc
+q
+source ~/.config/zshenv
+source ~/.config/zshrc
+s
+ls
+nvim $PREFIX/etc/z*
+nvim $PREFIX/
+q
+source ~/.config/zsh/zshenv
+source ~/.config/zsh/zshrc
+nvim /data/data/com.termux/files/home/.config/zsh/zshrc
+q
+exit
+source ~/.config/zsh/zshenv
+source ~/.config/zsh/zshrc
+so
+rm ~/.config/zsh/zsh_plugins.zsh
+q
+source ~/.config/zsh/zshenv
+source ~/.config/zsh/zshrc
+arrive
+do_arrive
+la
+zrc
+v ~/.config/zsh/plugins/aliases.zsh
+s
+exec zsh
+e
+source ~/.config/zsh/zshenv
+source ~/.config/zsh/zshenv
+cd .cofig
+cd .co fig
+cd .config
+ls
+cd zsh
+rm zshenv
+git checkout zshenv
+v plugins/arrive.zsh plugins/do_arrive.zsh 
+nvim /data/data/com.termux/files/home/.config/zsh/plugins/arrive.zsh /data/data/com.termux/files/home/.config/zsh/plugins/do_arrive.zsh 
+q
+exit
+source ~/.config/zsh/zshenv
+source ~/.config/zsh/zshrc
+arrive
+do_arrive
+la
+cat .zshenv
+rm .zshenv
+v ~/.config/zsh/plugins/do_arrive.zsh
+exec zsh
+source ~/.zsh
+source ~/.config/zsh/zshenv
+source ~/.config/zsh/zshrc
+arrive
+do_arrive
+la
+cat .zshenv
+q
+nvim ~/.config/zsh/plugins/do_arrive.zsh
+source ~/.config/zsh/plugins/arrive.zsh
+source ~/.config/zsh/plugins/do_arrive.zsh
+source ~/.zshrc
+source ~/.config/zsh/zshenv
+source ~/.config/zsh/zshrc
+arrice
+arrive
+do_arrive
+la
+v /data/data/com.termux/files/home/.config/zsh/plugins/arrive.zsh /data/data/com.termux/files/home/.config/zsh/plugins/do_arrive.zsh 
+source ~/.config/zsh/plugins/arrive.zsh
+exit
+ls
+l
+la
+ls -la
+zsh
+zsh -c "set -x"
+q
+exit
+nvim
+q
+exit
+source .zshenv
+arrive
+q
+exit
+zsh
+exit
+echo $ZDOTDIR
+nvim /data/data/com.termux/files/usr/etc/zprofile /data/data/com.termux/files/usr/etc/zshrc 
+rm .zshrc
+rm .zshenv
+la
+ls -la
+rm .bash_history
+ls
+la
+ls -la
+q
+exit
+ls
+rm -rf
+bat .config/zsh/zshenv
+bat .config/zsh/zshrc
+bat .config/zsh/zshenv
+bat .config/zsh/zshrc
+bat .config/zsh/zshenv
+v .config/zsh/zshenv
+nvim .config/zsh/zshenv
+source .config/zsh/zshenv
+source .config/zsh/zshrc

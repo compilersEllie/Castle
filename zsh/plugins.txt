@@ -8,8 +8,8 @@ zsh-users/zsh-completions
 romkatv/powerlevel10k
 romkatv/zsh-defer
 git@github.com:compilersEllie/use-xdg-basedirs
-~/.config/plugins
-~/.config/zsh_functions/ kind:autoload
+~/.config/zsh/plugins
+~/.config/zsh/functions kind:autoload
 
 # Lazy plugins
 ohmyzsh/ohmyzsh path:lib
