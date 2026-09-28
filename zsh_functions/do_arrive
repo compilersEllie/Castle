@@ -2,6 +2,7 @@
 local PKG_MAN=$(pkg_man)
 
 link "${HOME}/src/nvim" "${HOME}/.config/nvim"
+link "${HOME}/.config/cargo/config.toml" "${XDG_DATA_HOME}/cargo/config.toml"
 cat "${HOME}/.config/crontab" | crontab 1> /dev/null
 
 # LOAD EXTERNALS
@@ -17,6 +18,7 @@ if is-laptop; then
   program kitty
   program rustup
 fi
+program sccache
 crate bat
 setup zsh-patina "$_ZSH_PATINA_PATH" "cargo install zsh-patina"
 dotfile zshrc
