@@ -8,3 +8,4 @@ select-word-style bash
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
 setopt no_bang_hist # turn off history expansion using !
+setopt interactivecomments # inlime comments
