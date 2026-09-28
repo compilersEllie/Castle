@@ -11,9 +11,9 @@ setup() {
     NAME=$1; ENTRY=$2; CMD=$3
     # If the ENTRY file exists OR is an executable function (typically a wrapper).
     [[ -e "$ENTRY" ]] && return
-    echo "$NAME is missing"
+    echo "$NAME is missing -> $CMD"
     [[ -z "$CMD" ]] && return
-    sh -c "$CMD" # TODO ask for confirmation or exit
+    sh -c "$CMD"
 }
 
 dotfile() {
