@@ -1,4 +1,10 @@
 #!/usr/bin/zsh
+if [[ ! -n $ZDOTDIR ]]; then
+  echo "export ZDOTDIR=\"\${ZDOTDIR:-\$XDG_CONFIG_HOME/.config/zsh/}\"" >> $PREFIX/etc/zshrc
+  echo "Setting ZDOTDIR" 2> /dev/stderr
+  source $PREFIX/etc/zshrc
+fi
+
 local PKG_MAN=$(pkg_man)
 
 link "${HOME}/src/nvim" "${HOME}/.config/nvim"
@@ -21,6 +27,4 @@ fi
 program sccache
 crate bat
 setup zsh-patina "$_ZSH_PATINA_PATH" "cargo install zsh-patina"
-dotfile zshrc
-dotfile zshenv
 dotfile termux
