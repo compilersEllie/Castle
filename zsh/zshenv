@@ -8,6 +8,8 @@ export WORDCHARS=' *?_-.[]~=\\/&;!#$%^(){}<>'
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export KEYTIMEOUT=0.1
 export TERM="xterm-256color"
+export MAGIC_ENTER_GIT_COMMAND='s'
+export MAGIC_ENTER_OTHER_COMMAND='s'
 
 # TOOL SETTINGS
 export LLVM_SYS_221_PREFIX="/mnt/big/llvm-project/build"
