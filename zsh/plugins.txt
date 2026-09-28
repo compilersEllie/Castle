@@ -12,7 +12,6 @@ git@github.com:compilersEllie/use-xdg-basedirs
 ~/.config/zsh/functions kind:autoload
 
 # Lazy plugins
-ohmyzsh/ohmyzsh path:lib
 ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z
 ohmyzsh/ohmyzsh path:plugins/magic-enter kind:defer
 ohmyzsh/ohmyzsh path:plugins/mosh kind:defer
