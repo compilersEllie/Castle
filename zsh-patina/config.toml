@@ -1,5 +1,6 @@
 [highlighting]
-theme = "catppuccin-mocha"
+# theme = "catppuccin-mocha"
+theme = "nord"
 
 dynamic = true
 
