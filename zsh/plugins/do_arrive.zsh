@@ -1,5 +1,9 @@
 #!/usr/bin/zsh
 
+function is-laptop() {
+  [[ $OSTYPE != linux-android ]]
+}
+
 function do_arrive_packages() {
   local PKG_MAN=$(pkg_man)
 
@@ -24,6 +28,7 @@ function do_arrive_configs() {
     echo "Setting ZDOTDIR" 2> /dev/stderr
     cat "${HOME}/.config/zsh/bootstrap" >> "$PREFIX/etc/zshrc"
   fi
+  link "${HOME}/.config" "${HOME}/src/Castle"
 
   repo "nvim config" "git@github.com/compilersEllie/nvim_config" "${HOME}/.config/nvim"
   link "${HOME}/.config/nvim" "${HOME}/src/nvim_config"
