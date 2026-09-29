@@ -4,7 +4,7 @@ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export GIT_BIN="$(which git)"
 export ANTIDOTE_HOME="$HOME/.cache/antidote"
 export CARGO_HOME="$HOME/.cache/cargo"
-export CARGO_TARGET_DIR = "$CARGO_HOME/target"
+export CARGO_TARGET_DIR="$CARGO_HOME/target"
 export CARGO_INCREMENTAL=0
 
 export WORDCHARS=' *?_-.[]~=\\/&;!#$%^(){}<>'
