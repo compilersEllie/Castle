@@ -1,11 +1,13 @@
 # EXPORTS
 export HOME="$(cd;pwd)"
-export ANTIDOTE_HOME="$HOME/.cache/antidote"
-
-export NVM_LAZY_LOAD=true
-export NVM_COMPLETION=true
-export WORDCHARS=' *?_-.[]~=\\/&;!#$%^(){}<>'
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+export GIT_BIN="$(which git)"
+export ANTIDOTE_HOME="$HOME/.cache/antidote"
+export CARGO_HOME="$XDG_CACHE_HOME/cargo"
+export CARGO_TARGET_DIR = "$CARGO_HOME/target"
+export CARGO_INCREMENTAL=0
+
+export WORDCHARS=' *?_-.[]~=\\/&;!#$%^(){}<>'
 export KEYTIMEOUT=0.1
 export TERM="xterm-256color"
 export MAGIC_ENTER_GIT_COMMAND='s'
@@ -22,11 +24,13 @@ if [ ! -n "$EDITOR" ]; then
   fi
 fi
 export VISUAL="\$EDITOR"
-export CARGO_INCREMENTAL=0
+
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+
 export OLLAMA_REQUEST_TIMEOUT=600
 export OLLAMA_FLASH_ATTENTION=1
 export OLLAMA_KV_CACHE_TYPE=q8_0
-export GIT_BIN="$(which git)"
 
 # HISTORY
 export HISTSIZE=1000000 # set history size
