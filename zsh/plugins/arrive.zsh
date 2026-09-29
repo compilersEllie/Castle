@@ -52,7 +52,7 @@ repo() {
 
 arrive() {
   source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/zshenv"
-  source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/zshrc"
   source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/plugins/do_arrive.zsh"
   do_arrive
+  source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/zshrc"
 }
