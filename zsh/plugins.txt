@@ -1,3 +1,4 @@
+# vim:filetype=sh
 # First
 mattmc3/ez-compinit
 git@github.com:compilersEllie/use-xdg-basedirs
