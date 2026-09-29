@@ -15,13 +15,12 @@ git@github.com:compilersEllie/use-xdg-basedirs
 ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z
 ohmyzsh/ohmyzsh path:plugins/magic-enter kind:defer
 ohmyzsh/ohmyzsh path:plugins/mosh kind:defer
-# ohmyzsh/ohmyzsh path:plugins/extract kind:defer
+ohmyzsh/ohmyzsh path:plugins/extract kind:defer
 ohmyzsh/ohmyzsh path:plugins/autojump kind:defer
 ohmyzsh/ohmyzsh path:plugins/web-search kind:defer
 git@github.com:compilersEllie/greasy kind:defer
-# agkozak/zsh-z kind:defer
 lukechilds/zsh-nvm kind:defer
-# romkatv/zsh-bench kind:path
+romkatv/zsh-bench kind:path
 
 # Repos
 git@github.com:compilersEllie/Castle branch:main kind:clone
