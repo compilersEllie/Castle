@@ -46,7 +46,7 @@ crate() {
 }
 
 repo() {
-  PKG=$1; REPO=$2; DIR=${3:$HOME/-$1}
+  PKG=$1; REPO=$2; DIR=$3
   setup $PKG $DIR "git clone $REPO $DIR"
 }
 
