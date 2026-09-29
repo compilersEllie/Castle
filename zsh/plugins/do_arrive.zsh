@@ -18,8 +18,9 @@ function do_arrive_packages() {
     program rustup
   fi
   program sccache
-  crate bat
-  setup zsh-patina "$_ZSH_PATINA_PATH" "cargo install zsh-patina"
+  program bat
+  crate cog cocogitto cog
+  crate zsg-patina
   crontab "${HOME}/.config/crontab" 1> /dev/null
 }
 
