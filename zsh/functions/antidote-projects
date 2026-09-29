@@ -17,27 +17,25 @@ for line in $REPOS[@]; do
   dest="$PROJECTS_DIR/$name"
   if [[ ! -d $dest ]]; then
     if [[ -d $src ]]; then
-      echo "moving $src -> $name @ $dest"
+      echo "moving $repo -> $name"
       mv $src $dest # Move the repo
     else
-      echo "can't find $name in $src or $dest"
-      echo "cloning $repo to $dest"
+      echo "can't find $name"
+      echo "cloning $repo to $PROJECTS_DIR"
       git clone $repo $dest
     fi
   fi
   # dest exists, check src
   if [[ -d $src ]]; then
-    echo "S $src"
-    echo "D $dest"
     if [[ "$(realpath $src)" == "$dest" ]]; then
       # already linked
       continue
     fi
-    echo "backing up duplicate $src -> ~/.tmp/$name"
+    echo "backing up duplicate $repo -> ~/.tmp/$name"
     mkdir -p  ~/.tmp/
     mv $src ~/.tmp/$name
   fi
-  echo "linking $src -> $name @ $dest"
+  echo "linking $repo -> $name"
   mkdir -p $(dirname $src)
   ln -s $dest $src # Link to the repoo
 done
