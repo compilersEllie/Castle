@@ -42,7 +42,7 @@ function do_arrive_antidote() {
 
 function do_arrive() {
   # Setup our config & repos
-  do_arrive_packages &
-  do_arrive_antidote &
   do_arrive_configs &
+  do_arrive_packages &
+  do_arrive_antidote
 }
