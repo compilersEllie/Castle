@@ -35,6 +35,7 @@ function do_arrive_configs() {
   link "${HOME}/.config/nvim" "${HOME}/src/nvim_config"
   link "${HOME}/.config/cargo/config.toml" "${HOME}/.cache/cargo/config.toml"
   setup "zshrc stub" "${HOME}/.zshrc" "touch ${HOME}/.zshrc" # To silence zsh's help
+  setup "fzf zsh" "${HOME}/.config/zsh/fzf.zsh" "fzf --zsh >> \"${HOME}/.config/zsh/fzf.zsh\""
   dotfile termux
 
   # Remove the plugin file so antidote installs

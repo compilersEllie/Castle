@@ -5,6 +5,7 @@ export ANTIDOTE_HOME="$HOME/.cache/antidote"
 export CARGO_HOME="$HOME/.cache/cargo"
 export CARGO_TARGET_DIR="$CARGO_HOME/target"
 export CARGO_INCREMENTAL=0
+export ZSH_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
 
 export WORDCHARS=' *?_-.[]~=\\/&;!#$%^(){}<>'
 export KEYTIMEOUT=0.1
@@ -39,23 +40,21 @@ export HISTIGNORE="^(fg|bg|ls|s|p|q|cd|exit)$"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=yellow"
 
 # Set up path!
-PATH="/data/data/com.termux/files/usr/bin/:/usr/bin:/usr/sbin"
-path() {
-  PATH="$1:$PATH"
-}
-
-# Later is higher precedence
-path "/var/lib/snapd/snap/bin"
-path "/usr/local/bin"
-path "/opt/local/bin"
-path "/usr/local/sbin"
-path "$HOME/.npm-global/bin"
-path "$HOME/.local/share/pi-node/node-v22.23.2-linux-x64/bin"
-path "$HOME/.cache/cargo/bin"
-path "$HOME/.local/share/fzf/bin"
-path "$HOME/.dotnet/tools"
-path "$HOME/.local/bin"
-path "$HOME/.rbenv/bin"
-path "$HOME/.config/bin"
-path "/usr/local/cuda-12.5/bin"
+path=(
+  "/data/data/com.termux/files/usr/bin/"
+  "/usr/bin:/usr/sbin"
+  "/var/lib/snapd/snap/bin"
+  "/usr/local/bin"
+  "/opt/local/bin"
+  "/usr/local/sbin"
+  "/usr/local/cuda-12.5/bin"
+  "$HOME/.dotnet/tools"
+  "$HOME/.rbenv/bin"
+  "$HOME/.npm-global/bin"
+  "$HOME/.local/share/pi-node/node-v22.23.2-linux-x64/bin"
+  "$HOME/.cache/cargo/bin"
+  "$HOME/.local/share/fzf/bin"
+  "$HOME/.local/bin"
+  "$HOME/.config/bin"
+)
 export PATH="$PATH"

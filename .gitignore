@@ -91,6 +91,7 @@ qterminal.org
 bin/ccat
 greasy
 fzf-tab-completion
+zsh/fzf.zsh
 htop
 wslu
 volumeicon

@@ -1,14 +1,12 @@
 # First
 mattmc3/ez-compinit
+git@github.com:compilersEllie/use-xdg-basedirs
 
 # Plugins
-michel-kraemer/zsh-patina
-zsh-users/zsh-autosuggestions
-zsh-users/zsh-completions
 romkatv/powerlevel10k
 romkatv/zsh-defer
-git@github.com:compilersEllie/use-xdg-basedirs
 ~/.config/zsh/plugins
+ohmyzsh/ohmyzsh path:plugins/last-working-dir
 ~/.config/zsh/functions kind:autoload
 
 # Lazy plugins
@@ -18,6 +16,9 @@ ohmyzsh/ohmyzsh path:plugins/mosh kind:defer
 ohmyzsh/ohmyzsh path:plugins/extract kind:defer
 ohmyzsh/ohmyzsh path:plugins/autojump kind:defer
 ohmyzsh/ohmyzsh path:plugins/web-search kind:defer
+michel-kraemer/zsh-patina kind:defer
+zsh-users/zsh-autosuggestions kind:defer
+zsh-users/zsh-completions kind:defer
 git@github.com:compilersEllie/greasy kind:defer
 lukechilds/zsh-nvm kind:defer
 romkatv/zsh-bench kind:path
