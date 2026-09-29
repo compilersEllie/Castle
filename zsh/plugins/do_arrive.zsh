@@ -27,7 +27,7 @@ function do_arrive_configs() {
 
   repo "nvim config" "git@github.com/compilersEllie/nvim_config" "${HOME}/.config/nvim"
   link "${HOME}/.config/nvim" "${HOME}/src/nvim_config"
-  link "${HOME}/.config/cargo/config.toml" "${XDG_DATA_HOME}/cargo/config.toml"
+  link "${HOME}/.config/cargo/config.toml" "${HOME}/.cache/cargo/config.toml"
   setup "zshrc stub" "${HOME}/.zshrc" "touch ${HOME}/.zshrc" # To silence zsh's help
   dotfile termux
 }
@@ -42,7 +42,7 @@ function do_arrive_antidote() {
 
 function do_arrive() {
   # Setup our config & repos
-  do_arrive_configs &
-  do_arrive_packages &
+  do_arrive_configs
+  do_arrive_packages
   do_arrive_antidote
 }
