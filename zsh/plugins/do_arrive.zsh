@@ -35,6 +35,9 @@ function do_arrive_configs() {
   link "${HOME}/.config/cargo/config.toml" "${HOME}/.cache/cargo/config.toml"
   setup "zshrc stub" "${HOME}/.zshrc" "touch ${HOME}/.zshrc" # To silence zsh's help
   dotfile termux
+
+  # Remove the plugin file so antidote installs
+  rm ${HOME}/.config/zsh/plugins.zsh
 }
 
 function do_arrive_antidote() {
@@ -42,7 +45,6 @@ function do_arrive_antidote() {
   link "${ANTIDOTE_HOME}" "${HOME}/src/antidote"
   source "${ZDOTDIR}/functions/antidote-projects"
   source "${ANTIDOTE_HOME}/antidote.zsh"
-  antidote install
 }
 
 function do_arrive() {
