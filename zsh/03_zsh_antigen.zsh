@@ -1,3 +1,8 @@
-source "${ANTIDOTE_HOME}/antidote.zsh"
+zsh_plugins=${ZDOTDIR}/plugins
 
-antidote load ${HOME}/.config/zsh/plugins.txt
+if [[ ! ${zsh_plugins}.zsh -nt ${zsh_plugins}.txt ]]; then
+  source "${ANTIDOTE_HOME}/antidote.zsh"
+  antidote bundle <${zsh_plugins}.txt >|${zsh_plugins}.zsh
+fi
+
+source ${zsh_plugins}.zsh

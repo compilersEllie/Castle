@@ -1,5 +1,4 @@
 # EXPORTS
-export HOME="$(cd;pwd)"
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export GIT_BIN="$(which git)"
 export ANTIDOTE_HOME="$HOME/.cache/antidote"
