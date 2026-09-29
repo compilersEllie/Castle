@@ -1,0 +1,6 @@
+#!/usr/bin/zsh
+local PROJECTS_DIR="${1:-$HOME/src}"
+ls ${PROJECTS_DIR} | \
+  xargs -I{} zsh -c "cd ~/src/{}; git remote -v | grep '(fetch)'" | \
+  sed "s|.*	.*[:/]\(.*\)/\(.*\) .*$|\1 \2|" | \
+  sed "s|\.git$||"

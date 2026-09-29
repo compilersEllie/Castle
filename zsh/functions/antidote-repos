@@ -1,8 +1,9 @@
 #!/usr/bin/zsh
 local PLUGIN_FILE="${XDG_CONFIG_HOME:-$HOME/.config}/zsh/plugins.txt"
 cat $PLUGIN_FILE | \
-  sed "s|[# ].*||g" | \
-  grep -Ev "^(~|$)" | \
-  sort | \
-  unique | \
-  sed "s|.*@github.com:||"
+  sed "s|[# ].*||g" | # Remove comments # \
+  grep -Ev "^(~|$)" | # Remove local files and empty ines # \
+  sort | uniq |       # No duplicates # \
+  sed "s|.*@\(.*\):\(.*\)|\1/\2|" | # Convert ssh to subdir # \
+  sed "s|^\([^/]*\)/\([^/]*\)$|github.com/\1/\2|" | # user/proj to subdir \
+  sed "s|^\([^/]*\)/\(.*\)/\([^/]*\)$|\1/\2/\3\t\3|"  # subdir \t proj

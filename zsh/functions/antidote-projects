@@ -1,0 +1,45 @@
+#!/usr/bin/zsh
+local REPOS_FILE="${XDG_CONFIG_HOME:-$HOME/.config}/zsh/functions/antidote-repos"
+local PROJ_FILE="${XDG_CONFIG_HOME:-$HOME/.config}/zsh/functions/antidote-existing-projects"
+local PROJECTS_DIR="${1:-$HOME/src}"
+
+echo "Loading projects..."
+PROJ=("${(@f)$(zsh $PROJ_FILE)}")
+
+echo "Loading repos..."
+REPOS=("${(@f)$(zsh $REPOS_FILE)}")
+
+echo "Porting repos to projects..."
+for line in $REPOS[@]; do
+  repo=$(cut -f1 <<< $line)
+  name=$(cut -f2 <<< $line)
+  src="$ANTIDOTE_HOME/$repo"
+  dest="$PROJECTS_DIR/$name"
+  if [[ ! -d $dest ]]; then
+    if [[ -d $src ]]; then
+      echo "moving $src -> $name @ $dest"
+      mv $src $dest # Move the repo
+    else
+      echo "can't find $name in $src or $dest"
+      echo "cloning $repo to $dest"
+      git clone $repo $dest
+    fi
+  fi
+  # dest exists, check src
+  if [[ -d $src ]]; then
+    echo "S $src"
+    echo "D $dest"
+    if [[ "$(realpath $src)" == "$dest" ]]; then
+      # already linked
+      continue
+    fi
+    echo "backing up duplicate $src -> ~/.tmp/$name"
+    mkdir -p  ~/.tmp/
+    mv $src ~/.tmp/$name
+  fi
+  echo "linking $src -> $name @ $dest"
+  mkdir -p $(dirname $src)
+  ln -s $dest $src # Link to the repoo
+done
+
+# echo "Listing unmanaged projects..."
