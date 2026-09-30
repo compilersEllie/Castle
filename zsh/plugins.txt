@@ -4,14 +4,14 @@ mattmc3/ez-compinit
 git@github.com:compilersEllie/use-xdg-basedirs
 
 # Plugins
-romkatv/powerlevel10k
 romkatv/zsh-defer
 ~/.config/zsh/plugins
 ohmyzsh/ohmyzsh path:plugins/last-working-dir
 ~/.config/zsh/functions kind:autoload
 
 # Lazy plugins
-ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z
+romkatv/powerlevel10k kind:defer
+ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z kind:defer
 ohmyzsh/ohmyzsh path:plugins/magic-enter kind:defer
 ohmyzsh/ohmyzsh path:plugins/mosh kind:defer
 ohmyzsh/ohmyzsh path:plugins/extract kind:defer
