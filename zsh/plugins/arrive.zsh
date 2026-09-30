@@ -4,6 +4,10 @@ link() {
   if [ -d "$2" ]; then
     return
   fi
+  echo "$2 is missing -> linking"
+  if [ ! -d "$(dirname $2)" ]; then
+    mkdir -p $(dirname $2)
+  fi
   ln -sf "$1" "$2"
 }
 

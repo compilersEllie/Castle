@@ -25,7 +25,6 @@ lukechilds/zsh-nvm kind:defer
 romkatv/zsh-bench kind:path
 
 # Repos
-git@github.com:compilersEllie/Castle branch:main kind:clone
 git@github.com:HCAIRESteam/hcaires kind:clone conditional:is-laptop
 PolymerLabs/arcs kind:clone
 git@github.com:compilersEllie/llvm-project kind:clone conditional:is-laptop
@@ -39,4 +38,6 @@ neovim/neovim kind:clone conditional:is-laptop
 git@github.com:compilersEllie/notes kind:clone
 git@github.com:compilersEllie/nvim_config kind:clone
 git@github.com:compilersEllie/tako kind:clone
+git@github.com:compilersEllie/tako.wiki kind:clone
+git@github.com:compilersEllie/keeps_and_kobolds kind:clone
 git@github.com:skfltech/skfl kind:clone conditional:is-laptop
