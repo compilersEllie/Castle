@@ -3,3 +3,9 @@ zstyle ':autocomplete:*' default-context history-incremental-search-backward
 zstyle ':completion:*:*' ignored-patterns '*ORIG_HEAD'
 zstyle ':completion:*' menu select
 zstyle ':completion:*:default'         list-colors ${(s.:.)LS_COLORS}
+
+# Bash style
+zle -l backward-kill-word
+zstyle ':zle:*' word-chars ''
+zstyle ':zle:*' skip-whitespace-first true
+zstyle ':zle:*' word-style standard

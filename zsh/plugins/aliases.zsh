@@ -20,6 +20,8 @@ alias ll="ls -la"
 alias cl="less -r -f +G +g ${XDG_CACHE_DIR:-$HOME/.cache}/c.log"
 alias tl="less -r -f +G +g ${XDG_CACHE_DIR:-$HOME/.cache}/t.log"
 
+alias dupes="find . ! -empty -type f -exec md5sum {} + | sort | uniq -w32 -dD"
+
 alias sync='((a . && m "Backup $(date)") || true) && pP'
 alias "sn"="sync_notes"
 alias "a."="a ."
