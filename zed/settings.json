@@ -109,6 +109,17 @@
     "regex": true,
   },
   "agent": {
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "always_allow": [
+            {
+              "pattern": "^cargo\\s+check(\\s|$)"
+            }
+          ]
+        }
+      }
+    },
     "profiles": {
       "write": {
         "default_model": {
@@ -156,7 +167,7 @@
         }
       }
     },
-    "default_profile": "research",
+    "default_profile": "write",
     "dock": "right",
     "inline_assistant_model": {
       "provider": "ollama",
@@ -166,7 +177,7 @@
     "default_model": {
       "enable_thinking": true,
       "provider": "ollama",
-      "model": "qwen3.5:35b"
+      "model": "gemma4-65k:latest"
     },
   },
   "theme": {
