@@ -1,6 +1,6 @@
 #!env zsh
 
-cd ~/src/notes
-source ~/src/greasy/greasy.zsh
+cd ~/src/compilersEllie/notes
+source ~/src/compilersEllie/greasy/greasy.zsh
 echo "Sync $(date)" >&2
 ((a . && m "Backup $(date)") || true) && pP
