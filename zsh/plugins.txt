@@ -5,6 +5,7 @@ git@github.com:compilersEllie/use-xdg-basedirs
 
 # Plugins
 romkatv/zsh-defer
+jeffreytse/zsh-vi-mode
 ~/.config/zsh/plugins
 ohmyzsh/ohmyzsh path:plugins/last-working-dir
 ~/.config/zsh/functions kind:autoload
