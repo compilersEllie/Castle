@@ -52,7 +52,7 @@
     "dock": "right"
   },
   "title_bar": {
-    
+
   },
   "project_panel": {
     "dock": "left",
@@ -189,8 +189,10 @@
   "pane_split_direction_vertical": "right",
   "pane_split_direction_horizontal": "down",
   "vim": {
+    "gdefault": true,
     "toggle_relative_line_numbers": true,
     "use_smartcase_find": true,
+    "use_regex_search": true,
     "use_system_clipboard": "on_yank",
   },
   "lsp": {
