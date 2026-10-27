@@ -44,6 +44,7 @@ i = "job:initial"
 j = "scroll-lines(1)"
 k = "scroll-lines(-1)"
 n = "job:nextest"
+shift-n = "job:nextest_verbose"
 shift-t = "job:todo"
 l = "job:changelog"
 shift-c = "job:coverage"
@@ -63,7 +64,12 @@ need_stdout = true
 watch = ["tests"]
 
 [jobs.nextest]
-command = ["cargo", "nextest", "run", "--color", "always"]
+command = ["cargo", "nextest", "run", "--color", "always", "--show-progress", "bar"]
+need_stdout = true
+watch = ["tests"]
+
+[jobs.nextest_verbose]
+command = ["cargo", "nextest", "run", "--color", "always", "--show-progress", "bar", "--nocapture"]
 need_stdout = true
 watch = ["tests"]
 
@@ -85,7 +91,7 @@ need_stdout = true
 watch = ["tests"]
 
 [jobs.coverage]
-command = ["cargo", "tarpaulin", "--engine", "llvm"]
+command = ["cargo", "tarpaulin", "--color", "always", "--engine", "llvm", "-o", "markdown"]
 need_stdout = true
 watch = ["tests"]
 
@@ -97,5 +103,7 @@ jobs.coverage.env.CARGO_TARGET_DIR = "$CARGO_TARGET_DIR"
 jobs.coverage.env.RUSTC_WRAPPER = "$RUSTC_WRAPPER"
 jobs.nextest.env.CARGO_TARGET_DIR = "$CARGO_TARGET_DIR"
 jobs.nextest.env.RUSTC_WRAPPER = "$RUSTC_WRAPPER"
+jobs.nextest_verbose.env.CARGO_TARGET_DIR = "$CARGO_TARGET_DIR"
+jobs.nextest_verbose.env.RUSTC_WRAPPER = "$RUSTC_WRAPPER"
 jobs.run.env.CARGO_TARGET_DIR = "$CARGO_TARGET_DIR"
 jobs.run.env.RUSTC_WRAPPER = "$RUSTC_WRAPPER"
