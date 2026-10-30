@@ -40,6 +40,10 @@ function do_arrive_configs() {
     fi
   fi
 
+  if [[ -x "$(which gsettings)" ]]; then
+    gsettings set org.gnome.mutter.keybindings switch-monitor "[]"
+  fi
+
   link "${HOME}/.cache/antidote/github.com" "${HOME}/src"
 
   link "${HOME}/src/compilersEllie/nvim_config" "${HOME}/.config/nvim"

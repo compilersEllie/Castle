@@ -16,6 +16,7 @@ alias pv="pv -c"
 
 alias la="ls -a"
 alias ll="ls -la"
+alias z=j
 
 alias cl="less -r -f +G +g ${XDG_CACHE_DIR:-$HOME/.cache}/c.log"
 alias tl="less -r -f +G +g ${XDG_CACHE_DIR:-$HOME/.cache}/t.log"
