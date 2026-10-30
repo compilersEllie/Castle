@@ -95,3 +95,14 @@ CMakeCache.txt
 CMakeFiles
 cmake_install.cmake
 pnpm-lock.yaml
+wayfinder_tickets
+.wayfinder_tickets
+.wayfinder
+*_tickets
+.bacon-locations
+tarpaulin-report.md
+/target
+**/*.rs.bk
+*.profraw
+*WAYFINDER.md
+wayfinder
