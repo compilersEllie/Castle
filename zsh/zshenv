@@ -3,6 +3,7 @@ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export GIT_BIN="$(which git)"
 export ANTIDOTE_HOME="$HOME/.cache/antidote"
 export CARGO_HOME="$HOME/.cache/cargo"
+export NVM_DIR="$HOME/.cache/nvm"
 export JAVA_HOME="/usr/lib/jvm/java-25-openjdk-amd64"
 export ANDROID_HOME="$HOME/.local/share/android/"
 export ANDROID_NDK_HOME="$HOME/.local/share/android-ndk-r30-linux"
