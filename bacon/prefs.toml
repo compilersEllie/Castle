@@ -91,7 +91,7 @@ need_stdout = true
 watch = ["tests"]
 
 [jobs.coverage]
-command = ["cargo", "tarpaulin", "--color", "always", "--engine", "llvm", "-o", "markdown"]
+command = ["cargo", "tarpaulin", "--color", "always", "--engine", "llvm"]
 need_stdout = true
 watch = ["tests"]
 
