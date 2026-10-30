@@ -1,8 +1,19 @@
 {
-  "theme": "dark",
+  "enabledPlugins": {
+    "zedra@zedra": true
+  },
+  "extraKnownMarketplaces": {
+    "zedra": {
+      "source": {
+        "source": "github",
+        "repo": "tanlethanh/zedra-plugin"
+      }
+    }
+  },
   "modelSettings": {
     "gemma4-65k": {
       "effortLevel": "low"
     }
-  }
+  },
+  "theme": "dark"
 }
