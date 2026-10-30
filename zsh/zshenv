@@ -48,11 +48,11 @@ export PATH="$PATH"
 # TOOL SETTINGS
 export LLVM_SYS_221_PREFIX="/mnt/big/llvm-project/build"
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
-    export EDITOR="$(echo -e "$(which nvim || which vim)" | tail -n 1)"
+    export VISUAL="$(echo -e "$(which nvim || which vim)" | tail -n 1)"
 else
-    export EDITOR="$(echo -e "$(which zed || which nvim || which vim)" | tail -n 1)"
+    export VISUAL="$(echo -e "$(which zed || which nvim || which vim)" | tail -n 1)"
 fi
-export VISUAL="\$EDITOR"
+export EDITOR="$(echo -e "$(which nvim || which vim)" | tail -n 1)"
 
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
