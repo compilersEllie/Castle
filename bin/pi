@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# A script to lazy load NVM to run the PI agent harness.
+
+# From ZSH nvm_auto_use
+
+if [[ "$NVM_NO_USE" == true ]]; then
+  source "$NVM_DIR/nvm.sh" --no-use
+else
+  source "$NVM_DIR/nvm.sh"
+fi
+
+export NVM_AUTO_USE_ACTIVE=false # In case NVM get's loaded again
+
+nvm use default --lts
+
+pi "$@"
