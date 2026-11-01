@@ -143,6 +143,9 @@
             },
             {
               "pattern": "^git\\s+status(\\s|$)"
+            },
+            {
+              "pattern": "^CARGO_TARGET_DIR=/tmp/target\\s+RUSTC_WRAPPER=\\s+cargo\\s+test(\\s|$)"
             }
           ]
         }
