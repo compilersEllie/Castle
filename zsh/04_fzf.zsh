@@ -94,7 +94,7 @@ fzf-file-widget() {
   zle reset-prompt
   return $ret
 }
-if [[ "${FZF_CTRL_T_COMMAND}" != "" ]]; then
+if [[ "${FZF_CTRL_T_COMMAND-x}" != "" ]]; then
   zle     -N            fzf-file-widget
   bindkey -M emacs '^T' fzf-file-widget
   bindkey -M vicmd '^T' fzf-file-widget
@@ -120,7 +120,7 @@ fzf-cd-widget() {
   zle reset-prompt
   return $ret
 }
-if [[ "${FZF_ALT_C_COMMAND}" != "" ]]; then
+if [[ "${FZF_ALT_C_COMMAND-x}" != "" ]]; then
   zle     -N             fzf-cd-widget
   bindkey -M emacs '\ec' fzf-cd-widget
   bindkey -M vicmd '\ec' fzf-cd-widget
@@ -155,12 +155,10 @@ fzf-history-widget() {
   zle reset-prompt
   return $ret
 }
-if [[ ${FZF_CTRL_R_COMMAND} != "" ]]; then
   zle     -N            fzf-history-widget
   bindkey -M emacs '^R' fzf-history-widget
   bindkey -M vicmd '^R' fzf-history-widget
   bindkey -M viins '^R' fzf-history-widget
-fi
 fi
 
 } always {
