@@ -1,0 +1,24 @@
+Host test.skfl
+  Hostname 192.168.0.46
+  User skfl
+  ForwardAgent yes
+
+Host sudo.test.skfl
+  Hostname 192.168.0.46
+  User skfl_admin
+  ForwardAgent yes
+
+Host lego
+  Hostname lego-1.tail01de8a.ts.net
+  User ellie
+  ForwardAgent yes
+
+Host technix
+  Hostname technix.tail01de8a.ts.net
+  User ellie
+  ForwardAgent yes
+
+Host orange
+  Hostname 192.168.4.65
+  User orangepi
+  ForwardAgent yes

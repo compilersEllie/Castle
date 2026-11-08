@@ -47,6 +47,7 @@ function do_arrive_configs() {
   link "${HOME}/.cache/antidote/github.com" "${HOME}/src"
 
   link "${HOME}/src/compilersEllie/nvim_config" "${HOME}/.config/nvim"
+  link "${HOME}/.config/ssh/config" "${HOME}/.ssh/config"
   link "${HOME}/.config/cargo/config.toml" "${HOME}/.cache/cargo/config.toml"
   link "${ANTIDOTE_HOME}" "${HOME}/src/mattmc3/antidote"
   pyenv init > "${PYENV_HOME}/completions/pyenv.zsh"
