@@ -1,0 +1,10 @@
+[Unit]
+Description=sccache-dist server
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart= /home/ellie/.cache/cargo/bin/sccache-dist server --config /home/ellie/.config/sccache/server.conf
+
+[Install]
+WantedBy=multi-user.target
