@@ -1,0 +1,11 @@
+[Unit]
+Description=sccache-dist server
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/home/ellie/.cache/cargo/bin/sccache-dist scheduler --config /home/ellie/.config/sccache/scheduler.conf
+Environment=SCCACHE_NO_DAEMON=1
+
+[Install]
+WantedBy=multi-user.target
