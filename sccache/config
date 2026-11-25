@@ -11,4 +11,4 @@ toolchain_cache_size = 5368709120
 [dist.auth]
 type = "token"
 # This should match the `client_auth` section of the scheduler config.
-token = "my client token"
+token = "RxA3TKRdsBO2ZMrTzqRHDFzdrmSeKtTxo2ZzSZtaZBQ"
