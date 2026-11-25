@@ -17,14 +17,64 @@
         "context_servers": {}
       }
     },
-    "default_model": {
-      "provider": "ollama",
-      "model": "gemma4:latest",
-      "enable_thinking": true
-    },
     "favorite_models": [],
     "model_parameters": []
   }, */
+  "proxy": "",
+  "language_models": {
+    "llama.cpp": {
+      "api_url": "http://100.111.131.121:11434",
+    },
+    "ollama": {
+      "context_window": 64000,
+      "api_url": "http://192.168.4.66:11434",
+      "auto_discover": true,
+      "available_models": [ {
+          "max_tokens": 64000,
+          "name": "gemma4-64k:context"
+      } ]
+    }
+  },
+  "ssh_connections": [
+    {
+      "host": "lego",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/ellie"
+          ]
+        },
+        {
+          "paths": [
+            "/home/ellie/src/compilersEllie/sheetah/./"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "192.168.4.66",
+      "username": "ellie",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/ellie"
+          ]
+        },
+        {
+          "paths": [
+            "/home/ellie/src/compilersEllie/sheetah/./"
+          ]
+        },
+        {
+          "paths": [
+            "/home/ellie/src/compilersEllie/worktrees/sheetah/satin-tundra/sheetah/./"
+          ]
+        }
+      ]
+    }
+  ],
   "context_servers": {
     "github-activity-summarizer": {
       "enabled": true,
@@ -71,21 +121,13 @@
     "activate_on_close": "left_neighbour"
   },
   "agent_servers": {
-    "goose": {
-      "type": "registry"
-    },
-    "pi-acp": {
-      "type": "registry"
-    },
-    "corust-agent": {
-      "type": "registry"
-    }
+
   },
   "show_edit_predictions": true,
   "use_autoclose": false,
   "edit_predictions": {
     "provider": "ollama",
-    "mode": "subtle",
+    "mode": "eager",
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null
@@ -109,6 +151,13 @@
     "regex": true,
   },
   "agent": {
+    "auto_compact": {
+      "threshold": "70%"
+    },
+    "show_turn_stats": true,
+    "message_editor_min_lines": 6,
+    "play_sound_when_agent_done": "when_hidden",
+    "notify_when_agent_waiting": "all_screens",
     "tool_permissions": {
       "tools": {
         "create_directory": {
@@ -155,8 +204,8 @@
       "write": {
         "default_model": {
           "provider": "ollama",
-          "model": "qwen3-coder:30b",
-          "enable_thinking": false
+          "model": "gemma4-65k:latest",
+          "enable_thinking": true
         },
         "name": "Write",
         "tools": {
@@ -168,7 +217,7 @@
       "research": {
         "default_model": {
           "provider": "ollama",
-          "model": "gemma4:31b",
+          "model": "gemma4-65k:latest",
           "enable_thinking": true
         },
         "name": "Research",
@@ -202,7 +251,7 @@
     "dock": "left",
     "inline_assistant_model": {
       "provider": "ollama",
-      "model": "gemma4:latest",
+      "model": "gemma4-65k:latest",
       "enable_thinking": false
     },
     "default_model": {
