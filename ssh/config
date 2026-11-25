@@ -9,11 +9,14 @@ Host sudo.test.skfl
   ForwardAgent yes
 
 Host lego
+  Hostname 192.168.4.66
   Hostname lego-1.tail01de8a.ts.net
   User ellie
   ForwardAgent yes
+  # RemoteForward 11434 127.0.0.1:11434
 
 Host technix
+  Hostname 192.168.4.54
   Hostname technix.tail01de8a.ts.net
   User ellie
   ForwardAgent yes
