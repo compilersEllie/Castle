@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# Source - https://stackoverflow.com/q/24058544
+# Posted by BT643
+# Retrieved 2026-11-25, License - CC BY-SA 3.0
+
+# TODO: Currently only works FROM local computer, fix this
+#
+# Define source, target and cd to source
+source="$1"
+target="$2"
+cd "${source}" || exit 1
+
+# Split "target_host:target_dir"
+target_host="$(echo "${target}" | sed "s/:.*//")"
+
+# Set the maximum number of concurrent rsync threads
+maxthreads=5
+# How long to wait before checking the number of rsync threads again
+sleeptime=5
+
+remote() {
+  if [[ -z "${target_host}" ]]; then
+    sh "${@}"
+  else
+    ssh "${target_host}" -C "${@}"
+  fi
+}
+
+copy_dir() {
+  local from="$1"
+  local to="$2"
+  base="$(dirname "${to}")"
+  remote mkdir -p "${base}"
+  echo "+${from} >>> ${to}"
+  rsync -ra "${from}" "${to}" </dev/null >/dev/null 2>&1
+  echo "-${from} >>> ${to}"
+}
+
+# Find all folders in the source directory within the maxdepth level
+find . -type d | while read -r dir ; do
+    # Strip leading dot slash
+    subfolder="$(echo "${dir}" | sed "s/^\.\///")"
+    # Make sure to ignore the parent folder
+    if [[ "${subfolder}" == "" ]]; then
+      continue
+    fi
+    # Make sure the number of rsync threads running is below the threshold
+    while [ "$(pgrep "[r]sync" | wc -l)" -gt ${maxthreads} ]; do
+        echo "Sleeping ${sleeptime} seconds"
+        sleep ${sleeptime}
+    done
+    # Run rsync in background for the current subfolder and move one to the next one
+    copy_dir "${source}/${subfolder}/" "${target}/${subfolder}/" &
+done
+
+wait
