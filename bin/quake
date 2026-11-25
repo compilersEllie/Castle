@@ -1,0 +1,17 @@
+#!/bin/bash
+
+switch() {
+  local class
+  class=$(gdbus call --session --dest org.gnome.Shell --object-path /org/gnome/Shell/Extensions/WindowsExt --method org.gnome.Shell.Extensions.WindowsExt.FocusClass | sed "s/('//" | sed "s/',)//")
+  echo $class
+
+  #if [ $class = "kitty" ]; then
+    #wmctrl -ia $(cat ~/.local/state/lastfocusedwindow)
+  #else
+    echo $ACTIVE_WINDOW > ~/.local/state/lastfocusedwindow
+    #wmctrl -xa kitty.kitty || kitty
+  #fi
+  kitty -c ~/.config/kitty/kitty.conf -c ~/.config/kitty/quick_access_terminal.conf
+}
+
+switch
