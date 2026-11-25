@@ -158,9 +158,34 @@
     "message_editor_min_lines": 6,
     "play_sound_when_agent_done": "when_hidden",
     "notify_when_agent_waiting": "all_screens",
+    "sandbox_permissions": {
+      "allow_fs_write_all": true
+    },
     "tool_permissions": {
       "tools": {
+        "fetch": {
+          "always_allow": [
+            {
+              "pattern": "^https?://raw\\.githubusercontent\\.com"
+            }
+          ]
+        },
+        "write_file": {
+          "default": "allow",
+          "always_allow": [
+            {
+              "pattern": "^wayfinder_tickets/"
+            },
+            {
+              "pattern": "^wayfinder/"
+            },
+            {
+              "pattern": "^tickets/"
+            }
+          ]
+        },
         "create_directory": {
+          "default": "allow",
           "always_allow": [
             {
               "pattern": "^*/wayfinder/"
@@ -195,6 +220,51 @@
             },
             {
               "pattern": "^CARGO_TARGET_DIR=/tmp/target\\s+RUSTC_WRAPPER=\\s+cargo\\s+test(\\s|$)"
+            },
+            {
+              "pattern": "^git\\s+diff(\\s|$)"
+            },
+            {
+              "pattern": "^cargo\\s+clippy(\\s|$)"
+            },
+            {
+              "pattern": "^RUSTC_WRAPPER=\\s+cargo\\s+check(\\s|$)"
+            },
+            {
+              "pattern": "^RUSTC_WRAPPER=\\s+cargo\\s+clippy(\\s|$)"
+            },
+            {
+              "pattern": "^touch\\s+test_file(\\s|$)"
+            },
+            {
+              "pattern": "^CARGO_INCREMENTAL=0\\s+cargo\\s+check(\\s|$)"
+            },
+            {
+              "pattern": "^CARGO_TARGET_DIR=\\./target\\s+RUSTC_WRAPPER=\\s+cargo\\s+check(\\s|$)"
+            },
+            {
+              "pattern": "^CARGO_HOME=/home/ellie/\\.cache/antidote/github\\.com/compilersEllie/sheetah/\\.cargo_home\\s+RUSTC_WRAPPER=\\s+cargo\\s+check(\\s|$)"
+            },
+            {
+              "pattern": "^cat\\s+wayfinder/MAP\\.md(\\s|$)"
+            },
+            {
+              "pattern": "^RUSTC_WRAPPER=\\s+cargo\\s+test(\\s|$)"
+            },
+            {
+              "pattern": "^grep\\b"
+            },
+            {
+              "pattern": "^cargo\\s+build(\\s|$)"
+            },
+            {
+              "pattern": "^cargo\\s+search(\\s|$)"
+            },
+            {
+              "pattern": "^RUSTC_WRAPPER=\\s+cargo\\s+build(\\s|$)"
+            },
+            {
+              "pattern": "^RUSTC_WRAPPER=\\s+cargo\\s+tree(\\s|$)"
             }
           ]
         }
