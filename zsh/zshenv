@@ -13,6 +13,8 @@ export GOPATH="/usr/bin"
 export PYENV_HOME="${HOME}/.local/share/pyenv"
 export FZF_CTRL_R_COMMAND=1
 export ZSH_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
+export BORG_REPO="ssh://ellie@lego/mnt/3586b16c-0615-4e68-ab81-7a35f70ae599/notes_backups"
+export BORG_RSH="hpnssh -e none"
 
 export WORDCHARS=' *?_-.[]~=\\/&;!#$%^(){}<>'
 export KEYTIMEOUT=0.1
