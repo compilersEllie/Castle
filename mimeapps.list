@@ -235,6 +235,7 @@ font/ttf=org.gnome.font-viewer.desktop
 x-scheme-handler/obsidian=obsidian-obsidian.desktop
 text/markdown=obsidian-obsidian.desktop
 x-scheme-handler/claude-cli=claude-code-url-handler.desktop
+x-scheme-handler/opencode=ai.opencode.desktop.desktop
 
 [Added Associations]
 application/msword=google-chrome.desktop;libreoffice-writer.desktop;
