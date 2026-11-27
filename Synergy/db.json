@@ -1,0 +1,55 @@
+{
+  "version": {
+    "syncVersion": 0,
+    "schemaVersion": 17
+  },
+  "data": {
+    "mainID": {
+      "id": ""
+    },
+    "autoDiscover": {
+      "discovery": true
+    },
+    "computers": [],
+    "keyboard": {
+      "altgr": true,
+      "lock_to_screen": true
+    },
+    "hotkeys": {},
+    "security": {
+      "encryption": true,
+      "key_length": 4096,
+      "fingerprint": ""
+    },
+    "mouse": {
+      "relative": true
+    },
+    "performance": {
+      "allow_copy": true,
+      "limit": 4000,
+      "sync": false
+    },
+    "local-network": {
+      "keep_alive": true,
+      "interval": 5000
+    },
+    "system": {
+      "auto_restart": true,
+      "admin_daemon": false,
+      "no_daemon": false
+    },
+    "developers": {
+      "switchDelay": 0,
+      "shouldSwitchDoubleTap": false,
+      "switchDoubleTap": 0,
+      "dragAndDrop": false,
+      "corePort": 24800,
+      "showMeta": false
+    },
+    "override": {
+      "shouldOverride": false,
+      "configFile": "",
+      "serverName": "."
+    }
+  }
+}

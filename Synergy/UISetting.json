@@ -1,0 +1,17 @@
+{
+  "showCriticalErrors": true,
+  "filterLevel": "All",
+  "showCoreErrors": false,
+  "suppressWaylandDialog": false,
+  "suppressMissingLayoutsNotice": false,
+  "checkForUpdates": true,
+  "updateTrack": "stable",
+  "appearance": "system",
+  "mainWindowSize": {
+    "width": 1619,
+    "height": 679,
+    "maximized": false
+  },
+  "suppressMaintenanceWarningFor": null,
+  "suppressMaintenanceExpiredFor": null
+}

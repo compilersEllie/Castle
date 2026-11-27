@@ -1,0 +1,45 @@
+{
+  "version": 8,
+  "ips": {},
+  "myId": "8623082b279ab3dcbb6cd426e297fe5a60c2a4089811d59002055009a6385db7",
+  "send-report": true,
+  "serial": "",
+  "license": {
+    "offlineActivationResponse": "",
+    "activatedMode": "none"
+  },
+  "diagnostic": {
+    "level": "INFO",
+    "dir": "/home/ellie/.local/state/Synergy/synergy.jsonl"
+  },
+  "local_security": {
+    "path": "/home/ellie/.config/Synergy/synergyCert.pem",
+    "trusted_peers": [],
+    "require_client_certs": true
+  },
+  "local_system": {
+    "path": "/home/ellie/.config/Synergy/synergy.conf",
+    "run_on_login_screen": false,
+    "core_enabled": true
+  },
+  "local_computers": {
+    "8623082b279ab3dcbb6cd426e297fe5a60c2a4089811d59002055009a6385db7": "127.0.0.1"
+  },
+  "local_developers": {
+    "keepForeground": true,
+    "elevate_privileges": 1
+  },
+  "local_override": {
+    "computerName": "",
+    "serverIP": "",
+    "elevate_privileges": 1,
+    "args": [],
+    "shouldOverride": false,
+    "configFile": "",
+    "serverName": "."
+  },
+  "network": {
+    "interface": "Auto",
+    "discoverable": true
+  }
+}
